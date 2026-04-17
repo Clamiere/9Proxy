@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OpenAffiliate Program",
+  "description": "Schema for affiliate program YAML files in the OpenAffiliate registry",
+  "type": "object",
+  "required": ["name", "slug", "url", "category", "commission", "description", "short_description", "agents"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Display name of the product/service"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "URL-safe identifier, must match the filename"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Product website URL"
+    },
+    "category": {
+      "type": "string",
+      "description": "Primary category"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Searchable tags"
+    },
+    "commission": {
+      "type": "object",
+      "required": ["type", "rate", "currency"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["recurring", "one-time", "tiered", "hybrid"]
+        },
+        "rate": {
+          "type": "string",
+          "description": "Commission rate (e.g. '30%', '$100', '20-40%')"
+        },
+        "currency": {
+          "type": "string",
+          "default": "USD"
+        },
+        "duration": {
+          "type": ["string", "null"],
+          "description": "How long commissions are paid (e.g. '12 months', 'lifetime')"
+        },
+        "conditions": {
+          "type": ["string", "null"],
+          "description": "Conditions for earning the commission"
+        }
+      }
+    },
+    "cookie_days": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Cookie/attribution window in days"
+    },
+    "attribution": {
+      "type": "string",
+      "enum": ["last-click", "first-click", "multi-touch"],
+      "default": "last-click"
+    },
+    "tracking_method": {
+      "type": "string",
+      "enum": ["cookie", "server-side", "hybrid"],
+      "default": "cookie"
+    },
+    "payout": {
+      "type": "object",
+      "properties": {
+        "minimum": {
+          "type": "number",
+          "description": "Minimum payout threshold"
+        },
+        "currency": {
+          "type": "string",
+          "default": "USD"
+        },
+        "frequency": {
+          "type": "string",
+          "enum": ["weekly", "monthly", "net-30", "net-60"]
+        },
+        "methods": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["bank", "paypal", "wise", "crypto", "check", "stripe"]
+          }
+        }
+      }
+    },
+    "signup_url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Direct link to affiliate program signup"
+    },
+    "approval": {
+      "type": "string",
+      "enum": ["auto", "manual", "invite-only"],
+      "description": "How applications are approved"
+    },
+    "approval_time": {
+      "type": ["string", "null"],
+      "description": "Expected time to get approved"
+    },
+    "restrictions": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "Program restrictions and rules"
+    },
+    "marketing_materials": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether banners, links, landing pages are provided"
+    },
+    "api_available": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the program has an affiliate API"
+    },
+    "dedicated_manager": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether a dedicated affiliate manager is assigned"
+    },
+    "dashboard_url": {
+      "type": ["string", "null"],
+      "description": "URL to the affiliate dashboard"
+    },
+    "network": {
+      "type": ["string", "null"],
+      "description": "Affiliate network (impact, partnerstack, shareasale, in-house)"
+    },
+    "program_age": {
+      "type": ["string", "null"],
+      "description": "How long the affiliate program has existed"
+    },
+    "description": {
+      "type": "string",
+      "description": "Full description of the product and affiliate program"
+    },
+    "short_description": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "One-line description"
+    },
+    "agents": {
+      "type": "object",
+      "required": ["prompt"],
+      "properties": {
+        "prompt": {
+          "type": "string",
+          "description": "Instructions for AI agents on when to recommend this product"
+        },
+        "keywords": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "use_cases": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Specific scenarios when this product should be recommended"
+        }
+      }
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "submitted_by": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date"
+    }
+  },
+  "additionalProperties": false
+}

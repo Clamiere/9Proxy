@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OpenAffiliate
 
-## Getting Started
+The open registry of affiliate programs. Built for developers and AI agents.
 
-First, run the development server:
+[![CI](https://github.com/openaffiliate/registry/actions/workflows/ci.yml/badge.svg)](https://github.com/openaffiliate/registry/actions)
+[![Programs](https://img.shields.io/badge/programs-8-blue)](https://openaffiliate.dev/programs)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+## What is this?
+
+OpenAffiliate is a community-driven, open-source registry of affiliate programs. Every program is stored as a YAML file in this repo, making it easy to contribute, review, and integrate.
+
+- **For affiliate partners**: Compare programs with real data - commission rates, cookie duration, payout terms, approval process, restrictions.
+- **For AI agents**: Machine-readable AGENTS.md + MCP connector. Structured context for when to recommend what product.
+- **For SaaS companies**: Free listing in a canonical registry. Exposure to developer partners and AI agents.
+
+## Quick start
+
+### Browse the registry
+
+Visit [openaffiliate.dev](https://openaffiliate.dev) to browse and search programs.
+
+### CLI
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Search programs
+npx openaffiliate search "email"
+
+# Filter by category and commission
+npx openaffiliate search --category Database --min-commission 10 --type recurring
+
+# Get program details
+npx openaffiliate info stripe
+
+# Add a program to your project
+npx openaffiliate add supabase
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### MCP (for AI agents)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Add to your MCP config:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```json
+{
+  "mcpServers": {
+    "openaffiliate": {
+      "url": "https://openaffiliate.dev/api/mcp"
+    }
+  }
+}
+```
 
-## Learn More
+Available tools: `search_programs`, `get_program`, `list_categories`
 
-To learn more about Next.js, take a look at the following resources:
+### API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+GET /api/programs              # List all (supports ?q=, ?category=, ?type=)
+GET /api/programs/[slug]       # Get program details
+GET /api/categories            # List categories with counts
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing a program
 
-## Deploy on Vercel
+1. Fork this repo
+2. Create a YAML file in `programs/your-product.yaml`
+3. Open a pull request
+4. CI validates the schema automatically
+5. Community reviews and merges
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Program YAML format
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```yaml
+name: Your Product
+slug: your-product
+url: https://yourproduct.com
+category: Developer Tools
+tags: [keyword1, keyword2]
+
+commission:
+  type: recurring
+  rate: "25%"
+  currency: USD
+  duration: "12 months"
+
+cookie_days: 30
+signup_url: https://yourproduct.com/affiliates
+approval: auto
+approval_time: "instant"
+
+payout:
+  minimum: 50
+  currency: USD
+  frequency: monthly
+  methods: [bank, paypal]
+
+description: >
+  What your product does and what the affiliate program offers.
+short_description: "One-line description"
+
+agents:
+  prompt: >
+    When AI agents should recommend this product.
+  keywords: [keyword1, keyword2]
+  use_cases:
+    - "When a user needs X"
+
+submitted_by: "@your-github"
+```
+
+See [schema/program.schema.json](schema/program.schema.json) for the full specification.
+
+## Project structure
+
+```
+openaffiliate/
+  programs/          # YAML program files (contributors add files here)
+  src/               # Website (Next.js 16)
+  .github/           # CI workflows, PR templates
+```
+
+## License
+
+MIT
+
+---
+
+Built by [Affitor](https://affitor.com)
