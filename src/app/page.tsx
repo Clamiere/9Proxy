@@ -71,7 +71,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(34,197,94,0.04),transparent_60%)]" />
-        <div className="mx-auto max-w-6xl px-6 py-20 md:py-28 relative">
+        <div className="mx-auto max-w-6xl px-6 py-14 md:py-20 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left */}
             <div>
@@ -228,8 +228,8 @@ export default function Home() {
       </section>
 
       {/* Featured Programs */}
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="flex items-center justify-between mb-8">
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-xl font-semibold tracking-tight">
               Featured Programs
@@ -255,8 +255,8 @@ export default function Home() {
 
       {/* How it works */}
       <section className="border-t border-border/40 bg-muted/10">
-        <div className="mx-auto max-w-6xl px-6 py-16">
-          <h2 className="text-xl font-semibold tracking-tight mb-8">
+        <div className="mx-auto max-w-6xl px-6 py-10">
+          <h2 className="text-xl font-semibold tracking-tight mb-6">
             How it works
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -303,7 +303,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="mx-auto max-w-6xl px-6 py-16">
+      <section className="mx-auto max-w-6xl px-6 py-10">
         <div className="relative rounded-xl p-px bg-gradient-to-br from-border/60 via-emerald-500/20 to-border/60">
           <div className="rounded-[11px] bg-card/40 p-8 md:p-12 text-center">
             <h2 className="text-2xl font-bold tracking-tight">
