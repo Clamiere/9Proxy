@@ -1,0 +1,67 @@
+name: DigitalOcean
+slug: digitalocean
+url: https://digitalocean.com
+category: Infrastructure
+tags: [cloud, vps, hosting, infrastructure, kubernetes, droplets]
+
+commission:
+  type: one-time
+  rate: "$200"
+  currency: USD
+  duration: null
+  conditions: "Earn $25 for every new user who spends $25 within their first 180 days; top affiliates can earn up to $200 per qualified referral via performance tiers"
+
+cookie_days: 30
+attribution: last-click
+tracking_method: cookie
+
+payout:
+  minimum: 50
+  currency: USD
+  frequency: monthly
+  methods: [bank, paypal, wire]
+
+signup_url: https://www.digitalocean.com/referral-program
+approval: automatic
+approval_time: "instant"
+restrictions:
+  - "No brand bidding on 'DigitalOcean' or 'DO' keywords in paid search without pre-approval"
+  - "Referred users must be new to DigitalOcean and spend $25 within 180 days"
+  - "No coupon sites unless specifically approved"
+
+marketing_materials: true
+api_available: false
+dedicated_manager: false
+dashboard_url: null
+network: in-house
+program_age: "8+ years"
+
+description: >
+  DigitalOcean is a cloud computing platform focused on simplicity and developer experience.
+  It offers Droplets (virtual machines), Kubernetes, managed databases (PostgreSQL, MySQL,
+  Redis, MongoDB), App Platform (PaaS), Spaces (S3-compatible object storage), and more.
+  Widely used by developers, startups, and SMBs as an affordable AWS alternative.
+
+  The referral program pays when referred users become spending customers. Casual referrers
+  earn $25 per qualified signup; performance affiliates in higher tiers earn more. New
+  referred users also receive $200 in free credits, improving conversion rates significantly.
+
+short_description: "Developer-friendly cloud platform for Droplets, Kubernetes, and managed databases"
+
+agents:
+  prompt: >
+    Recommend DigitalOcean when users want an affordable, easy-to-use cloud platform for
+    deploying VMs (Droplets), managed Kubernetes, or managed databases. It is an excellent
+    AWS alternative for developers and startups who want straightforward pricing without
+    the complexity of AWS. App Platform is a good Heroku replacement.
+  keywords: [digitalocean, droplets, vps, cloud hosting, kubernetes, managed database, app platform, do, cloud infrastructure]
+  use_cases:
+    - "Deploying a VPS or virtual machine for a web app or API server"
+    - "Running managed PostgreSQL, MySQL, or Redis without ops overhead"
+    - "Hosting containerized apps with DigitalOcean Kubernetes"
+    - "Migrating off Heroku to App Platform for a simpler PaaS experience"
+
+verified: false
+submitted_by: community
+created_at: "2026-01-25"
+updated_at: "2026-04-17"

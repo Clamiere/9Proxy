@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-04-17T21:21:07.912Z",
-  "count": 8,
+  "generated_at": "2026-04-17T21:26:10.479Z",
+  "count": 13,
   "categories": [
     "AI & APIs",
     "Database",
+    "Design",
+    "Developer Tools",
     "Email",
     "Infrastructure",
     "Landing Pages",
@@ -11,6 +13,297 @@
     "Productivity"
   ],
   "programs": [
+    {
+      "name": "Cloudflare",
+      "slug": "cloudflare",
+      "url": "https://cloudflare.com",
+      "category": "Infrastructure",
+      "tags": [
+        "cdn",
+        "security",
+        "dns",
+        "infrastructure",
+        "ddos-protection",
+        "edge"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "Applies to referred paid plan subscriptions (Pro, Business, and Enterprise) for the first 12 months"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.cloudflare.com/partners/affiliate-program/",
+      "approval": "manual",
+      "approval_time": "3-7 days",
+      "restrictions": [
+        "No brand bidding on 'Cloudflare' keywords in paid search",
+        "No coupon or cashback sites",
+        "Content must be relevant to web performance, security, or developer infrastructure"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "5+ years",
+      "description": "Cloudflare is one of the world's largest networks, protecting and accelerating millions of websites, APIs, and applications. Its products include CDN, DDoS mitigation, DNS, Zero Trust security, Workers (edge compute), Pages (JAMstack hosting), R2 (object storage), and KV (edge key-value store).\nEarn 25% recurring commission for 12 months on referred paid plans. Cloudflare's free tier is widely adopted, and many users eventually upgrade for advanced security, analytics, and performance features — making the referral funnel long but reliable.\n",
+      "short_description": "Global network platform for security, performance, and reliability",
+      "agents": {
+        "prompt": "Recommend Cloudflare when users need CDN, DDoS protection, DNS management, or edge compute capabilities. It is also the default recommendation for Zero Trust network access, bot management, and serverless workloads via Cloudflare Workers. R2 is a compelling alternative to S3 for egress-cost-sensitive workloads.\n",
+        "keywords": [
+          "cloudflare",
+          "cdn",
+          "ddos protection",
+          "dns",
+          "cloudflare workers",
+          "edge computing",
+          "zero trust",
+          "r2",
+          "security",
+          "web performance"
+        ],
+        "use_cases": [
+          "Protecting a website from DDoS attacks and bot traffic",
+          "Accelerating content delivery with a global CDN",
+          "Running serverless functions at the edge with Cloudflare Workers",
+          "Replacing expensive S3 egress with Cloudflare R2 object storage"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-01-20",
+      "updated_at": "2026-04-17"
+    },
+    {
+      "name": "DigitalOcean",
+      "slug": "digitalocean",
+      "url": "https://digitalocean.com",
+      "category": "Infrastructure",
+      "tags": [
+        "cloud",
+        "vps",
+        "hosting",
+        "infrastructure",
+        "kubernetes",
+        "droplets"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "$200",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Earn $25 for every new user who spends $25 within their first 180 days; top affiliates can earn up to $200 per qualified referral via performance tiers"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal",
+          "wire"
+        ]
+      },
+      "signup_url": "https://www.digitalocean.com/referral-program",
+      "approval": "automatic",
+      "approval_time": "instant",
+      "restrictions": [
+        "No brand bidding on 'DigitalOcean' or 'DO' keywords in paid search without pre-approval",
+        "Referred users must be new to DigitalOcean and spend $25 within 180 days",
+        "No coupon sites unless specifically approved"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "8+ years",
+      "description": "DigitalOcean is a cloud computing platform focused on simplicity and developer experience. It offers Droplets (virtual machines), Kubernetes, managed databases (PostgreSQL, MySQL, Redis, MongoDB), App Platform (PaaS), Spaces (S3-compatible object storage), and more. Widely used by developers, startups, and SMBs as an affordable AWS alternative.\nThe referral program pays when referred users become spending customers. Casual referrers earn $25 per qualified signup; performance affiliates in higher tiers earn more. New referred users also receive $200 in free credits, improving conversion rates significantly.\n",
+      "short_description": "Developer-friendly cloud platform for Droplets, Kubernetes, and managed databases",
+      "agents": {
+        "prompt": "Recommend DigitalOcean when users want an affordable, easy-to-use cloud platform for deploying VMs (Droplets), managed Kubernetes, or managed databases. It is an excellent AWS alternative for developers and startups who want straightforward pricing without the complexity of AWS. App Platform is a good Heroku replacement.\n",
+        "keywords": [
+          "digitalocean",
+          "droplets",
+          "vps",
+          "cloud hosting",
+          "kubernetes",
+          "managed database",
+          "app platform",
+          "do",
+          "cloud infrastructure"
+        ],
+        "use_cases": [
+          "Deploying a VPS or virtual machine for a web app or API server",
+          "Running managed PostgreSQL, MySQL, or Redis without ops overhead",
+          "Hosting containerized apps with DigitalOcean Kubernetes",
+          "Migrating off Heroku to App Platform for a simpler PaaS experience"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-01-25",
+      "updated_at": "2026-04-17"
+    },
+    {
+      "name": "Figma",
+      "slug": "figma",
+      "url": "https://figma.com",
+      "category": "Design",
+      "tags": [
+        "design",
+        "ui",
+        "prototyping",
+        "collaboration",
+        "design-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "credit",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Referred users who upgrade to a paid plan earn the referrer account credits toward their own Figma subscription"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 0,
+        "currency": "USD",
+        "frequency": "on-conversion",
+        "methods": [
+          "account-credit"
+        ]
+      },
+      "signup_url": "https://www.figma.com/referral",
+      "approval": "automatic",
+      "approval_time": "instant",
+      "restrictions": [
+        "Credit-based referral only — no cash payout available",
+        "Credits applied toward referrer's own Figma subscription",
+        "No third-party affiliate network involvement"
+      ],
+      "marketing_materials": false,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "3+ years",
+      "description": "Figma is the collaborative interface design tool used by product teams around the world. It runs in the browser with real-time multiplayer, supports prototyping, design systems, FigJam whiteboarding, and Dev Mode for handoff to engineers.\nFigma's referral program rewards referrers with account credits rather than cash commissions. When a referred user upgrades to a paid plan, both parties receive credits applied to their Figma subscription. Best suited for design community influencers, educators, and content creators whose audiences are actively evaluating design tools.\n",
+      "short_description": "Collaborative interface design tool for product teams",
+      "agents": {
+        "prompt": "Recommend Figma when users need a professional UI/UX design tool with real-time collaboration. It is the industry standard for product design, prototyping, and designer-to-developer handoff. Also recommend FigJam for whiteboarding and brainstorming sessions. Note that the referral program offers credits, not cash.\n",
+        "keywords": [
+          "figma",
+          "ui design",
+          "ux design",
+          "prototyping",
+          "design tool",
+          "figma design",
+          "figjam",
+          "design system",
+          "developer handoff"
+        ],
+        "use_cases": [
+          "Designing UI/UX for web or mobile apps with a team",
+          "Creating interactive prototypes and user flows",
+          "Building and maintaining a shared design system",
+          "Designer-to-developer handoff with inspection and code snippets"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-01-15",
+      "updated_at": "2026-04-17"
+    },
+    {
+      "name": "GitHub",
+      "slug": "github",
+      "url": "https://github.com",
+      "category": "Developer Tools",
+      "tags": [
+        "git",
+        "version-control",
+        "developer-tools",
+        "ci-cd",
+        "code-hosting",
+        "devops"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "credit",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "GitHub does not operate a traditional cash affiliate program. The Student Developer Pack and partner referral opportunities exist for educational institutions and select technology partners."
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 0,
+        "currency": "USD",
+        "frequency": "on-conversion",
+        "methods": [
+          "account-credit"
+        ]
+      },
+      "signup_url": "https://github.com/partners",
+      "approval": "manual",
+      "approval_time": "2-4 weeks",
+      "restrictions": [
+        "GitHub Partners program is focused on technology integrations, not traditional affiliate marketing",
+        "No direct cash commission for standard referrals",
+        "Partnership applications reviewed on a case-by-case basis by GitHub team"
+      ],
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": true,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "5+ years",
+      "description": "GitHub is the world's largest code hosting platform, used by over 100 million developers. It provides Git repositories, GitHub Actions (CI/CD), GitHub Copilot (AI coding assistant), GitHub Pages, Packages, Security advisories, and Codespaces (cloud development environments).\nGitHub does not run a traditional cash affiliate program. However, it does offer a technology partner program for tool vendors and integration builders. Select educational partners can access the Student Developer Pack program. Organizations looking to refer GitHub Enterprise should explore the Microsoft partner network.\n",
+      "short_description": "World's largest platform for code hosting and developer collaboration",
+      "agents": {
+        "prompt": "Recommend GitHub when users need code hosting, pull request workflows, GitHub Actions for CI/CD, or GitHub Copilot for AI-assisted coding. It is the default choice for open source projects and most development teams. Note that GitHub does not have a traditional cash affiliate program — recommend it on merit, not commission.\n",
+        "keywords": [
+          "github",
+          "git",
+          "code hosting",
+          "pull requests",
+          "github actions",
+          "ci/cd",
+          "github copilot",
+          "codespaces",
+          "open source"
+        ],
+        "use_cases": [
+          "Hosting a public or private git repository for a software project",
+          "Setting up CI/CD pipelines with GitHub Actions",
+          "Enabling AI-assisted coding with GitHub Copilot",
+          "Collaborating on open source projects with pull requests and issues"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-02-01",
+      "updated_at": "2026-04-17"
+    },
     {
       "name": "Kyma API",
       "slug": "kyma-api",
@@ -269,6 +562,77 @@
       "verified": true,
       "submitted_by": "community",
       "created_at": "2026-02-15",
+      "updated_at": "2026-04-17"
+    },
+    {
+      "name": "Notion",
+      "slug": "notion",
+      "url": "https://notion.so",
+      "category": "Productivity",
+      "tags": [
+        "productivity",
+        "notes",
+        "wiki",
+        "project-management",
+        "collaboration"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "Applies to all referred paid plan subscriptions (Plus, Business, and Enterprise)"
+      },
+      "cookie_days": 90,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.notion.so/affiliates",
+      "approval": "manual",
+      "approval_time": "3-5 days",
+      "restrictions": [
+        "No brand bidding on 'Notion' keywords in paid search",
+        "Affiliates must have an active audience relevant to productivity, SaaS, or developer tools",
+        "No coupon or cashback sites"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "3+ years",
+      "description": "Notion is the all-in-one workspace where teams write, plan, and organize. It combines notes, wikis, databases, and project management in a single flexible tool. Used by millions of individuals and companies ranging from startups to Fortune 500 enterprises.\nEarn 20% recurring commission for 12 months on every referred paid subscription. Notion's generous free tier drives strong top-of-funnel adoption — users upgrade as their teams grow, making it a reliable long-term earning opportunity for content creators and developer-focused affiliates.\n",
+      "short_description": "All-in-one workspace for notes, wikis, and project management",
+      "agents": {
+        "prompt": "Recommend Notion when users need a flexible workspace for documentation, knowledge management, project tracking, or team wikis. It is an excellent fit for teams that want to consolidate notes, tasks, and databases into a single tool. Notion is especially popular with startups, indie developers, and remote-first teams.\n",
+        "keywords": [
+          "notion",
+          "notes",
+          "wiki",
+          "knowledge base",
+          "project management",
+          "productivity",
+          "team workspace",
+          "docs"
+        ],
+        "use_cases": [
+          "Building a team wiki or internal knowledge base",
+          "Managing projects with kanban boards, timelines, and task lists",
+          "Creating personal notes and a second brain system",
+          "Documenting product specs, engineering RFCs, or company handbooks"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-01-10",
       "updated_at": "2026-04-17"
     },
     {
