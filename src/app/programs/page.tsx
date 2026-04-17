@@ -54,14 +54,14 @@ export default function ProgramsPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-10">
       {/* Header + Search */}
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-2xl font-bold tracking-tight">Programs</h1>
         <p className="text-sm text-muted-foreground mt-1">
           {programs.length} affiliate programs — curated, verified, and
           agent-ready
         </p>
 
-        {/* Search bar — prominent */}
+        {/* Search bar */}
         <div className="mt-6 relative">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <input
@@ -74,7 +74,7 @@ export default function ProgramsPage() {
             onBlur={() => setTimeout(() => setSearchFocused(false), 200)}
           />
 
-          {/* Keyword suggestions — show when focused and no query */}
+          {/* Keyword suggestions */}
           {searchFocused && !query && (
             <div className="absolute top-full left-0 right-0 mt-2 rounded-xl border border-border/50 bg-card p-3 z-10">
               <p className="text-[10px] text-muted-foreground/60 uppercase tracking-wide mb-2">
@@ -99,14 +99,14 @@ export default function ProgramsPage() {
         </div>
       </div>
 
-      {/* Category filters — horizontal scroll */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-4 scrollbar-none">
+      {/* Category filters — wrapping grid */}
+      <div className="flex flex-wrap gap-2 mb-6">
         <button
           onClick={() => {
             setSelectedCategory("");
             setPage(1);
           }}
-          className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
+          className={`rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
             !selectedCategory
               ? "bg-foreground text-background"
               : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
@@ -118,7 +118,7 @@ export default function ProgramsPage() {
           <button
             key={cat}
             onClick={() => handleCategory(cat)}
-            className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
+            className={`rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
               selectedCategory === cat
                 ? "bg-foreground text-background"
                 : "bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted"
@@ -129,30 +129,12 @@ export default function ProgramsPage() {
         ))}
       </div>
 
-      {/* Results count + page size */}
-      <div className="flex items-center justify-between mb-4">
-        <p className="text-xs text-muted-foreground">
-          {filtered.length === programs.length
-            ? `${filtered.length} programs`
-            : `${filtered.length} of ${programs.length} programs`}
-        </p>
-        <div className="flex items-center gap-1">
-          <span className="text-xs text-muted-foreground mr-1">Show</span>
-          {PAGE_SIZE_OPTIONS.map((size) => (
-            <button
-              key={size}
-              onClick={() => handlePageSize(size)}
-              className={`rounded px-2 py-0.5 text-xs font-medium transition-colors ${
-                pageSize === size
-                  ? "bg-muted text-foreground"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              {size}
-            </button>
-          ))}
-        </div>
-      </div>
+      {/* Results count */}
+      <p className="text-xs text-muted-foreground mb-4">
+        {filtered.length === programs.length
+          ? `${filtered.length} programs`
+          : `${filtered.length} of ${programs.length} programs`}
+      </p>
 
       {/* Results */}
       <div className="space-y-2">
@@ -219,38 +201,56 @@ export default function ProgramsPage() {
         )}
       </div>
 
-      {/* Pagination */}
-      {totalPages > 1 && (
-        <div className="flex items-center justify-center gap-2 mt-8">
-          <button
-            onClick={() => setPage(Math.max(1, currentPage - 1))}
-            disabled={currentPage <= 1}
-            className="flex h-8 w-8 items-center justify-center rounded-lg border border-border/40 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors disabled:opacity-30 disabled:pointer-events-none"
-          >
-            <ChevronLeft className="h-4 w-4" />
-          </button>
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+      {/* Pagination + page size — together at bottom */}
+      <div className="flex flex-col items-center gap-3 mt-8">
+        {totalPages > 1 && (
+          <div className="flex items-center gap-2">
             <button
-              key={p}
-              onClick={() => setPage(p)}
-              className={`flex h-8 w-8 items-center justify-center rounded-lg text-xs font-medium transition-colors ${
-                p === currentPage
+              onClick={() => setPage(Math.max(1, currentPage - 1))}
+              disabled={currentPage <= 1}
+              className="flex h-8 w-8 items-center justify-center rounded-lg border border-border/40 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors disabled:opacity-30 disabled:pointer-events-none"
+            >
+              <ChevronLeft className="h-4 w-4" />
+            </button>
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+              <button
+                key={p}
+                onClick={() => setPage(p)}
+                className={`flex h-8 w-8 items-center justify-center rounded-lg text-xs font-medium transition-colors ${
+                  p === currentPage
+                    ? "bg-muted text-foreground"
+                    : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                }`}
+              >
+                {p}
+              </button>
+            ))}
+            <button
+              onClick={() => setPage(Math.min(totalPages, currentPage + 1))}
+              disabled={currentPage >= totalPages}
+              className="flex h-8 w-8 items-center justify-center rounded-lg border border-border/40 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors disabled:opacity-30 disabled:pointer-events-none"
+            >
+              <ChevronRight className="h-4 w-4" />
+            </button>
+          </div>
+        )}
+        <div className="flex items-center gap-1">
+          <span className="text-xs text-muted-foreground mr-1">Show</span>
+          {PAGE_SIZE_OPTIONS.map((size) => (
+            <button
+              key={size}
+              onClick={() => handlePageSize(size)}
+              className={`rounded px-2 py-0.5 text-xs font-medium transition-colors ${
+                pageSize === size
                   ? "bg-muted text-foreground"
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                  : "text-muted-foreground hover:text-foreground"
               }`}
             >
-              {p}
+              {size}
             </button>
           ))}
-          <button
-            onClick={() => setPage(Math.min(totalPages, currentPage + 1))}
-            disabled={currentPage >= totalPages}
-            className="flex h-8 w-8 items-center justify-center rounded-lg border border-border/40 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors disabled:opacity-30 disabled:pointer-events-none"
-          >
-            <ChevronRight className="h-4 w-4" />
-          </button>
         </div>
-      )}
+      </div>
 
       {/* CLI hint */}
       <div className="mt-10 rounded-xl border border-border/40 bg-muted/20 p-6">
