@@ -25,6 +25,7 @@ import {
   BarChart2,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { ProgramLogo } from "@/components/program-logo";
 import { programs, getProgram } from "@/lib/programs";
 
 export function generateStaticParams() {
@@ -87,9 +88,7 @@ export default async function ProgramPage({
         <div className="lg:col-span-2 space-y-8">
           {/* Header */}
           <div className="flex items-start gap-4">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-muted text-lg font-bold">
-              {program.logo}
-            </div>
+            <ProgramLogo slug={program.slug} name={program.name} size={56} className="shrink-0 rounded-xl" />
             <div className="flex-1">
               <div className="flex items-center gap-2.5">
                 <h1 className="text-2xl font-bold tracking-tight">

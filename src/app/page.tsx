@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Star, Terminal, Users, Zap, GitFork } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { ProgramLogo } from "@/components/program-logo";
 import { programs, categories } from "@/lib/programs";
 
 function ProgramCard({ program }: { program: (typeof programs)[0] }) {
@@ -11,9 +12,7 @@ function ProgramCard({ program }: { program: (typeof programs)[0] }) {
     >
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-sm font-bold">
-            {program.logo}
-          </div>
+          <ProgramLogo slug={program.slug} name={program.name} size={40} />
           <div>
             <div className="flex items-center gap-2">
               <h3 className="text-sm font-semibold">{program.name}</h3>

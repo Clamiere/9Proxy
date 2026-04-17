@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Search, Star, SlidersHorizontal } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
+import { ProgramLogo } from "@/components/program-logo";
 import { programs, categories, searchPrograms } from "@/lib/programs";
 
 export default function ProgramsPage() {
@@ -81,9 +82,7 @@ export default function ProgramsPage() {
               href={`/programs/${program.slug}`}
               className="group flex items-center gap-4 rounded-xl border border-border/40 bg-card/30 p-4 transition-all hover:border-border hover:bg-card/60"
             >
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-muted text-sm font-bold">
-                {program.logo}
-              </div>
+              <ProgramLogo slug={program.slug} name={program.name} size={44} className="shrink-0" />
 
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2">
