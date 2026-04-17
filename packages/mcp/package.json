@@ -1,0 +1,24 @@
+{
+  "name": "@openaffiliate/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the OpenAffiliate registry",
+  "type": "module",
+  "bin": {
+    "openaffiliate-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "dev": "tsup src/index.ts --format esm --watch",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": ["mcp", "affiliate", "openaffiliate", "ai-agent"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.0",
+    "@types/node": "^22.0.0"
+  }
+}
