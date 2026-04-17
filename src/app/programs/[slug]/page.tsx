@@ -15,7 +15,7 @@ import {
   Check,
   X,
   Lock,
-  AlertTriangle,
+
   MousePointer,
   Fingerprint,
   CreditCard,
@@ -59,13 +59,13 @@ export default async function ProgramPage({
     },
     manual: {
       label: "Manual review",
-      icon: <Clock className="h-3.5 w-3.5 text-yellow-400" />,
-      className: "text-yellow-400",
+      icon: <Clock className="h-3.5 w-3.5 text-muted-foreground" />,
+      className: "text-foreground",
     },
     "invite-only": {
       label: "Invite only",
-      icon: <Lock className="h-3.5 w-3.5 text-rose-400" />,
-      className: "text-rose-400",
+      icon: <Lock className="h-3.5 w-3.5 text-muted-foreground" />,
+      className: "text-foreground",
     },
   } as const;
 
@@ -188,15 +188,12 @@ export default async function ProgramPage({
           {/* Restrictions */}
           {program.restrictions && program.restrictions.length > 0 && (
             <div>
-              <div className="flex items-center gap-2 mb-3">
-                <AlertTriangle className="h-4 w-4 text-yellow-500/70" />
-                <h2 className="text-base font-semibold">Restrictions</h2>
-              </div>
-              <div className="rounded-xl border border-yellow-500/20 bg-yellow-500/5 p-5">
+              <h2 className="text-base font-semibold mb-3">Restrictions</h2>
+              <div className="rounded-xl border border-border/50 bg-muted/20 p-5">
                 <ul className="space-y-2">
                   {program.restrictions.map((restriction, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-yellow-500/50 shrink-0" />
+                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-muted-foreground/50 shrink-0" />
                       {restriction}
                     </li>
                   ))}

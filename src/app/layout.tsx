@@ -161,8 +161,7 @@ function Footer() {
             <ul className="space-y-2.5">
               {[
                 { label: "Affitor", href: "https://affitor.com", external: true },
-                { label: "Blog", href: "https://affitor.com/blog", external: true },
-                { label: "Twitter", href: "https://twitter.com/affitor", external: true },
+                { label: "GitHub", href: "https://github.com/Affitor", external: true },
               ].map(({ label, href }) => (
                 <li key={label}>
                   <a

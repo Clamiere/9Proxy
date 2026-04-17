@@ -127,9 +127,9 @@ export default function Home() {
               <div className="rounded-xl border border-border/50 bg-zinc-950 overflow-hidden shadow-2xl">
                 {/* Title bar */}
                 <div className="flex items-center gap-2 px-4 py-3 border-b border-border/40 bg-zinc-900/80">
-                  <span className="h-3 w-3 rounded-full bg-red-500/70" />
-                  <span className="h-3 w-3 rounded-full bg-yellow-500/70" />
-                  <span className="h-3 w-3 rounded-full bg-emerald-500/70" />
+                  <span className="h-3 w-3 rounded-full bg-zinc-600" />
+                  <span className="h-3 w-3 rounded-full bg-zinc-600" />
+                  <span className="h-3 w-3 rounded-full bg-zinc-600" />
                   <span className="ml-3 text-xs text-muted-foreground font-mono">
                     openaffiliate
                   </span>
