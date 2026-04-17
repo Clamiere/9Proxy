@@ -128,3 +128,67 @@
     @apply font-sans;
   }
 }
+
+/* Premium design system additions */
+.glow-card {
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.glow-card:hover {
+  border-color: oklch(0.7 0.15 160 / 30%);
+  box-shadow: 0 0 20px oklch(0.7 0.15 160 / 6%);
+}
+
+/* Dot grid background */
+.dot-grid {
+  background-image: radial-gradient(circle, oklch(1 0 0 / 4%) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Terminal window styling */
+.terminal-window {
+  background: oklch(0.16 0 0);
+  border: 1px solid oklch(1 0 0 / 8%);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.terminal-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+  border-bottom: 1px solid oklch(1 0 0 / 6%);
+}
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.terminal-body {
+  padding: 20px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.7;
+  color: oklch(0.75 0 0);
+}
+.terminal-body .cmd {
+  color: oklch(0.92 0 0);
+}
+.terminal-body .accent {
+  color: oklch(0.7 0.15 160);
+}
+
+/* Gradient border effect */
+.gradient-border {
+  position: relative;
+}
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, oklch(0.7 0.15 160 / 20%), transparent 50%, oklch(0.7 0.15 160 / 10%));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}

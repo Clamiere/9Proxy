@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 function Nav() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center gap-2.5">
@@ -81,6 +81,14 @@ function Nav() {
           </code>
         </div>
       </div>
+      {/* Subtle gradient bottom line instead of plain border */}
+      <div
+        className="h-px w-full"
+        style={{
+          background:
+            "linear-gradient(90deg, transparent, oklch(1 0 0 / 8%) 20%, oklch(0.7 0.15 160 / 15%) 50%, oklch(1 0 0 / 8%) 80%, transparent)",
+        }}
+      />
     </header>
   );
 }
@@ -88,8 +96,91 @@ function Nav() {
 function Footer() {
   return (
     <footer className="mt-auto border-t border-border/40">
-      <div className="mx-auto max-w-6xl px-6 py-8">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto max-w-6xl px-6 py-12">
+        {/* Mega footer columns */}
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 mb-12">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">
+              Registry
+            </p>
+            <ul className="space-y-2.5">
+              {[
+                { label: "Programs", href: "/programs" },
+                { label: "Categories", href: "/programs" },
+                { label: "Submit", href: "/submit" },
+                { label: "Docs", href: "/docs" },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <Link
+                    href={href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">
+              Developers
+            </p>
+            <ul className="space-y-2.5">
+              {[
+                { label: "CLI", href: "/docs" },
+                { label: "MCP", href: "/docs" },
+                { label: "API", href: "/docs" },
+                { label: "GitHub", href: "https://github.com/Affitor/open-affiliate", external: true },
+              ].map(({ label, href, external }) => (
+                <li key={label}>
+                  {external ? (
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={href}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {label}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-4">
+              Company
+            </p>
+            <ul className="space-y-2.5">
+              {[
+                { label: "Affitor", href: "https://affitor.com", external: true },
+                { label: "Blog", href: "https://affitor.com/blog", external: true },
+                { label: "Twitter", href: "https://twitter.com/affitor", external: true },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="border-t border-border/40 pt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-2">
             <Image
               src="/logo.svg"
@@ -102,18 +193,17 @@ function Footer() {
               OpenAffiliate. Open source, community-driven.
             </span>
           </div>
-          <div className="flex items-center gap-4 text-xs text-muted-foreground">
-            <a href="https://github.com/Affitor/open-affiliate" className="hover:text-foreground transition-colors">
-              GitHub
+          <span className="text-xs text-muted-foreground">
+            Built by{" "}
+            <a
+              href="https://affitor.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              Affitor
             </a>
-            <span className="text-border">|</span>
-            <span>
-              Built by{" "}
-              <a href="https://affitor.com" className="hover:text-foreground transition-colors">
-                Affitor
-              </a>
-            </span>
-          </div>
+          </span>
         </div>
       </div>
     </footer>
@@ -132,7 +222,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Nav />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 dot-grid">{children}</main>
         <Footer />
       </body>
     </html>

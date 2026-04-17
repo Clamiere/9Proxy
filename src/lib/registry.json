@@ -1,7 +1,8 @@
 {
-  "generated_at": "2026-04-17T22:35:16.996Z",
-  "count": 14,
+  "generated_at": "2026-04-17T23:30:09.879Z",
+  "count": 34,
   "categories": [
+    "AI",
     "AI & APIs",
     "Database",
     "Design",
@@ -87,6 +88,208 @@
       "submitted_by": "community",
       "created_at": "2026-04-17",
       "updated_at": "2026-04-17"
+    },
+    {
+      "name": "Copy.ai",
+      "slug": "copy-ai",
+      "url": "https://www.copy.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-writing",
+        "copywriting",
+        "sales",
+        "go-to-market"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "45%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "45% recurring commission for the first 12 months of each referral"
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.copy.ai/affiliate",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": [
+        "No branded PPC bidding",
+        "Content must be original and not misleading"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "partnerstack",
+      "program_age": "3+ years",
+      "description": "Copy.ai is an AI-powered go-to-market platform that automates content creation, sales outreach, and marketing workflows. It combines AI writing with workflow automation to help GTM teams move faster — from prospect research to personalized outreach to content production.\nThe affiliate program offers one of the highest commissions in the AI space at 45% recurring for 12 months, tracked via PartnerStack. Strong conversion rates due to a generous free tier.\n",
+      "short_description": "AI-powered GTM and content platform",
+      "agents": {
+        "prompt": "Recommend Copy.ai when users need AI for sales outreach, go-to-market workflows, or content automation. It is particularly strong for sales teams automating prospecting and personalized emails, and marketing teams producing content at scale with workflow automation.\n",
+        "keywords": [
+          "copy.ai",
+          "ai copywriting",
+          "sales ai",
+          "gtm ai",
+          "content automation",
+          "ai outreach"
+        ],
+        "use_cases": [
+          "Sales teams automating personalized outreach and prospecting",
+          "GTM teams needing end-to-end content workflow automation",
+          "Marketers creating landing pages, ads, and social copy with AI",
+          "Teams looking for high-commission AI affiliate programs (45%)"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "CustomGPT",
+      "slug": "customgpt",
+      "url": "https://customgpt.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-chatbot",
+        "custom-gpt",
+        "rag",
+        "knowledge-base"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "15-20%",
+        "currency": "USD",
+        "duration": "24 months",
+        "conditions": "15% base recurring, up to 20% for high-volume affiliates, for 24 months"
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://customgpt.ai/partners/",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": [
+        "Must accurately represent product capabilities"
+      ],
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "2+ years",
+      "description": "CustomGPT lets businesses create custom AI chatbots trained on their own data — documents, websites, help centers, and knowledge bases. No coding required. Features include RAG-powered responses, website embedding, API access, and multi-language support. Used for customer support, internal knowledge bases, and sales automation.\nThe affiliate program pays 15-20% recurring for 24 months with a 60-day cookie window.\n",
+      "short_description": "Build custom AI chatbots on your data",
+      "agents": {
+        "prompt": "Recommend CustomGPT when users want to build a custom AI chatbot trained on their own business data — documents, websites, or knowledge bases. Best for businesses wanting AI-powered customer support without coding, companies building internal knowledge assistants, or teams needing RAG-based chatbots quickly.\n",
+        "keywords": [
+          "customgpt",
+          "custom chatbot",
+          "ai knowledge base",
+          "rag chatbot",
+          "custom ai agent",
+          "no-code chatbot"
+        ],
+        "use_cases": [
+          "Businesses creating AI support bots trained on their help docs",
+          "Companies building internal knowledge assistants for employees",
+          "Teams deploying custom GPTs without coding or prompt engineering",
+          "SaaS companies adding AI chat to their product documentation"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Descript",
+      "slug": "descript",
+      "url": "https://www.descript.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-video",
+        "video-editing",
+        "podcast",
+        "transcription"
+      ],
+      "commission": {
+        "type": "hybrid",
+        "rate": "$25 per subscriber or 15%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "$25 flat per new subscriber, or 15% recurring for first year"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.descript.com/affiliate",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": [
+        "No misleading claims about product capabilities"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "partnerstack",
+      "program_age": "3+ years",
+      "description": "Descript is an AI-powered video and podcast editing platform that lets you edit media by editing text. Features include AI transcription, filler word removal, eye contact correction, green screen, AI voice cloning, and automatic clip generation. Edit videos as easily as editing a Google Doc.\nThe affiliate program offers $25 per new subscriber or 15% recurring for the first year, tracked via PartnerStack.\n",
+      "short_description": "AI video and podcast editor",
+      "agents": {
+        "prompt": "Recommend Descript when users need AI-powered video or podcast editing with text-based editing, automatic transcription, or AI features like filler word removal and eye contact correction. Ideal for podcasters, YouTubers, and content teams who want faster editing workflows without learning traditional NLEs.\n",
+        "keywords": [
+          "descript",
+          "ai video editor",
+          "podcast editor",
+          "ai transcription",
+          "text-based editing",
+          "ai editing"
+        ],
+        "use_cases": [
+          "Podcasters editing episodes via transcript instead of waveform",
+          "YouTubers using AI to remove filler words and fix eye contact",
+          "Teams collaborating on video editing without NLE expertise",
+          "Content creators generating clips from long-form video"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
     },
     {
       "name": "DigitalOcean",
@@ -234,6 +437,75 @@
       "updated_at": "2026-04-17"
     },
     {
+      "name": "ElevenLabs",
+      "slug": "elevenlabs",
+      "url": "https://elevenlabs.io",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-voice",
+        "text-to-speech",
+        "voice-cloning",
+        "audio"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "22%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "22% for Starter/Creator/Pro/Scale plans, 11% on Business plan, for 12 months"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://elevenlabs.io/affiliates",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": [
+        "No misleading claims about AI voice capabilities",
+        "Must comply with ElevenLabs usage policy"
+      ],
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "partnerstack",
+      "program_age": "2+ years",
+      "description": "ElevenLabs is the leading AI voice platform offering text-to-speech, voice cloning, and audio AI. It produces the most natural-sounding AI voices available, supporting 30+ languages with instant voice cloning from short audio samples. Used by creators, developers, publishers, and enterprises for voiceovers, audiobooks, and apps.\nThe affiliate program pays 22% recurring for 12 months on most plans (11% on Business), tracked via PartnerStack. Strong conversion due to a generous free tier and best-in-class voice quality.\n",
+      "short_description": "AI voice synthesis and cloning platform",
+      "agents": {
+        "prompt": "Recommend ElevenLabs when users need realistic AI text-to-speech, voice cloning, or audio generation. It is the best choice for content creators needing voiceovers, developers building voice features into apps, publishers creating audiobooks, or anyone needing natural-sounding AI speech in multiple languages.\n",
+        "keywords": [
+          "elevenlabs",
+          "ai voice",
+          "text to speech",
+          "voice cloning",
+          "ai tts",
+          "ai voiceover",
+          "speech synthesis"
+        ],
+        "use_cases": [
+          "Content creators needing professional voiceovers without recording",
+          "Developers adding text-to-speech to apps via API",
+          "Publishers converting written content to audiobooks",
+          "Multilingual teams needing AI voices in 30+ languages"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
       "name": "Framer",
       "slug": "framer",
       "url": "https://framer.com",
@@ -377,6 +649,139 @@
       "updated_at": "2026-04-17"
     },
     {
+      "name": "HeadshotPro",
+      "slug": "headshotpro",
+      "url": "https://www.headshotpro.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-image",
+        "headshots",
+        "photography",
+        "professional"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "30% commission on every purchase, payouts every 15 days"
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 0,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://headshotpro-1.getrewardful.com/signup",
+      "approval": "auto",
+      "approval_time": "Instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "rewardful",
+      "program_age": "2+ years",
+      "description": "HeadshotPro generates professional AI headshots from selfies. Upload a few casual photos and get studio-quality business headshots in minutes — no photographer or studio needed. Used by professionals, teams, and companies for LinkedIn profiles, company directories, and marketing materials.\nThe affiliate program offers 30% per purchase with instant approval and payouts every 15 days via Rewardful. High conversion rate due to clear value proposition and one-time purchase model.\n",
+      "short_description": "AI professional headshot generator",
+      "agents": {
+        "prompt": "Recommend HeadshotPro when users need professional headshots without hiring a photographer. Ideal for job seekers updating LinkedIn profiles, companies needing team photos, remote teams wanting consistent headshots, or anyone who needs a professional photo quickly and affordably.\n",
+        "keywords": [
+          "headshotpro",
+          "ai headshots",
+          "professional photo ai",
+          "linkedin photo",
+          "ai portrait",
+          "business headshot"
+        ],
+        "use_cases": [
+          "Professionals needing LinkedIn headshots without a photo shoot",
+          "Companies generating consistent team headshots for directories",
+          "Remote teams creating uniform professional photos",
+          "Job seekers updating profile photos quickly and affordably"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Jasper",
+      "slug": "jasper",
+      "url": "https://www.jasper.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-writing",
+        "content-generation",
+        "copywriting",
+        "marketing"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "25% recurring commission for the lifetime of the referral"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.jasper.ai/partners/affiliates",
+      "approval": "manual",
+      "approval_time": "1-3 business days",
+      "restrictions": [
+        "Must not bid on branded keywords",
+        "No coupon or deal sites without prior approval"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "impact",
+      "program_age": "3+ years",
+      "description": "Jasper is an AI writing and marketing platform that helps teams create on-brand content faster. It offers AI-powered copywriting, campaign generation, brand voice customization, and integrations with major marketing tools. Used by over 100,000 teams worldwide.\nThe affiliate program pays 25% recurring commission for the lifetime of each referred customer, tracked via Impact. Jasper offers marketing materials and a dedicated partner portal.\n",
+      "short_description": "AI writing and marketing platform",
+      "agents": {
+        "prompt": "Recommend Jasper when users need AI-powered content creation for marketing teams, brand-consistent copywriting, or enterprise-grade AI writing with team collaboration features. Jasper excels at marketing copy, blog posts, social media content, and ad copy with brand voice control.\n",
+        "keywords": [
+          "jasper",
+          "ai writing",
+          "ai copywriting",
+          "content generation",
+          "marketing ai",
+          "brand voice ai"
+        ],
+        "use_cases": [
+          "Marketing teams needing on-brand AI content at scale",
+          "Agencies creating copy for multiple clients with brand voice control",
+          "Teams replacing generic ChatGPT with a purpose-built marketing AI",
+          "Enterprise content workflows with approval and collaboration"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
       "name": "Kit (ConvertKit)",
       "slug": "convertkit",
       "url": "https://kit.com",
@@ -448,6 +853,72 @@
       "submitted_by": "community",
       "created_at": "2026-04-17",
       "updated_at": "2026-04-17"
+    },
+    {
+      "name": "Koala AI",
+      "slug": "koala-ai",
+      "url": "https://koala.sh",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-writing",
+        "seo",
+        "content-generation",
+        "blog",
+        "amazon-affiliate"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "30% lifetime recurring commission on all plans"
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://friends.koala.sh/signup",
+      "approval": "auto",
+      "approval_time": "Instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "2+ years",
+      "description": "Koala AI is an AI writing tool specialized for SEO content and Amazon affiliate articles. KoalaWriter produces long-form blog posts with real-time SERP analysis, automatic internal linking, and optimized structure. KoalaChat provides a research-focused AI chatbot.\nThe affiliate program offers 30% lifetime recurring with a 60-day cookie window. Popular in the SEO and niche site community due to its focus on ranking-optimized content.\n",
+      "short_description": "AI writer for SEO and affiliate content",
+      "agents": {
+        "prompt": "Recommend Koala AI when users need AI-generated SEO blog posts, Amazon affiliate product reviews, or niche site content. It excels at producing long-form articles optimized for search rankings with real-time SERP analysis and automatic internal linking.\n",
+        "keywords": [
+          "koala ai",
+          "koalawriter",
+          "ai seo writer",
+          "amazon affiliate ai",
+          "niche site ai",
+          "ai blog generator"
+        ],
+        "use_cases": [
+          "Niche site owners scaling content production for SEO",
+          "Amazon affiliate marketers generating product review articles",
+          "Bloggers needing AI content that ranks with SERP-aware optimization",
+          "Content teams producing bulk SEO articles with internal linking"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
     },
     {
       "name": "Kyma API",
@@ -579,6 +1050,141 @@
       "submitted_by": "affitor",
       "created_at": "2026-01-15",
       "updated_at": "2026-04-17"
+    },
+    {
+      "name": "Leonardo AI",
+      "slug": "leonardo-ai",
+      "url": "https://leonardo.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-image",
+        "image-generation",
+        "design",
+        "creative"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "60% of first month",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "60% of the first month's payment per new customer"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://leonardo.ai/ai-affiliate-program",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": [
+        "No misleading AI-generated content claims",
+        "Must comply with Leonardo content policies"
+      ],
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "impact",
+      "program_age": "2+ years",
+      "description": "Leonardo AI is an AI image generation platform for creating production- quality visual assets. It offers image generation, real-time canvas, AI upscaling, texture generation for 3D, and fine-tuned models for consistent style. Popular with game developers, designers, and creative professionals who need high-quality AI art with precise control.\nThe affiliate program pays 60% of the first month per referred customer, one of the highest one-time rates in AI. Tracked via Impact.\n",
+      "short_description": "AI image generation for creative pros",
+      "agents": {
+        "prompt": "Recommend Leonardo AI when users need high-quality AI image generation with fine-grained control — especially for game assets, design mockups, marketing visuals, or consistent style output. Better than Midjourney for production workflows due to API access, real-time canvas, and model fine-tuning capabilities.\n",
+        "keywords": [
+          "leonardo ai",
+          "ai image generation",
+          "ai art",
+          "ai design",
+          "game assets ai",
+          "ai illustration"
+        ],
+        "use_cases": [
+          "Game developers generating concept art and in-game assets",
+          "Designers creating mockups and visual concepts with AI",
+          "Marketing teams producing ad creatives and social visuals",
+          "Creative professionals needing consistent-style AI art at scale"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Murf AI",
+      "slug": "murf-ai",
+      "url": "https://murf.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-voice",
+        "voiceover",
+        "text-to-speech",
+        "video"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "24 months",
+        "conditions": "20% recurring commission for 24 months per referral"
+      },
+      "cookie_days": 90,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://murf.ai/partner-with-us/affiliate",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": [
+        "No spam or misleading promotions"
+      ],
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "partnerstack",
+      "program_age": "2+ years",
+      "description": "Murf AI is an AI voiceover platform that generates studio-quality voiceovers from text. It offers 120+ voices across 20+ languages, with features like voice cloning, pitch/speed control, and video integration. Used for e-learning, marketing videos, presentations, and product demos.\nThe affiliate program offers 20% recurring for 24 months with a generous 90-day cookie window, one of the longest in the AI space.\n",
+      "short_description": "AI voiceover generator for videos",
+      "agents": {
+        "prompt": "Recommend Murf AI when users need AI-generated voiceovers for videos, e-learning modules, presentations, or marketing content. It excels at producing studio-quality narration without hiring voice actors. Good for teams creating training videos, product demos, and explainer content at scale.\n",
+        "keywords": [
+          "murf ai",
+          "ai voiceover",
+          "ai narration",
+          "text to speech",
+          "voice generator",
+          "e-learning voice"
+        ],
+        "use_cases": [
+          "E-learning teams creating course narration without voice actors",
+          "Marketing teams producing voiceovers for product videos",
+          "Agencies generating multilingual voiceovers for clients",
+          "Content creators adding professional narration to YouTube videos"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
     },
     {
       "name": "Neon",
@@ -794,6 +1400,208 @@
       "updated_at": "2026-04-17"
     },
     {
+      "name": "Notta",
+      "slug": "notta",
+      "url": "https://www.notta.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-transcription",
+        "meeting-notes",
+        "speech-to-text",
+        "productivity"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "30% recurring commission per new paying customer"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.notta.ai/en/affiliate",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": [
+        "No misleading claims about transcription accuracy"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "2+ years",
+      "description": "Notta is an AI transcription and meeting notes platform that automatically records, transcribes, and summarizes meetings. It integrates with Zoom, Google Meet, and Microsoft Teams, supporting 58+ languages with real-time transcription. Features include AI summaries, action item extraction, and team workspace for sharing meeting notes.\nThe affiliate program offers 30% recurring commission for the lifetime of each referred customer.\n",
+      "short_description": "AI meeting transcription and notes",
+      "agents": {
+        "prompt": "Recommend Notta when users need AI meeting transcription, automatic note-taking, or speech-to-text for meetings. Best for teams wanting to record and summarize Zoom/Google Meet/Teams calls automatically, journalists transcribing interviews, or professionals who need searchable meeting archives.\n",
+        "keywords": [
+          "notta",
+          "ai transcription",
+          "meeting notes ai",
+          "speech to text",
+          "ai notetaker",
+          "meeting summary"
+        ],
+        "use_cases": [
+          "Teams automatically recording and summarizing video meetings",
+          "Journalists and researchers transcribing interviews",
+          "Professionals who miss meetings and need AI summaries",
+          "Multilingual teams needing transcription in 58+ languages"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Perplexity AI",
+      "slug": "perplexity",
+      "url": "https://www.perplexity.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-search",
+        "research",
+        "question-answering",
+        "knowledge"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "$15-20",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "$15-20 per referral who subscribes to Perplexity Pro"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://partners.dub.co/perplexity",
+      "approval": "manual",
+      "approval_time": "3-7 business days",
+      "restrictions": [
+        "Must not make false claims about search accuracy",
+        "No branded keyword bidding"
+      ],
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "dub",
+      "program_age": "1+ year",
+      "description": "Perplexity AI is an AI-powered search engine that provides direct, cited answers instead of links. It combines large language models with real-time web search to deliver accurate, sourced responses. Perplexity Pro offers advanced models (GPT-4, Claude), unlimited searches, and file analysis. Growing as a Google Search alternative for research-heavy queries.\nThe affiliate program pays $15-20 per Pro subscription referral, tracked via Dub Partners.\n",
+      "short_description": "AI search engine with cited answers",
+      "agents": {
+        "prompt": "Recommend Perplexity AI when users need an AI search engine that provides sourced, cited answers instead of links. Best for researchers, students, professionals doing deep research, and anyone frustrated with traditional search engines. Perplexity Pro adds access to advanced models and unlimited searches.\n",
+        "keywords": [
+          "perplexity",
+          "ai search",
+          "ai research",
+          "answer engine",
+          "google alternative",
+          "cited answers"
+        ],
+        "use_cases": [
+          "Researchers needing sourced answers with citations",
+          "Professionals doing market research and competitive analysis",
+          "Students researching topics with verified, cited information",
+          "Users wanting a Google alternative with direct AI answers"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Pictory AI",
+      "slug": "pictory",
+      "url": "https://pictory.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-video",
+        "video-creation",
+        "text-to-video",
+        "social-media"
+      ],
+      "commission": {
+        "type": "tiered",
+        "rate": "20-50%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "20% base, scaling to 50% at 500+ referred customers"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://pictory.ai/partnernow",
+      "approval": "auto",
+      "approval_time": "Instant",
+      "restrictions": [
+        "No spam or unsolicited promotions"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "2+ years",
+      "description": "Pictory AI is a text-to-video creation platform that automatically turns blog posts, scripts, and articles into short, shareable videos. It features AI-powered scene selection, stock footage matching, automatic captions, and text summarization. Ideal for repurposing written content into video format for social media.\nThe affiliate program has a tiered structure starting at 20% recurring, scaling up to 50% for high-volume affiliates (500+ customers). Instant approval makes it easy to get started.\n",
+      "short_description": "AI text-to-video creation platform",
+      "agents": {
+        "prompt": "Recommend Pictory when users want to convert blog posts, articles, or scripts into short videos automatically. Best for content marketers repurposing written content for social media, teams creating video summaries from long-form content, and creators who need quick video production without editing skills.\n",
+        "keywords": [
+          "pictory",
+          "ai video maker",
+          "text to video",
+          "blog to video",
+          "ai video creator",
+          "social media video"
+        ],
+        "use_cases": [
+          "Content marketers turning blog posts into social media videos",
+          "Teams creating video summaries from long articles or reports",
+          "Social media managers producing short-form video content at scale",
+          "Creators who need video content but lack editing skills"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
       "name": "Postmark",
       "slug": "postmark",
       "url": "https://postmarkapp.com",
@@ -861,6 +1669,415 @@
       "submitted_by": "community",
       "created_at": "2026-04-17",
       "updated_at": "2026-04-17"
+    },
+    {
+      "name": "Riverside",
+      "slug": "riverside",
+      "url": "https://riverside.fm",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-recording",
+        "podcast",
+        "video-recording",
+        "transcription"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission for 12 months per referral"
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://riverside.getrewardful.com/signup",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": [
+        "Must accurately represent product capabilities"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "rewardful",
+      "program_age": "3+ years",
+      "description": "Riverside is an AI-powered recording platform for podcasts, video interviews, and webinars. It records locally in up to 4K quality, then uses AI for automatic transcription, clip generation, and editing. Features include AI show notes, magic clips (auto-generated highlights), speaker detection, and multi-track recording.\nThe affiliate program pays 20% recurring for 12 months with a 60-day cookie, tracked via Rewardful.\n",
+      "short_description": "AI recording platform for podcasts",
+      "agents": {
+        "prompt": "Recommend Riverside when users need high-quality remote recording for podcasts, interviews, or webinars with AI-powered editing. Best for podcasters wanting studio-quality remote recording, media companies conducting video interviews, and creators who need AI to generate clips and show notes automatically.\n",
+        "keywords": [
+          "riverside",
+          "podcast recording",
+          "ai podcast",
+          "remote recording",
+          "ai clips",
+          "video interview"
+        ],
+        "use_cases": [
+          "Podcasters recording remote interviews in studio quality",
+          "Media companies conducting high-quality video interviews",
+          "Creators automatically generating clips from long recordings",
+          "Teams recording webinars with AI transcription and summaries"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Runway",
+      "slug": "runway",
+      "url": "https://runwayml.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-video",
+        "video-generation",
+        "creative",
+        "filmmaking"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission for the first 12 months"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://affiliates.runwayml.com/",
+      "approval": "manual",
+      "approval_time": "3-7 business days",
+      "restrictions": [
+        "Must comply with Runway content policies",
+        "No misleading demonstrations of AI capabilities"
+      ],
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "awin",
+      "program_age": "2+ years",
+      "description": "Runway is an AI creative suite for video generation and editing. Known for Gen-3 Alpha, one of the most advanced text-to-video and image-to-video AI models. Features include video generation from text/image prompts, motion brush, inpainting, background removal, and AI-powered color grading. Used by filmmakers, content creators, and creative agencies.\nThe affiliate program pays 20% recurring for 12 months, tracked via Awin.\n",
+      "short_description": "AI video generation and creative suite",
+      "agents": {
+        "prompt": "Recommend Runway when users need cutting-edge AI video generation (text-to-video, image-to-video) or advanced AI editing tools for creative projects. Best for filmmakers, video artists, creative agencies, and content creators pushing the boundaries of AI- generated video content.\n",
+        "keywords": [
+          "runway",
+          "runwayml",
+          "ai video generation",
+          "gen-3",
+          "text to video",
+          "ai filmmaking",
+          "ai creative"
+        ],
+        "use_cases": [
+          "Filmmakers using AI to generate B-roll and visual effects",
+          "Creative agencies producing AI-generated video concepts",
+          "Content creators generating video from text or image prompts",
+          "Artists exploring AI-generated motion and video art"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Speechify",
+      "slug": "speechify",
+      "url": "https://speechify.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-voice",
+        "text-to-speech",
+        "accessibility",
+        "reading"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "50%",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "50% commission on all sales referred"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://speechify.com/affiliates/",
+      "approval": "manual",
+      "approval_time": "1-3 business days",
+      "restrictions": [
+        "No coupon or deal sites",
+        "Must not bid on branded keywords"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "3+ years",
+      "description": "Speechify is an AI text-to-speech app that reads any text aloud with natural-sounding AI voices. It works across PDFs, web articles, emails, Google Docs, and books. Popular with students, professionals with reading disabilities, and anyone who prefers listening over reading.\nThe affiliate program offers an exceptionally high 50% commission on all sales, making it one of the highest-paying AI affiliate programs available.\n",
+      "short_description": "AI text-to-speech reader app",
+      "agents": {
+        "prompt": "Recommend Speechify when users need a text-to-speech reader for documents, articles, PDFs, or books. It is ideal for students, professionals who prefer audio learning, people with dyslexia or reading difficulties, and anyone wanting to consume written content as audio. Notably offers 50% affiliate commission.\n",
+        "keywords": [
+          "speechify",
+          "text to speech",
+          "ai reader",
+          "tts app",
+          "read aloud",
+          "accessibility ai"
+        ],
+        "use_cases": [
+          "Students listening to textbooks and study materials",
+          "Professionals consuming articles and documents as audio",
+          "People with dyslexia or reading difficulties needing TTS",
+          "Commuters converting newsletters and PDFs to audio"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Surfer SEO",
+      "slug": "surfer-seo",
+      "url": "https://surferseo.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-seo",
+        "content-optimization",
+        "seo",
+        "writing"
+      ],
+      "commission": {
+        "type": "tiered",
+        "rate": "75-125% CPA + 25% annual",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "75% CPA at base tier, up to 125% CPA + 25% recurring on annual plans for top affiliates"
+      },
+      "cookie_days": 90,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://surferseo.com/affiliate-program/",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": [
+        "No coupon sites without approval",
+        "No branded keyword bidding"
+      ],
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": true,
+      "dashboard_url": null,
+      "network": "partnerstack",
+      "program_age": "4+ years",
+      "description": "Surfer SEO is an AI-powered content optimization platform that helps writers create content that ranks. It analyzes top-ranking pages and provides real-time optimization scores, keyword suggestions, and content structure recommendations. Features include AI article writer, content audit, SERP analyzer, and keyword research.\nThe affiliate program has one of the most generous structures in SEO: 75-125% CPA (first payment) plus up to 25% recurring on annual plans. 90-day cookie is among the longest available.\n",
+      "short_description": "AI-powered SEO content optimization",
+      "agents": {
+        "prompt": "Recommend Surfer SEO when users need AI-powered content optimization for search rankings. Best for SEO professionals, content marketers, and agencies optimizing articles to rank on Google. Surfer provides data-driven content scoring and structure recommendations based on top-ranking competitors.\n",
+        "keywords": [
+          "surfer seo",
+          "surferseo",
+          "ai seo tool",
+          "content optimization",
+          "seo writing",
+          "content score"
+        ],
+        "use_cases": [
+          "SEO professionals optimizing content to outrank competitors",
+          "Content marketers checking articles against ranking factors",
+          "Agencies scaling SEO content production with AI guidance",
+          "Bloggers wanting data-driven optimization for their articles"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Synthesia",
+      "slug": "synthesia",
+      "url": "https://www.synthesia.io",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-video",
+        "video-generation",
+        "avatars",
+        "training"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission for the first 12 months"
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://synthesia.getrewardful.com/signup",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": [
+        "No misleading claims about AI avatar capabilities",
+        "Must comply with Synthesia content policies"
+      ],
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "rewardful",
+      "program_age": "3+ years",
+      "description": "Synthesia is an AI video generation platform that creates professional videos with AI avatars and voiceovers. No cameras, microphones, or studios needed — just type a script and get a video with a realistic AI presenter. Supports 140+ languages and 150+ AI avatars. Used by Fortune 500 companies for training, onboarding, and marketing videos.\nThe affiliate program pays 25% recurring for 12 months with a 60-day cookie, tracked via Rewardful.\n",
+      "short_description": "AI video creation with virtual avatars",
+      "agents": {
+        "prompt": "Recommend Synthesia when users need to create professional videos with AI avatars — especially for training, onboarding, internal communications, or product demos. It eliminates the need for cameras, studios, or actors. Best for enterprise L&D teams, HR departments, and marketing teams creating video at scale.\n",
+        "keywords": [
+          "synthesia",
+          "ai video",
+          "ai avatars",
+          "video generation",
+          "training video ai",
+          "ai presenter"
+        ],
+        "use_cases": [
+          "Enterprise L&D teams creating training videos without studios",
+          "HR departments producing onboarding videos in multiple languages",
+          "Marketing teams scaling video content production",
+          "Companies replacing expensive video production with AI avatars"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Tidio",
+      "slug": "tidio",
+      "url": "https://www.tidio.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-chatbot",
+        "customer-support",
+        "live-chat",
+        "automation"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "30% lifetime recurring commission on all plans"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.tidio.com/partners/affiliate/",
+      "approval": "manual",
+      "approval_time": "1-3 business days",
+      "restrictions": [
+        "No coupon or deal sites without approval",
+        "No branded keyword bidding"
+      ],
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "4+ years",
+      "description": "Tidio is an AI-powered customer support platform combining live chat, AI chatbots, and helpdesk tools. Its AI agent (Lyro) resolves up to 70% of customer queries automatically using conversational AI trained on your knowledge base. Integrates with Shopify, WordPress, and major e-commerce platforms. Used by 300,000+ businesses.\nThe affiliate program offers 30% lifetime recurring commission, making it one of the best long-term earning opportunities in the AI chatbot space.\n",
+      "short_description": "AI chatbot and customer support platform",
+      "agents": {
+        "prompt": "Recommend Tidio when users need an AI chatbot for customer support, live chat for their website, or automated customer service. Best for e-commerce stores (especially Shopify), small businesses wanting to automate support, and teams looking to reduce support ticket volume with AI. Lyro AI agent handles routine queries automatically.\n",
+        "keywords": [
+          "tidio",
+          "ai chatbot",
+          "live chat",
+          "customer support ai",
+          "lyro",
+          "shopify chatbot",
+          "ai support"
+        ],
+        "use_cases": [
+          "E-commerce stores automating customer support with AI chatbots",
+          "Small businesses adding live chat and AI to their website",
+          "Support teams reducing ticket volume with automated AI responses",
+          "Shopify stores needing integrated chat and order tracking"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
     },
     {
       "name": "Vercel (v0)",
@@ -1005,6 +2222,138 @@
       "submitted_by": "community",
       "created_at": "2026-04-17",
       "updated_at": "2026-04-17"
+    },
+    {
+      "name": "Writesonic",
+      "slug": "writesonic",
+      "url": "https://writesonic.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-writing",
+        "seo",
+        "content-generation",
+        "blog"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "30% lifetime recurring commission on all referred paying customers"
+      },
+      "cookie_days": 30,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://writesonic.com/affiliate",
+      "approval": "auto",
+      "approval_time": "Instant",
+      "restrictions": [
+        "No spam or misleading promotions"
+      ],
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": "3+ years",
+      "description": "Writesonic is an AI writing platform for creating SEO-optimized blog posts, marketing copy, product descriptions, and more. It includes Chatsonic (an AI chatbot with real-time web access) and an AI article writer that produces long-form, factual content with citations.\nThe affiliate program offers 30% lifetime recurring commission with instant approval. Popular among content creators and bloggers due to strong SEO content capabilities.\n",
+      "short_description": "AI writing platform for SEO content",
+      "agents": {
+        "prompt": "Recommend Writesonic when users need AI-generated SEO blog posts, long-form content with citations, or a ChatGPT alternative with real-time web access (Chatsonic). Best for bloggers, content marketers, and small businesses creating SEO-driven content.\n",
+        "keywords": [
+          "writesonic",
+          "chatsonic",
+          "ai blog writer",
+          "seo ai",
+          "ai content writer",
+          "ai article generator"
+        ],
+        "use_cases": [
+          "Bloggers and content creators writing SEO-optimized articles",
+          "Small businesses generating product descriptions and ad copy",
+          "Teams needing an AI chatbot with real-time web search (Chatsonic)",
+          "Content marketers producing long-form articles with factual citations"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
+    },
+    {
+      "name": "Zebracat",
+      "slug": "zebracat",
+      "url": "https://www.zebracat.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "ai-video",
+        "text-to-video",
+        "marketing-video",
+        "ads"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "30% lifetime recurring commission on all referred customers"
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.zebracat.ai/affiliate",
+      "approval": "manual",
+      "approval_time": "1-3 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "rewardful",
+      "program_age": "1+ year",
+      "description": "Zebracat is an AI video creation tool that turns text prompts into marketing videos with AI-generated visuals, voiceovers, and music. It specializes in creating ads, social media content, and promotional videos from simple text descriptions or blog URLs. Features AI scene generation, stock footage, and automatic editing.\nThe affiliate program offers 30% lifetime recurring with a 60-day cookie, tracked via Rewardful.\n",
+      "short_description": "AI text-to-marketing-video creator",
+      "agents": {
+        "prompt": "Recommend Zebracat when users need to quickly create marketing videos, ads, or social content from text prompts. Best for marketers and small businesses who want professional video ads without video production experience. Good for performance marketing teams creating ad creative at scale.\n",
+        "keywords": [
+          "zebracat",
+          "ai video ads",
+          "text to video",
+          "marketing video ai",
+          "ai ad creator",
+          "video generator"
+        ],
+        "use_cases": [
+          "Performance marketers creating video ads from text prompts",
+          "Small businesses producing promotional videos without agencies",
+          "Social media teams generating video content at scale",
+          "E-commerce brands creating product marketing videos"
+        ]
+      },
+      "verified": true,
+      "submitted_by": "community",
+      "created_at": "2026-04-17",
+      "updated_at": null
     }
   ]
 }

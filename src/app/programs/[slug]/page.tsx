@@ -206,7 +206,7 @@ export default async function ProgramPage({
           )}
 
           {/* Agent Instructions */}
-          <div className="rounded-xl border border-border/50 bg-card/30 overflow-hidden">
+          <div className="gradient-border rounded-xl border border-border/50 bg-card/30 overflow-hidden">
             <div className="flex items-center gap-2 px-5 py-3 border-b border-border/30 bg-muted/30">
               <Bot className="h-4 w-4 text-muted-foreground" />
               <h2 className="text-sm font-semibold">AGENTS.md</h2>
@@ -267,7 +267,7 @@ export default async function ProgramPage({
             <div className="rounded-lg bg-muted/50 border border-border/50 p-4 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Terminal className="h-4 w-4 text-muted-foreground" />
-                <code className="text-sm font-mono">
+                <code className="text-sm font-mono text-emerald-400">
                   npx openaffiliate add {program.slug}
                 </code>
               </div>
@@ -300,7 +300,7 @@ export default async function ProgramPage({
         {/* Sidebar */}
         <div className="space-y-4">
           {/* Commission card */}
-          <div className="rounded-xl border border-border/50 bg-card/50 p-5 space-y-4">
+          <div className="glow-card rounded-xl border border-border/50 bg-card/50 p-5 space-y-4">
             <h3 className="text-sm font-semibold">Commission</h3>
             <div className="space-y-3">
               <div className="flex items-center justify-between">
@@ -422,7 +422,7 @@ export default async function ProgramPage({
             program.marketingMaterials !== undefined ||
             program.apiAvailable !== undefined ||
             program.dedicatedManager !== undefined) && (
-            <div className="rounded-xl border border-border/50 bg-card/50 p-5">
+            <div className="glow-card rounded-xl border border-border/50 bg-card/50 p-5">
               <h3 className="text-sm font-semibold mb-3 flex items-center gap-1.5">
                 <Info className="h-3.5 w-3.5 text-muted-foreground" />
                 Program Info
@@ -471,13 +471,13 @@ export default async function ProgramPage({
           )}
 
           {/* Category */}
-          <div className="rounded-xl border border-border/50 bg-card/50 p-5">
+          <div className="glow-card rounded-xl border border-border/50 bg-card/50 p-5">
             <h3 className="text-sm font-semibold mb-3">Category</h3>
             <Badge variant="secondary">{program.category}</Badge>
           </div>
 
           {/* Tags */}
-          <div className="rounded-xl border border-border/50 bg-card/50 p-5">
+          <div className="glow-card rounded-xl border border-border/50 bg-card/50 p-5">
             <h3 className="text-sm font-semibold mb-3">Tags</h3>
             <div className="flex flex-wrap gap-1.5">
               {program.tags.map((tag) => (
@@ -489,7 +489,7 @@ export default async function ProgramPage({
           </div>
 
           {/* Submitted by */}
-          <div className="rounded-xl border border-border/50 bg-card/50 p-5">
+          <div className="glow-card rounded-xl border border-border/50 bg-card/50 p-5">
             <h3 className="text-sm font-semibold mb-2">Submitted by</h3>
             <p className="text-xs text-muted-foreground">
               @{program.submittedBy}
@@ -501,7 +501,7 @@ export default async function ProgramPage({
             href={joinUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 rounded-xl bg-foreground text-background px-5 py-3 text-sm font-medium hover:bg-foreground/90 transition-colors w-full"
+            className="flex items-center justify-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-3 text-sm font-medium transition-colors w-full"
           >
             Join Program
             <ExternalLink className="h-3.5 w-3.5" />

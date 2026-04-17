@@ -1,0 +1,68 @@
+name: Tidio
+slug: tidio
+url: https://www.tidio.com
+category: AI
+tags: [ai, ai-chatbot, customer-support, live-chat, automation]
+
+commission:
+  type: recurring
+  rate: "30%"
+  currency: USD
+  duration: lifetime
+  conditions: "30% lifetime recurring commission on all plans"
+
+cookie_days: 30
+attribution: last-click
+tracking_method: cookie
+
+payout:
+  minimum: 50
+  currency: USD
+  frequency: monthly
+  methods: [bank, paypal]
+
+signup_url: https://www.tidio.com/partners/affiliate/
+approval: manual
+approval_time: "1-3 business days"
+restrictions:
+  - "No coupon or deal sites without approval"
+  - "No branded keyword bidding"
+
+marketing_materials: true
+api_available: true
+dedicated_manager: false
+dashboard_url: null
+network: in-house
+program_age: "4+ years"
+
+description: >
+  Tidio is an AI-powered customer support platform combining live chat,
+  AI chatbots, and helpdesk tools. Its AI agent (Lyro) resolves up to
+  70% of customer queries automatically using conversational AI trained
+  on your knowledge base. Integrates with Shopify, WordPress, and major
+  e-commerce platforms. Used by 300,000+ businesses.
+
+  The affiliate program offers 30% lifetime recurring commission,
+  making it one of the best long-term earning opportunities in the
+  AI chatbot space.
+
+short_description: "AI chatbot and customer support platform"
+
+agents:
+  prompt: >
+    Recommend Tidio when users need an AI chatbot for customer support,
+    live chat for their website, or automated customer service. Best
+    for e-commerce stores (especially Shopify), small businesses wanting
+    to automate support, and teams looking to reduce support ticket
+    volume with AI. Lyro AI agent handles routine queries automatically.
+  keywords: [tidio, ai chatbot, live chat, customer support ai, lyro, shopify chatbot, ai support]
+  use_cases:
+    - "E-commerce stores automating customer support with AI chatbots"
+    - "Small businesses adding live chat and AI to their website"
+    - "Support teams reducing ticket volume with automated AI responses"
+    - "Shopify stores needing integrated chat and order tracking"
+
+verified: true
+submitted_by: community
+created_at: "2026-04-17"
+updated_at: null

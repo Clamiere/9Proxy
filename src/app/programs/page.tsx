@@ -23,7 +23,7 @@ export default function ProgramsPage() {
       <div className="mb-8">
         <h1 className="text-2xl font-bold tracking-tight">Programs</h1>
         <p className="text-sm text-muted-foreground mt-1">
-          {programs.length} affiliate programs in the registry
+          {programs.length} affiliate programs — curated, verified, and agent-ready
         </p>
       </div>
 
@@ -33,7 +33,7 @@ export default function ProgramsPage() {
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input
             placeholder="Search programs, categories, tags..."
-            className="pl-9 bg-muted/50 border-border/50"
+            className="pl-9 h-10 bg-muted/50 border-border/50 text-sm focus-visible:ring-emerald-500/30 focus-visible:border-emerald-500/40"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
@@ -43,7 +43,7 @@ export default function ProgramsPage() {
             onClick={() => setSelectedCategory("")}
             className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
               !selectedCategory
-                ? "bg-foreground text-background"
+                ? "bg-emerald-500/15 text-emerald-400 border border-emerald-500/30"
                 : "bg-muted text-muted-foreground hover:text-foreground"
             }`}
           >
@@ -57,7 +57,7 @@ export default function ProgramsPage() {
               }
               className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
                 selectedCategory === cat
-                  ? "bg-foreground text-background"
+                  ? "bg-emerald-500/15 text-emerald-400 border border-emerald-500/30"
                   : "bg-muted text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -80,7 +80,7 @@ export default function ProgramsPage() {
             <Link
               key={program.slug}
               href={`/programs/${program.slug}`}
-              className="group flex items-center gap-4 rounded-xl border border-border/40 bg-card/30 p-4 transition-all hover:border-border hover:bg-card/60"
+              className="glow-card group flex items-center gap-4 rounded-xl border border-border/40 bg-card/30 p-4 transition-all hover:border-border hover:bg-card/60"
             >
               <ProgramLogo slug={program.slug} name={program.name} size={44} className="shrink-0" />
 
