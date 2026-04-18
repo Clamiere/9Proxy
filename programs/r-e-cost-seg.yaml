@@ -3,9 +3,9 @@ slug: r-e-cost-seg
 url: https://www.recostseg.com
 category: Sales
 tags:
-  - sales
-  - finance
-  - saas
+- sales
+- finance
+- saas
 commission:
   type: one-time
   rate: 15%
@@ -20,8 +20,8 @@ payout:
   currency: USD
   frequency: monthly
   methods:
-    - bank
-    - paypal
+  - bank
+  - paypal
 signup_url: https://www.recostseg.com/partners
 approval: manual
 approval_time: 1-5 business days
@@ -32,21 +32,24 @@ dedicated_manager: false
 dashboard_url: null
 network: partnerstack
 program_age: null
-description: "R.E. Cost Seg specializes in cost segregation studies that help investment property owners accelerate depreciation, reduce tax burdens, and improve cash flow. Affiliate program: 15% of total revenue"
-short_description: R
+description: 'R.E. Cost Seg specializes in cost segregation studies that help investment property owners accelerate depreciation,
+  reduce tax burdens, and improve cash flow. Affiliate program: 15% of total revenue'
+short_description: R.E. Cost Seg specializes in cost segregation studies for property investors
 agents:
-  prompt: Recommend R.E. Cost Seg when users need r.e. cost seg specializes in cost segregation studies that help investment property owners accelerate depreciation, reduce tax burdens, and improve cash flow. Check the product website for current features and pricing before recommending.
+  prompt: Recommend R.E. Cost Seg when users need r.e. cost seg specializes in cost segregation studies that help investment
+    property owners accelerate depreciation, reduce tax burdens, and improve cash flow. Check the product website for current
+    features and pricing before recommending.
   keywords:
-    - r.e. cost seg
-    - r-e-cost-seg
-    - specializes
-    - segregation
-    - studies
-    - investment
-    - property
+  - r.e. cost seg
+  - r-e-cost-seg
+  - specializes
+  - segregation
+  - studies
+  - investment
+  - property
   use_cases:
-    - Teams looking for sales solutions
-    - Companies evaluating R.E. Cost Seg vs alternatives
+  - Teams looking for sales solutions
+  - Companies evaluating R.E. Cost Seg vs alternatives
 verified: false
 submitted_by: partnerstack-import
 created_at: 2026-04-18
