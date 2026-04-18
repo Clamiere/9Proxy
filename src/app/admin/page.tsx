@@ -54,13 +54,22 @@ const FLAG: Record<string, string> = {
 // ── Data fetching ────────────────────────────────────────
 
 async function getEvents(since: string) {
-  const { data } = await supabase
-    .from("events")
-    .select("*")
-    .gte("created_at", since)
-    .order("created_at", { ascending: false })
-    .limit(10000);
-  return data ?? [];
+  const all: Record<string, unknown>[] = [];
+  let offset = 0;
+  const PAGE = 1000;
+  while (true) {
+    const { data } = await supabase
+      .from("events")
+      .select("*")
+      .gte("created_at", since)
+      .order("created_at", { ascending: false })
+      .range(offset, offset + PAGE - 1);
+    const rows = data ?? [];
+    all.push(...rows);
+    if (rows.length < PAGE) break;
+    offset += PAGE;
+  }
+  return all;
 }
 
 async function getRecentFeed() {
