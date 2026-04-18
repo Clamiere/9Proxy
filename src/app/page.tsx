@@ -6,10 +6,147 @@ import {
   Search,
   Code,
   GitPullRequest,
+  ArrowUpDown,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ProgramLogo } from "@/components/program-logo";
-import { programs, categories } from "@/lib/programs";
+import { programs, categories, parseCommissionRate } from "@/lib/programs";
+import type { Program } from "@/lib/programs";
+
+function affiliateScore(p: Program): number {
+  const commRate = parseCommissionRate(p.commission.rate);
+  const commScore = Math.min(commRate / 50, 1) * 50;
+  const cookieScore = Math.min(p.cookieDays / 90, 1) * 20;
+  const recurringScore = p.commission.type === "recurring" ? 20 : p.commission.type === "tiered" ? 10 : 0;
+  const verifiedScore = p.verified ? 10 : 0;
+  return Math.round(commScore + cookieScore + recurringScore + verifiedScore);
+}
+
+function RankingsPreview() {
+  const top5 = [...programs]
+    .sort((a, b) => affiliateScore(b) - affiliateScore(a))
+    .slice(0, 5);
+
+  const medals = ["text-amber-500 bg-amber-500/15", "text-zinc-400 bg-zinc-400/15", "text-orange-500 bg-orange-500/15"];
+
+  return (
+    <section className="mx-auto max-w-6xl px-6 py-10">
+      <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center gap-2">
+          <ArrowUpDown className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+          <div>
+            <h2 className="text-xl font-semibold tracking-tight">
+              Rankings
+            </h2>
+            <p className="text-sm text-muted-foreground mt-0.5">
+              Top programs by Affiliate Score
+            </p>
+          </div>
+        </div>
+        <Link
+          href="/rankings"
+          className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
+        >
+          View all <ArrowRight className="h-3 w-3" />
+        </Link>
+      </div>
+
+      <div className="rounded-xl border border-border/40 overflow-hidden">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="border-b border-border/40 bg-muted/30">
+              <th className="w-12 py-2.5 px-3 text-center text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
+                #
+              </th>
+              <th className="py-2.5 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
+                Program
+              </th>
+              <th className="w-28 py-2.5 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide hidden sm:table-cell">
+                Commission
+              </th>
+              <th className="w-20 py-2.5 px-3 text-center text-[11px] font-medium text-muted-foreground uppercase tracking-wide hidden sm:table-cell">
+                Cookie
+              </th>
+              <th className="w-28 py-2.5 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide hidden md:table-cell">
+                Category
+              </th>
+              <th className="w-16 py-2.5 px-3 text-center text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
+                Score
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {top5.map((program, i) => (
+              <tr
+                key={program.slug}
+                className="border-t border-border/20 hover:bg-muted/20 transition-colors group"
+              >
+                <td className="py-2.5 px-3 text-center">
+                  <span
+                    className={`inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
+                      i < 3 ? medals[i] : "text-muted-foreground"
+                    }`}
+                  >
+                    {i + 1}
+                  </span>
+                </td>
+                <td className="py-2.5 px-3">
+                  <Link
+                    href={`/programs/${program.slug}`}
+                    className="flex items-center gap-2.5"
+                  >
+                    <ProgramLogo
+                      slug={program.slug}
+                      name={program.name}
+                      size={28}
+                      className="shrink-0"
+                    />
+                    <div className="min-w-0">
+                      <span className="text-sm font-medium truncate group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                        {program.name}
+                      </span>
+                      {program.verified && (
+                        <Badge
+                          variant="outline"
+                          className="ml-1.5 text-[9px] px-1 py-0 border-emerald-600/30 dark:border-emerald-500/30 text-emerald-600 dark:text-emerald-400"
+                        >
+                          verified
+                        </Badge>
+                      )}
+                    </div>
+                  </Link>
+                </td>
+                <td className="py-2.5 px-3 hidden sm:table-cell">
+                  <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400">
+                    {program.commission.rate}
+                  </span>
+                  <span className="text-[10px] text-muted-foreground ml-1">
+                    {program.commission.type === "recurring" ? "rec" : program.commission.type}
+                  </span>
+                </td>
+                <td className="py-2.5 px-3 text-center hidden sm:table-cell">
+                  <span className="text-xs text-muted-foreground">
+                    {program.cookieDays}d
+                  </span>
+                </td>
+                <td className="py-2.5 px-3 hidden md:table-cell">
+                  <span className="text-xs text-muted-foreground">
+                    {program.category}
+                  </span>
+                </td>
+                <td className="py-2.5 px-3 text-center">
+                  <span className="inline-flex items-center justify-center h-6 w-9 rounded-md bg-emerald-500/10 text-xs font-semibold text-emerald-600 dark:text-emerald-400 tabular-nums">
+                    {affiliateScore(program)}
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
 
 function ProgramCard({ program }: { program: (typeof programs)[0] }) {
   return (
@@ -167,6 +304,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Rankings Preview */}
+      <RankingsPreview />
 
       {/* Social Proof + Stats */}
       <section className="relative border-y border-border/25">
