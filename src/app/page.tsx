@@ -1,10 +1,7 @@
 import Link from "next/link";
 import {
   ArrowRight,
-  Star,
   Terminal,
-  Users,
-  Zap,
   GitFork,
   Search,
   Code,
@@ -171,47 +168,67 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Compatible Tools Bar */}
-      <section className="border-y border-border/30 bg-muted/10">
-        <div className="mx-auto max-w-6xl px-6 py-5">
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-0 justify-between">
-            <span className="text-xs text-muted-foreground/60 tracking-wide uppercase font-medium whitespace-nowrap">
-              Built for developers and AI agents
-            </span>
-            <div className="flex items-center gap-3 text-xs text-muted-foreground/50 flex-wrap justify-center sm:justify-end">
-              {["Claude", "Cursor", "Windsurf", "Copilot", "CLI", "MCP"].map(
-                (tool, i, arr) => (
-                  <span key={tool} className="flex items-center gap-3">
-                    <span className="hover:text-muted-foreground transition-colors">
-                      {tool}
-                    </span>
-                    {i < arr.length - 1 && (
-                      <span className="text-border/40">·</span>
-                    )}
-                  </span>
-                )
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="border-b border-border/40 bg-muted/20">
-        <div className="mx-auto max-w-6xl px-6 py-8">
-          <div className="grid grid-cols-3 gap-8">
+      {/* Social Proof + Stats */}
+      <section className="relative border-y border-border/25">
+        <div className="absolute inset-0 bg-gradient-to-b from-muted/5 to-transparent pointer-events-none" />
+        <div className="relative mx-auto max-w-6xl px-6 py-0">
+          {/* Stats */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-border/25">
             {[
-              { label: "Programs", value: programs.length.toString() },
-              { label: "Categories", value: categories.length.toString() },
-              { label: "Open Source", value: "100%" },
+              { value: programs.length.toString(), label: "Programs", sub: "and growing" },
+              { value: categories.length.toString(), label: "Categories", sub: "fully indexed" },
+              { value: "100%", label: "Open Source", sub: "MIT licensed" },
             ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <p className="text-2xl font-bold tracking-tight">
+              <div
+                key={stat.label}
+                className="flex flex-col items-center justify-center gap-1 py-8 sm:py-10 px-6 text-center"
+              >
+                <span className="text-4xl sm:text-[2.75rem] font-bold leading-none tracking-tight tabular-nums text-foreground">
                   {stat.value}
-                </p>
-                <p className="text-xs text-muted-foreground mt-1">{stat.label}</p>
+                </span>
+                <span className="text-[11px] font-medium uppercase tracking-widest text-muted-foreground/70 mt-1">
+                  {stat.label}
+                </span>
+                <span className="text-[11px] text-muted-foreground/35 tracking-wide">
+                  {stat.sub}
+                </span>
               </div>
             ))}
+          </div>
+
+          {/* Tools */}
+          <div className="border-t border-border/25" />
+          <div className="flex items-center justify-between py-4">
+            <span className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground/35 font-medium whitespace-nowrap">
+              Works with
+            </span>
+            <div className="hidden sm:flex items-center gap-5">
+              {[
+                { name: "Claude", icon: "◆" },
+                { name: "Cursor", icon: "◈" },
+                { name: "Windsurf", icon: "◇" },
+                { name: "Copilot", icon: "○" },
+                { name: "CLI", icon: "›_" },
+                { name: "MCP", icon: "⬡" },
+              ].map((tool, i, arr) => (
+                <span key={tool.name} className="flex items-center gap-5">
+                  <span className="group flex items-center gap-1.5 cursor-default">
+                    <span className="text-[10px] text-muted-foreground/25 group-hover:text-emerald-500/60 transition-colors duration-300 font-mono">
+                      {tool.icon}
+                    </span>
+                    <span className="text-[11px] text-muted-foreground/40 group-hover:text-muted-foreground/80 transition-colors duration-300 tracking-wide">
+                      {tool.name}
+                    </span>
+                  </span>
+                  {i < arr.length - 1 && (
+                    <span className="text-border/20 text-[10px]">/</span>
+                  )}
+                </span>
+              ))}
+            </div>
+            <span className="sm:hidden text-[11px] text-muted-foreground/40 tracking-wide">
+              Claude · Cursor · Windsurf + 3 more
+            </span>
           </div>
         </div>
       </section>
