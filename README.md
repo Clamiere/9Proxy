@@ -17,6 +17,22 @@ OpenAffiliate is a community-driven, open-source registry of affiliate programs.
 - **For developers** -- CLI, SDK, and REST API. Build tools on top of the registry.
 - **For SaaS companies** -- Free listing in a canonical registry. Exposure to developer partners and AI agents.
 
+## Features
+
+- **Search and filter** -- Full-text search across 349+ programs. Filter by category, commission type, minimum rate, and verified status.
+- **Rankings** -- Affiliate Score algorithm ranks programs by commission rate, cookie duration, recurring potential, and verification. Sort by score, name, commission, or cookie days. View rankings by programs, networks, or categories.
+- **Community voting** -- Upvote programs you've had success with. Votes are stored in Supabase and displayed alongside scores.
+- **Compare** -- Side-by-side comparison of up to 4 programs. Compare commission, cookie, payout, approval, and more.
+- **Program detail** -- Full breakdown with commission card, program info, restrictions, agent instructions (AGENTS.md), and integration snippets.
+- **Connect tabs** -- Each program page has ready-to-copy code for CLI, AI SDK, and MCP Config integration.
+- **Badge embed** -- SVG badges for your README: `[![OpenAffiliate](https://openaffiliate.dev/badge/stripe.svg)](https://openaffiliate.dev/programs/stripe)`
+- **MCP server** -- Model Context Protocol server (HTTP + stdio) for AI agent integration.
+- **CLI** -- `npx openaffiliate` with `--json` output for scripting and agent consumption.
+- **REST API** -- Public JSON API, no auth required.
+- **SDK** -- TypeScript SDK for programmatic access.
+- **Submit** -- Web form to submit new programs without touching YAML.
+- **Verification** -- Automated signup URL verification via CI.
+
 ## Quick start
 
 ### Browse the registry

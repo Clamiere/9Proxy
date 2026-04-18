@@ -35,6 +35,7 @@ function CodeBlock({ code, label }: { code: string; label?: string }) {
 
 function SectionNav() {
   const sections = [
+    { id: "features", label: "Features" },
     { id: "cli", label: "CLI" },
     { id: "api", label: "API" },
     { id: "mcp", label: "MCP" },
@@ -70,6 +71,95 @@ export default function DocsPage() {
       <SectionNav />
 
       <div className="space-y-12">
+        {/* Features */}
+        <section id="features">
+          <h2 className="text-lg font-semibold mb-2">Features</h2>
+          <p className="text-sm text-muted-foreground mb-4">
+            Everything OpenAffiliate offers for partners, developers, and AI
+            agents.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              {
+                title: "Search & Filter",
+                desc: "Full-text search across 349+ programs. Filter by category, commission type, min rate, verified status.",
+                href: "/programs",
+              },
+              {
+                title: "Rankings",
+                desc: "Affiliate Score algorithm ranks by commission, cookie duration, recurring potential, and verification. Sort by programs, networks, or categories.",
+                href: "/rankings",
+              },
+              {
+                title: "Community Voting",
+                desc: "Upvote programs you have success with. Votes stored in Supabase, displayed alongside scores.",
+                href: "/rankings",
+              },
+              {
+                title: "Compare",
+                desc: "Side-by-side comparison of up to 4 programs. Compare commission, cookie, payout, approval, and more.",
+                href: "/compare",
+              },
+              {
+                title: "Program Detail",
+                desc: "Full breakdown: commission card, program info, restrictions, AGENTS.md instructions, integration snippets.",
+                href: "/programs/vercel",
+              },
+              {
+                title: "Connect Tabs",
+                desc: "Each program page has ready-to-copy code for CLI, AI SDK, and MCP Config integration.",
+                href: "/programs/stripe",
+              },
+              {
+                title: "Badge Embed",
+                desc: "SVG badges for your README. Copy the Markdown snippet from any program page.",
+                href: "/programs/supabase",
+              },
+              {
+                title: "Submit",
+                desc: "Web form to submit new programs without touching YAML files directly.",
+                href: "/submit",
+              },
+            ].map((f) => (
+              <Link
+                key={f.title}
+                href={f.href}
+                className="rounded-lg border border-border/50 bg-muted/20 p-4 hover:bg-muted/40 transition-colors group"
+              >
+                <h3 className="text-sm font-semibold group-hover:text-foreground">
+                  {f.title}
+                </h3>
+                <p className="text-[11px] text-muted-foreground mt-1 leading-relaxed">
+                  {f.desc}
+                </p>
+              </Link>
+            ))}
+          </div>
+
+          <h3 className="text-sm font-semibold mt-6 mb-3">
+            Integration options
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            {[
+              { label: "CLI", desc: "npx openaffiliate", href: "#cli" },
+              { label: "REST API", desc: "Public, no auth", href: "#api" },
+              { label: "MCP Server", desc: "HTTP + stdio", href: "#mcp" },
+              { label: "SDK", desc: "TypeScript", href: "#sdk" },
+            ].map((i) => (
+              <a
+                key={i.label}
+                href={i.href}
+                className="rounded-lg border border-border/50 bg-muted/20 p-3 text-center hover:bg-muted/40 transition-colors"
+              >
+                <p className="text-xs font-semibold">{i.label}</p>
+                <p className="text-[10px] text-muted-foreground mt-0.5">
+                  {i.desc}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+
         {/* CLI */}
         <section id="cli">
           <h2 className="text-lg font-semibold mb-2">CLI</h2>
