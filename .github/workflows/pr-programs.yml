@@ -41,6 +41,15 @@ jobs:
           SLUGS=$(echo "$FILES" | sed 's|programs/||;s|\.yaml||' | tr '\n' ', ' | sed 's/,$//')
           echo "slugs=$SLUGS" >> $GITHUB_OUTPUT
 
+      # ── Step 1b: Build registry index from main (for dedup check) ──
+      - name: Build dedup index from main
+        if: steps.changed.outputs.count > 0
+        run: |
+          # Build index from main branch state (before PR changes)
+          git stash
+          npx tsx scripts/build-registry.ts 2>/dev/null || true
+          git stash pop || true
+
       # ── Step 2: Validate YAML schema ──
       - name: Validate YAML schema
         id: validate
@@ -136,8 +145,26 @@ jobs:
             let body = `### Program Submission Review\n\n`;
             body += `**${files.length} program(s):** ${list}\n\n`;
 
+            // Check for duplicates first
+            const duplicates = enrichResults.filter(r => r.duplicate);
+            if (duplicates.length > 0) {
+              body += `#### Duplicate Detected\n\n`;
+              for (const r of duplicates) {
+                const d = r.duplicate;
+                if (d.match_type === 'fuzzy') {
+                  body += `> **${r.slug}** looks similar to existing program **${d.matched_slug}** (fuzzy match, distance: ${d.distance}).\n`;
+                  body += `> Please confirm this is a different program, or update the existing file instead.\n\n`;
+                } else {
+                  body += `> **${r.slug}** already exists in the registry (matched by ${d.match_type} → **${d.matched_slug}**).\n`;
+                  body += `> To update an existing program, modify \`programs/${d.matched_slug}.yaml\` instead of creating a new file.\n\n`;
+                }
+              }
+            }
+
             // Checklist
+            const dedupOk = duplicates.length === 0;
             body += `#### Automated Checks\n`;
+            body += `- [${dedupOk ? 'x' : ' '}] Dedup check (no duplicates)${!dedupOk ? ' **BLOCKED**' : ''}\n`;
             body += `- [${validateOk ? 'x' : ' '}] YAML schema validation\n`;
             body += `- [${verifyOk ? 'x' : ' '}] Signup URL verification\n`;
             body += `- [ ] Commission data accuracy (manual)\n`;
@@ -150,24 +177,24 @@ jobs:
                 if (r.changes.length > 0) {
                   body += `**${r.slug}** — ${r.changes.length} fix(es) applied automatically:\n`;
                   for (const c of r.changes) {
-                    body += `- ✅ ${c}\n`;
+                    body += `- ${c}\n`;
                   }
                 }
                 if (r.errors.length > 0) {
-                  body += `**${r.slug}** — ⚠️ needs manual fix:\n`;
+                  body += `**${r.slug}** — needs manual fix:\n`;
                   for (const e of r.errors) {
-                    body += `- ❌ ${e}\n`;
+                    body += `- ${e}\n`;
                   }
                 }
-                if (r.changes.length === 0 && r.errors.length === 0) {
-                  body += `**${r.slug}** — ✅ no issues found\n`;
+                if (r.changes.length === 0 && r.errors.length === 0 && !r.duplicate) {
+                  body += `**${r.slug}** — no issues found\n`;
                 }
               }
               body += '\n';
             }
 
             if (committed) {
-              body += `> 💡 Auto-enrichment changes have been committed to this PR.\n\n`;
+              body += `> Auto-enrichment changes have been committed to this PR.\n\n`;
             }
 
             body += `---\nThanks for contributing to OpenAffiliate! A maintainer will review shortly.`;

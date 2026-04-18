@@ -17,7 +17,7 @@
  *   5. Reports what was changed (for PR comment)
  */
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from "fs";
 import { join, basename, dirname } from "path";
 import { fileURLToPath } from "url";
 import { parse as parseYaml, stringify as stringifyYaml } from "yaml";
@@ -27,6 +27,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const PROGRAMS_DIR = join(ROOT, "programs");
 const LOGOS_DIR = join(ROOT, "public", "logos");
+const INDEX_FILE = join(ROOT, "src", "lib", "registry-index.json");
 
 const VALID_CATEGORIES = [
   "AI", "Analytics", "Business Operations", "Communication",
@@ -40,12 +41,84 @@ const VALID_COMMISSION_TYPES = ["recurring", "one-time", "tiered", "hybrid"];
 const VALID_APPROVAL = ["auto", "manual", "invite-only"];
 const VALID_KINDS = ["affiliate", "referral", "creator-payout", "revenue-share", "cashback", "partner-network"];
 
+interface DedupMatch {
+  matched_slug: string;
+  match_type: "slug" | "domain" | "alias" | "fuzzy";
+  distance?: number;
+}
+
 interface EnrichResult {
   file: string;
   slug: string;
   changes: string[];
   errors: string[];
   logoDownloaded: boolean;
+  duplicate?: DedupMatch;
+}
+
+// ── Dedup helpers ──
+
+interface RegistryIndex {
+  by_slug: string[];
+  by_domain: Record<string, string>;
+  by_alias: Record<string, string>;
+}
+
+function loadRegistryIndex(): RegistryIndex | null {
+  if (!existsSync(INDEX_FILE)) return null;
+  try {
+    return JSON.parse(readFileSync(INDEX_FILE, "utf-8"));
+  } catch {
+    return null;
+  }
+}
+
+function levenshtein(a: string, b: string): number {
+  if (a === b) return 0;
+  if (!a.length) return b.length;
+  if (!b.length) return a.length;
+  const dp: number[][] = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+  for (let i = 0; i <= a.length; i++) dp[i][0] = i;
+  for (let j = 0; j <= b.length; j++) dp[0][j] = j;
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
+    }
+  }
+  return dp[a.length][b.length];
+}
+
+function checkDuplicate(slug: string, url: string, index: RegistryIndex): DedupMatch | null {
+  // 1. Exact slug match (file already exists on main)
+  if (index.by_slug.includes(slug)) {
+    return { matched_slug: slug, match_type: "slug" };
+  }
+
+  // 2. Domain match
+  try {
+    const domain = new URL(url).hostname.replace(/^www\./, "");
+    if (index.by_domain[domain]) {
+      return { matched_slug: index.by_domain[domain], match_type: "domain" };
+    }
+  } catch {}
+
+  // 3. Alias match
+  if (index.by_alias[slug]) {
+    return { matched_slug: index.by_alias[slug], match_type: "alias" };
+  }
+
+  // 4. Fuzzy match (Levenshtein < 3)
+  if (slug.length >= 3) {
+    for (const existing of index.by_slug) {
+      const d = levenshtein(slug, existing);
+      if (d > 0 && d < 3) {
+        return { matched_slug: existing, match_type: "fuzzy", distance: d };
+      }
+    }
+  }
+
+  return null;
 }
 
 async function downloadLogo(slug: string, url: string): Promise<boolean> {
@@ -98,6 +171,24 @@ async function enrichProgram(filePath: string): Promise<EnrichResult> {
   if (!data || typeof data !== "object") {
     result.errors.push("Invalid YAML");
     return result;
+  }
+
+  // 0. Dedup check against existing registry
+  const index = loadRegistryIndex();
+  if (index && data.url) {
+    const dup = checkDuplicate(slug, data.url, index);
+    if (dup) {
+      result.duplicate = dup;
+      if (dup.match_type === "fuzzy") {
+        result.errors.push(
+          `Possible duplicate: "${slug}" is similar to existing program "${dup.matched_slug}" (distance: ${dup.distance}). Please verify this is a new program.`
+        );
+      } else {
+        result.errors.push(
+          `Duplicate detected: "${slug}" already exists in registry (matched by ${dup.match_type} → "${dup.matched_slug}"). If this is an update, modify the existing file instead.`
+        );
+      }
+    }
   }
 
   // 1. Fix commission.rate: number → string
