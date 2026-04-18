@@ -3,15 +3,18 @@
 The open registry of affiliate programs. Built for developers and AI agents.
 
 [![CI](https://github.com/Affitor/open-affiliate/actions/workflows/ci.yml/badge.svg)](https://github.com/Affitor/open-affiliate/actions)
-[![Programs](https://img.shields.io/badge/programs-30-blue)](https://openaffiliate.dev)
+[![Programs](https://img.shields.io/badge/programs-450+-blue)](https://openaffiliate.dev)
+[![npm](https://img.shields.io/npm/v/openaffiliate)](https://www.npmjs.com/package/openaffiliate)
+[![MCP](https://img.shields.io/badge/MCP-server-purple)](https://www.npmjs.com/package/openaffiliate-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## What is this?
 
-OpenAffiliate is a community-driven, open-source registry of affiliate programs. Every program is stored as a YAML file in this repo, making it easy to contribute, review, and integrate.
+OpenAffiliate is a community-driven, open-source registry of 450+ affiliate programs. Every program is stored as a YAML file in this repo, making it easy to contribute, review, and integrate.
 
 - **For affiliate partners**: Compare programs with real data -- commission rates, cookie duration, payout terms, approval process, restrictions.
-- **For AI agents**: Machine-readable AGENTS.md + MCP connector. Structured context for when to recommend what product.
+- **For AI agents**: MCP server + AGENTS.md + structured data. Tell your agent which programs to recommend and when.
+- **For developers**: CLI, SDK, and REST API. Build tools on top of the registry.
 - **For SaaS companies**: Free listing in a canonical registry. Exposure to developer partners and AI agents.
 
 ## Quick start
@@ -64,6 +67,19 @@ npx openaffiliate add supabase
 ```
 
 Available tools: `search_programs`, `get_program`, `list_categories`
+
+### SDK
+
+```bash
+npm install openaffiliate-sdk
+```
+
+```typescript
+import { searchPrograms, getProgram } from "openaffiliate-sdk";
+
+const programs = await searchPrograms("email", { commission_type: "recurring" });
+const stripe = await getProgram("stripe");
+```
 
 ### API
 
@@ -132,10 +148,19 @@ open-affiliate/
   src/                 # Website (Next.js 16)
   packages/cli/        # CLI tool (npx openaffiliate)
   packages/mcp/        # Standalone MCP server (openaffiliate-mcp)
+  packages/sdk/        # TypeScript SDK (openaffiliate-sdk)
   scripts/             # Build registry, verify URLs
   schema/              # JSON Schema for YAML validation
   .github/             # CI workflows
 ```
+
+## Packages
+
+| Package | npm | Description |
+|---|---|---|
+| [openaffiliate](packages/cli) | [![npm](https://img.shields.io/npm/v/openaffiliate)](https://www.npmjs.com/package/openaffiliate) | CLI with `--json` output for agents |
+| [openaffiliate-mcp](packages/mcp) | [![npm](https://img.shields.io/npm/v/openaffiliate-mcp)](https://www.npmjs.com/package/openaffiliate-mcp) | MCP server (stdio + HTTP) |
+| [openaffiliate-sdk](packages/sdk) | [![npm](https://img.shields.io/npm/v/openaffiliate-sdk)](https://www.npmjs.com/package/openaffiliate-sdk) | TypeScript SDK |
 
 ## Verification
 
