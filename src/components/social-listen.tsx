@@ -6,14 +6,13 @@ function formatViews(n: number): string {
   return String(n)
 }
 
-function timeAgo(dateStr: string): string {
-  const diff = Date.now() - new Date(dateStr).getTime()
-  const days = Math.floor(diff / 86400000)
-  if (days < 1) return "today"
-  if (days < 30) return `${days}d ago`
-  const months = Math.floor(days / 30)
-  if (months < 12) return `${months}mo ago`
-  return `${Math.floor(months / 12)}y ago`
+function formatDate(dateStr: string): string {
+  try {
+    const d = new Date(dateStr)
+    return d.toLocaleDateString("en-US", { month: "short", year: "numeric" })
+  } catch {
+    return ""
+  }
 }
 
 const PLATFORM_CONFIG: Record<string, { label: string; color: string; icon: string; viewLabel: string; hasMedia: boolean }> = {
@@ -56,7 +55,7 @@ function MediaCard({ item, isTop }: { item: SocialItem; isTop: boolean }) {
           {(item.views ?? 0) > 0 && (
             <span>{formatViews(item.views!)} {platform.viewLabel}</span>
           )}
-          {item.publishedAt && <span>{timeAgo(item.publishedAt)}</span>}
+          {item.publishedAt && <span>{formatDate(item.publishedAt)}</span>}
         </div>
       </div>
     </a>
@@ -88,7 +87,7 @@ function TextCard({ item, isTop }: { item: SocialItem; isTop: boolean }) {
         {engagement > 0 && platform.viewLabel && (
           <span>{formatViews(engagement)} {platform.viewLabel}</span>
         )}
-        {item.publishedAt && <span>{timeAgo(item.publishedAt)}</span>}
+        {item.publishedAt && <span>{formatDate(item.publishedAt)}</span>}
       </div>
     </a>
   )
