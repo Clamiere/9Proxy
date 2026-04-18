@@ -23,7 +23,7 @@ export function ProgramLogo({
 
   return (
     <div
-      className={`relative flex items-center justify-center rounded-lg bg-muted text-sm font-bold overflow-hidden ${className}`}
+      className={`relative flex items-center justify-center rounded-lg text-sm font-bold overflow-hidden ${imgLoaded && !imgError ? "" : "bg-muted"} ${className}`}
       style={{ width: size, height: size }}
     >
       {(!imgLoaded || imgError) && (
