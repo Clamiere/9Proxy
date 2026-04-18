@@ -1,7 +1,4 @@
-"use client"
-
-import { useEffect, useState } from "react"
-import type { SocialItem } from "@/app/api/social/[slug]/route"
+import type { SocialItem } from "@/lib/social"
 
 function formatViews(n: number): string {
   if (n >= 1_000_000) return (n / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M"
@@ -105,19 +102,6 @@ function TopBadge() {
   )
 }
 
-function SkeletonCard() {
-  return (
-    <div className="flex gap-3 rounded-lg border border-border/40 bg-card/30 p-3 animate-pulse">
-      <div className="h-16 w-28 rounded bg-muted/50 shrink-0" />
-      <div className="flex-1 space-y-2">
-        <div className="h-3 w-full rounded bg-muted/50" />
-        <div className="h-3 w-3/4 rounded bg-muted/50" />
-        <div className="h-2.5 w-24 rounded bg-muted/50" />
-      </div>
-    </div>
-  )
-}
-
 function PlatformSection({ platform, items }: { platform: string; items: SocialItem[] }) {
   if (items.length === 0) return null
   const config = PLATFORM_CONFIG[platform] ?? PLATFORM_CONFIG.x
@@ -144,25 +128,8 @@ function PlatformSection({ platform, items }: { platform: string; items: SocialI
   )
 }
 
-export function SocialListen({ slug }: { slug: string }) {
-  const [items, setItems] = useState<SocialItem[]>([])
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    let cancelled = false
-    fetch(`/api/social/${slug}`)
-      .then((res) => (res.ok ? res.json() : { items: [] }))
-      .then((data) => {
-        if (!cancelled) setItems(data.items ?? [])
-      })
-      .catch(() => {})
-      .finally(() => {
-        if (!cancelled) setLoading(false)
-      })
-    return () => { cancelled = true }
-  }, [slug])
-
-  if (!loading && items.length === 0) return null
+export function SocialListen({ items }: { items: SocialItem[] }) {
+  if (items.length === 0) return null
 
   const grouped = new Map<string, SocialItem[]>()
   for (const item of items) {
@@ -181,21 +148,15 @@ export function SocialListen({ slug }: { slug: string }) {
           Sorted by engagement × recency
         </span>
       </div>
-      {loading ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          {Array.from({ length: 3 }).map((_, i) => <SkeletonCard key={i} />)}
-        </div>
-      ) : (
-        <div className="space-y-4">
-          {["youtube", "tiktok", "x", "reddit", "blog"].map((platform) => (
-            <PlatformSection
-              key={platform}
-              platform={platform}
-              items={grouped.get(platform) ?? []}
-            />
-          ))}
-        </div>
-      )}
+      <div className="space-y-4">
+        {["youtube", "tiktok", "x", "reddit", "blog"].map((platform) => (
+          <PlatformSection
+            key={platform}
+            platform={platform}
+            items={grouped.get(platform) ?? []}
+          />
+        ))}
+      </div>
     </div>
   )
 }
