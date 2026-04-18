@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "What is Open Source?",
@@ -8,25 +10,24 @@ export const metadata: Metadata = {
 export default function OpenSourcePage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">
-        What is Open Source?
-      </h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        A plain-language explanation for non-developers.
-      </p>
+      <DocsHeader
+        group="Guides"
+        title="What is Open Source?"
+        description="Why the registry is open and what that means for you."
+      />
 
       <div className="space-y-10">
         {/* Analogy */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">The recipe book analogy</h2>
-          <p className="text-sm text-muted-foreground leading-relaxed">
+          <h2 id="the-recipe-book-analogy" className="text-lg font-semibold mb-3">The recipe book analogy</h2>
+          <p className="text-base text-muted-foreground leading-relaxed">
             Imagine a recipe book that anyone can read, cook from, and add their
             own recipes to. If you spot a mistake in a recipe, you can suggest a
             fix. If you have a great recipe that is not in the book, you can
             submit it for others to enjoy. The book is never locked away — it
             belongs to everyone who uses it.
           </p>
-          <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+          <p className="text-base text-muted-foreground leading-relaxed mt-3">
             Open source software works the same way. The code — the
             &ldquo;recipe&rdquo; that tells computers what to do — is published
             publicly. Anyone can read it, use it, improve it, or build
@@ -36,7 +37,7 @@ export default function OpenSourcePage() {
 
         {/* What makes OpenAffiliate open source */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">
+          <h2 id="what-makes-openaffiliate-open-source" className="text-lg font-semibold mb-3">
             What makes OpenAffiliate open source
           </h2>
           <div className="space-y-3">
@@ -60,10 +61,10 @@ export default function OpenSourcePage() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="rounded-lg border border-border/50 bg-muted/20 p-4"
+                className="rounded-2xl border border-border/50 bg-muted/20 p-6"
               >
                 <h3 className="text-sm font-semibold mb-1">{item.title}</h3>
-                <p className="text-[11px] text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -73,7 +74,7 @@ export default function OpenSourcePage() {
 
         {/* Why it matters */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">Why it matters</h2>
+          <h2 id="why-it-matters" className="text-lg font-semibold mb-3">Why it matters</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
               {
@@ -91,10 +92,10 @@ export default function OpenSourcePage() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="rounded-lg border border-border/50 bg-muted/20 p-4"
+                className="rounded-2xl border border-border/50 bg-muted/20 p-6"
               >
                 <h3 className="text-sm font-semibold mb-1">{item.title}</h3>
-                <p className="text-[11px] text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -103,8 +104,8 @@ export default function OpenSourcePage() {
         </section>
 
         {/* You don't need to be a developer */}
-        <section className="rounded-lg border border-border/40 bg-muted/10 p-5">
-          <h2 className="text-sm font-semibold mb-2">
+        <section className="rounded-2xl border border-border/40 bg-muted/10 p-5">
+          <h2 id="no-developer-needed" className="text-sm font-semibold mb-2">
             You do not need to be a developer
           </h2>
           <p className="text-xs text-muted-foreground leading-relaxed">
@@ -123,10 +124,10 @@ export default function OpenSourcePage() {
 
         {/* GitHub account */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">
+          <h2 id="no-github-account" className="text-lg font-semibold mb-3">
             Do not have a GitHub account?
           </h2>
-          <p className="text-sm text-muted-foreground leading-relaxed">
+          <p className="text-base text-muted-foreground leading-relaxed">
             GitHub is the platform where open source projects live. It is free
             to sign up and you do not need technical knowledge to create an
             account. Visit{" "}
@@ -140,7 +141,7 @@ export default function OpenSourcePage() {
             </a>{" "}
             to get started.
           </p>
-          <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+          <p className="text-base text-muted-foreground leading-relaxed mt-3">
             Alternatively, just use the{" "}
             <Link href="/submit" className="text-foreground hover:underline">
               web form on the submit page
@@ -149,6 +150,8 @@ export default function OpenSourcePage() {
           </p>
         </section>
       </div>
+
+      <DocsPagination currentPath="/docs/open-source" />
     </div>
   );
 }

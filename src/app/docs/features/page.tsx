@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "Features",
@@ -8,10 +10,11 @@ export const metadata: Metadata = {
 export default function FeaturesPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">Features</h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        Everything OpenAffiliate offers for partners, developers, and AI agents.
-      </p>
+      <DocsHeader
+        group="Getting Started"
+        title="Features"
+        description="Search, rankings, voting, compare, badges, and integration options."
+      />
 
       <div className="space-y-10">
         <section>
@@ -61,12 +64,12 @@ export default function FeaturesPage() {
               <Link
                 key={f.title}
                 href={f.href}
-                className="rounded-lg border border-border/50 bg-muted/20 p-4 hover:bg-muted/40 transition-colors group"
+                className="rounded-2xl border border-border/50 bg-muted/20 p-6 hover:bg-muted/40 transition-colors group"
               >
                 <h3 className="text-sm font-semibold group-hover:text-foreground">
                   {f.title}
                 </h3>
-                <p className="text-[11px] text-muted-foreground mt-1 leading-relaxed">
+                <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
                   {f.desc}
                 </p>
               </Link>
@@ -75,7 +78,7 @@ export default function FeaturesPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-semibold mb-3">Integration options</h2>
+          <h2 id="integration-options" className="text-lg font-semibold mb-3">Integration options</h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {[
               {
@@ -113,6 +116,8 @@ export default function FeaturesPage() {
           </div>
         </section>
       </div>
+
+      <DocsPagination currentPath="/docs/features" />
     </div>
   );
 }

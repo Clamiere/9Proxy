@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "Contributing",
@@ -8,10 +10,13 @@ export const metadata: Metadata = {
 export default function ContributingPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">Contributing</h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        OpenAffiliate is open source. All contributions welcome.
-      </p>
+      <DocsHeader
+        group="Guides"
+        title="Contributing"
+        description="How to contribute programs, fixes, and features."
+      />
+
+      <h2 id="steps" className="text-lg font-semibold mb-3">Steps</h2>
 
       <div className="space-y-3 text-sm text-muted-foreground">
         {[
@@ -60,14 +65,18 @@ export default function ContributingPage() {
         ))}
       </div>
 
-      <div className="mt-6 rounded-lg border border-border/40 bg-muted/10 p-4">
-        <p className="text-xs text-muted-foreground">
+      <h2 id="web-submission" className="text-lg font-semibold mt-10 mb-3">Web submission</h2>
+
+      <div className="rounded-2xl border border-border/40 bg-muted/10 p-6">
+        <p className="text-sm text-muted-foreground">
           Or submit via the web:{" "}
           <Link href="/submit" className="text-foreground hover:underline">
             openaffiliate.dev/submit
           </Link>
         </p>
       </div>
+
+      <DocsPagination currentPath="/docs/contributing" />
     </div>
   );
 }

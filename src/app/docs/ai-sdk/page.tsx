@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { CodeBlock } from "@/components/code-block";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "AI SDK",
@@ -8,19 +10,13 @@ export const metadata: Metadata = {
 export default function AISDKPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">AI SDK</h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        Use the{" "}
-        <a
-          href="https://sdk.vercel.ai"
-          className="text-foreground hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vercel AI SDK
-        </a>{" "}
-        to connect your AI application to OpenAffiliate via MCP.
-      </p>
+      <DocsHeader
+        group="References"
+        title="AI SDK"
+        description="Use the Vercel AI SDK to build AI-powered affiliate tools."
+      />
+
+      <h2 id="usage" className="text-lg font-semibold mb-3">Usage</h2>
 
       <CodeBlock
         label="TypeScript"
@@ -44,6 +40,8 @@ const { text } = await generateText({
 
 await mcpClient.close();`}
       />
+
+      <DocsPagination currentPath="/docs/ai-sdk" />
     </div>
   );
 }

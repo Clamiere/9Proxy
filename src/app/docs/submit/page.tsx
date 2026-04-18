@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CodeBlock } from "@/components/code-block";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "Submit a Program",
@@ -9,11 +11,11 @@ export const metadata: Metadata = {
 export default function SubmitPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">Submit a Program</h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        Three ways to add an affiliate program to the registry. Choose the path
-        that fits you.
-      </p>
+      <DocsHeader
+        group="Guides"
+        title="Submit a Program"
+        description="Add your affiliate program to the open registry."
+      />
 
       <div className="space-y-10">
         {/* Agent flow */}
@@ -22,9 +24,9 @@ export default function SubmitPage() {
             <span className="text-[10px] font-mono bg-emerald-600/10 text-emerald-700 dark:text-emerald-400 px-1.5 py-0.5 rounded">
               PRIMARY
             </span>
-            <h2 className="text-lg font-semibold">Agent flow</h2>
+            <h2 id="agent-flow" className="text-lg font-semibold">Agent flow</h2>
           </div>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             Ask your AI agent to submit a program on your behalf. Add
             OpenAffiliate to your MCP config, then describe what you want to
             submit.
@@ -39,7 +41,7 @@ export default function SubmitPage() {
   }
 }`}
           />
-          <div className="mt-4 rounded-lg border border-border/40 bg-muted/10 p-4">
+          <div className="mt-4 rounded-2xl border border-border/40 bg-muted/10 p-6">
             <p className="text-xs text-muted-foreground mb-1 font-medium">
               Example prompt
             </p>
@@ -63,8 +65,8 @@ export default function SubmitPage() {
 
         {/* Human flow */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">Web form</h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <h2 id="web-form" className="text-lg font-semibold mb-3">Web form</h2>
+          <p className="text-base text-muted-foreground mb-4">
             Use the web form — no GitHub account needed. Fill in the program
             details and we generate the YAML and open a pre-filled GitHub PR on
             your behalf.
@@ -79,8 +81,8 @@ export default function SubmitPage() {
 
         {/* Developer flow */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">Developer flow</h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <h2 id="developer-flow" className="text-lg font-semibold mb-3">Developer flow</h2>
+          <p className="text-base text-muted-foreground mb-4">
             Fork the repo, create a YAML file, and open a PR directly.
           </p>
           <div className="space-y-2 text-sm text-muted-foreground">
@@ -145,6 +147,8 @@ export default function SubmitPage() {
           </div>
         </section>
       </div>
+
+      <DocsPagination currentPath="/docs/submit" />
     </div>
   );
 }

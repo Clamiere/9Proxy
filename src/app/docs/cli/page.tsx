@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "CLI",
@@ -7,13 +9,14 @@ export const metadata: Metadata = {
 export default function CLIPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">CLI</h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        Search and manage affiliate programs from your terminal. No install
-        required.
-      </p>
+      <DocsHeader
+        group="References"
+        title="CLI"
+        description="Search and manage affiliate programs from your terminal."
+      />
 
       <div className="space-y-3">
+        <h2 id="commands" className="text-lg font-semibold mb-3">Commands</h2>
         {[
           {
             cmd: 'npx openaffiliate search "email"',
@@ -62,6 +65,8 @@ export default function CLIPage() {
         <code className="bg-muted px-1 py-0.5 rounded">--json</code> on any
         command to get machine-readable output for piping into other tools.
       </p>
+
+      <DocsPagination currentPath="/docs/cli" />
     </div>
   );
 }

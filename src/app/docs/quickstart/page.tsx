@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CodeBlock } from "@/components/code-block";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "Quick Start",
@@ -9,17 +11,17 @@ export const metadata: Metadata = {
 export default function QuickStartPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">Quick Start</h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        The fastest way to start using OpenAffiliate. Pick the integration that
-        fits your workflow.
-      </p>
+      <DocsHeader
+        group="Getting Started"
+        title="Quick Start"
+        description="Get up and running in 30 seconds with the CLI, MCP, or REST API."
+      />
 
       <div className="space-y-10">
         {/* CLI */}
         <section>
-          <h2 className="text-lg font-semibold mb-1">CLI</h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <h2 id="cli" className="text-lg font-semibold mb-1">CLI</h2>
+          <p className="text-base text-muted-foreground mb-4">
             No install required. Run directly with{" "}
             <code className="bg-muted px-1 py-0.5 rounded text-xs">npx</code>.
           </p>
@@ -45,8 +47,8 @@ export default function QuickStartPage() {
 
         {/* MCP */}
         <section>
-          <h2 className="text-lg font-semibold mb-1">MCP</h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <h2 id="mcp" className="text-lg font-semibold mb-1">MCP</h2>
+          <p className="text-base text-muted-foreground mb-4">
             Add OpenAffiliate to any MCP-compatible AI client (Claude, ChatGPT,
             Cursor) with a single config block.
           </p>
@@ -69,8 +71,8 @@ export default function QuickStartPage() {
 
         {/* API */}
         <section>
-          <h2 className="text-lg font-semibold mb-1">REST API</h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <h2 id="rest-api" className="text-lg font-semibold mb-1">REST API</h2>
+          <p className="text-base text-muted-foreground mb-4">
             Public JSON API. No authentication required.
           </p>
           <CodeBlock
@@ -86,7 +88,7 @@ export default function QuickStartPage() {
 
         {/* Next steps */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">Next steps</h2>
+          <h2 id="next-steps" className="text-lg font-semibold mb-3">Next steps</h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {[
               { title: "CLI", desc: "All commands", href: "/docs/cli" },
@@ -112,6 +114,8 @@ export default function QuickStartPage() {
           </div>
         </section>
       </div>
+
+      <DocsPagination currentPath="/docs/quickstart" />
     </div>
   );
 }

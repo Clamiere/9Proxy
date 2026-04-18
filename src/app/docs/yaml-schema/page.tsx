@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { CodeBlock } from "@/components/code-block";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "YAML Schema",
@@ -8,12 +10,13 @@ export const metadata: Metadata = {
 export default function YAMLSchemaPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">YAML Schema</h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        Every program is a YAML file in{" "}
-        <code className="bg-muted px-1 py-0.5 rounded text-xs">programs/</code>
-        . Key fields:
-      </p>
+      <DocsHeader
+        group="References"
+        title="YAML Schema"
+        description="The structure of a program entry in the registry."
+      />
+
+      <h2 id="schema" className="text-lg font-semibold mb-3">Schema</h2>
 
       <CodeBlock
         label="programs/your-product.yaml"
@@ -65,6 +68,8 @@ submitted_by: "@your-github"`}
         </a>{" "}
         for the full specification. CI validates every PR against this schema.
       </p>
+
+      <DocsPagination currentPath="/docs/yaml-schema" />
     </div>
   );
 }

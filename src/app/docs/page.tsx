@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "What is OpenAffiliate?",
@@ -10,19 +12,17 @@ export const metadata: Metadata = {
 export default function DocsPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">
-        What is OpenAffiliate?
-      </h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        The open registry of affiliate programs. Built for developers and AI
-        agents.
-      </p>
+      <DocsHeader
+        group="Getting Started"
+        title="What is OpenAffiliate?"
+        description="The open registry of affiliate programs. Built for developers and AI agents."
+      />
 
       <div className="space-y-10">
         {/* What is a registry? */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">What is a registry?</h2>
-          <p className="text-sm text-muted-foreground leading-relaxed">
+          <h2 id="what-is-a-registry" className="text-lg font-semibold mb-3">What is a registry?</h2>
+          <p className="text-base text-muted-foreground leading-relaxed">
             A registry is a central directory — a single place where information
             is collected, organized, and made available to anyone who needs it.
             OpenAffiliate is a registry of affiliate programs: every program has
@@ -31,7 +31,7 @@ export default function DocsPage() {
             hunting through dozens of individual affiliate pages, you query one
             place and get consistent, machine-readable data back.
           </p>
-          <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+          <p className="text-base text-muted-foreground leading-relaxed mt-3">
             The data lives in plain YAML files on GitHub. Anyone can read it,
             improve it, or build on top of it. There is no API key required to
             browse programs, and the registry itself is open source.
@@ -40,7 +40,7 @@ export default function DocsPage() {
 
         {/* Who is this for? */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">Who is this for?</h2>
+          <h2 id="who-is-this-for" className="text-lg font-semibold mb-3">Who is this for?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
               {
@@ -58,10 +58,10 @@ export default function DocsPage() {
             ].map((card) => (
               <div
                 key={card.title}
-                className="rounded-lg border border-border/50 bg-muted/20 p-4"
+                className="rounded-2xl border border-border/50 bg-muted/20 p-6"
               >
                 <h3 className="text-sm font-semibold mb-1">{card.title}</h3>
-                <p className="text-[11px] text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {card.desc}
                 </p>
               </div>
@@ -71,7 +71,7 @@ export default function DocsPage() {
 
         {/* How it works */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">How it works</h2>
+          <h2 id="how-it-works" className="text-lg font-semibold mb-3">How it works</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
               {
@@ -92,7 +92,7 @@ export default function DocsPage() {
             ].map((item) => (
               <div
                 key={item.step}
-                className="rounded-lg border border-border/50 bg-muted/20 p-4"
+                className="rounded-2xl border border-border/50 bg-muted/20 p-6"
               >
                 <span className="text-[10px] font-mono text-muted-foreground/50">
                   {item.step}
@@ -100,7 +100,7 @@ export default function DocsPage() {
                 <h3 className="text-sm font-semibold mt-1 mb-1">
                   {item.title}
                 </h3>
-                <p className="text-[11px] text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -110,7 +110,7 @@ export default function DocsPage() {
 
         {/* Quick links */}
         <section>
-          <h2 className="text-lg font-semibold mb-3">Quick links</h2>
+          <h2 id="quick-links" className="text-lg font-semibold mb-3">Quick links</h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {[
               {
@@ -148,6 +148,8 @@ export default function DocsPage() {
           </div>
         </section>
       </div>
+
+      <DocsPagination currentPath="/docs" />
     </div>
   );
 }

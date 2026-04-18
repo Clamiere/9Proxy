@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { CodeBlock } from "@/components/code-block";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "REST API",
@@ -8,17 +10,15 @@ export const metadata: Metadata = {
 export default function APIPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">REST API</h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        Public JSON API. No authentication required. Base URL:{" "}
-        <code className="bg-muted px-1.5 py-0.5 rounded text-xs">
-          https://openaffiliate.dev
-        </code>
-      </p>
+      <DocsHeader
+        group="References"
+        title="REST API"
+        description="Query the registry with simple HTTP requests. No auth required."
+      />
 
       <div className="space-y-10">
         <section>
-          <h2 className="text-lg font-semibold mb-3">Endpoints</h2>
+          <h2 id="endpoints" className="text-lg font-semibold mb-3">Endpoints</h2>
           <div className="space-y-3">
             {[
               {
@@ -42,7 +42,7 @@ export default function APIPage() {
             ].map((item) => (
               <div
                 key={item.path}
-                className="rounded-lg bg-muted/60 dark:bg-zinc-950 border border-border/50 px-4 py-3 flex items-start gap-3 overflow-x-auto"
+                className="rounded-2xl bg-muted/60 dark:bg-zinc-950 border border-border/50 px-4 py-3 flex items-start gap-3 overflow-x-auto"
               >
                 <span className="text-[10px] font-mono font-bold bg-emerald-600/10 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 px-1.5 py-0.5 rounded mt-0.5 shrink-0">
                   {item.method}
@@ -51,7 +51,7 @@ export default function APIPage() {
                   <code className="text-xs font-mono whitespace-nowrap">
                     {item.path}
                   </code>
-                  <p className="text-[11px] text-muted-foreground mt-0.5">
+                  <p className="text-sm text-muted-foreground mt-0.5">
                     {item.desc}
                     {item.params && (
                       <span className="text-muted-foreground/60">
@@ -67,7 +67,7 @@ export default function APIPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-semibold mb-3">Example</h2>
+          <h2 id="example" className="text-lg font-semibold mb-3">Example</h2>
           <CodeBlock
             label="curl"
             code={`curl "https://openaffiliate.dev/api/programs?q=database&type=recurring&verified=true"
@@ -87,6 +87,8 @@ export default function APIPage() {
           />
         </section>
       </div>
+
+      <DocsPagination currentPath="/docs/api" />
     </div>
   );
 }

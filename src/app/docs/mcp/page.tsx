@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { CodeBlock } from "@/components/code-block";
+import { DocsHeader } from "@/components/docs-header";
+import { DocsPagination } from "@/components/docs-pagination";
 
 export const metadata: Metadata = {
   title: "MCP Server",
@@ -8,18 +10,18 @@ export const metadata: Metadata = {
 export default function MCPPage() {
   return (
     <div>
-      <h1 className="text-2xl font-bold tracking-tight">MCP Server</h1>
-      <p className="text-sm text-muted-foreground mt-2 mb-10">
-        Connect AI agents to the registry via Model Context Protocol. Works with
-        Claude, ChatGPT, Cursor, and any MCP-compatible client.
-      </p>
+      <DocsHeader
+        group="References"
+        title="MCP Server"
+        description="Connect AI agents to the registry via Model Context Protocol."
+      />
 
       <div className="space-y-10">
         <section>
-          <h2 className="text-lg font-semibold mb-2">
+          <h2 id="http-transport" className="text-lg font-semibold mb-2">
             HTTP transport (recommended)
           </h2>
-          <p className="text-xs text-muted-foreground mb-3">
+          <p className="text-base text-muted-foreground mb-3">
             For Claude.ai, ChatGPT, and remote MCP clients:
           </p>
           <CodeBlock
@@ -35,8 +37,8 @@ export default function MCPPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-semibold mb-2">stdio transport</h2>
-          <p className="text-xs text-muted-foreground mb-3">
+          <h2 id="stdio-transport" className="text-lg font-semibold mb-2">stdio transport</h2>
+          <p className="text-base text-muted-foreground mb-3">
             For Claude Code, Cursor, and local tools:
           </p>
           <CodeBlock
@@ -53,7 +55,7 @@ export default function MCPPage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-semibold mb-3">Available tools</h2>
+          <h2 id="available-tools" className="text-lg font-semibold mb-3">Available tools</h2>
           <div className="space-y-2">
             {[
               {
@@ -79,6 +81,8 @@ export default function MCPPage() {
           </div>
         </section>
       </div>
+
+      <DocsPagination currentPath="/docs/mcp" />
     </div>
   );
 }
