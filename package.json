@@ -3,13 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "workspaces": [
-    "packages/*",
-    "apps/*",
-    "services/*"
+    "packages/*"
   ],
   "scripts": {
     "dev": "next dev",
-    "prebuild": "npx tsx scripts/build-registry.ts && (npm run build --workspace apps/embed --if-present || true)",
+    "prebuild": "npx tsx scripts/build-registry.ts && (npm run build --workspace @openaffiliate/scoring --if-present || true) && (npm run build --workspace apps/embed --if-present || true)",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
