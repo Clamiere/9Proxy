@@ -260,10 +260,6 @@ function ProgramsTable({
               <th className="w-12 py-3 px-3 text-center text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
                 #
               </th>
-              <th className="w-14 py-3 px-2 text-center text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
-                Vote
-              </th>
-              <SortHeader label="Score" column="score" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-16 text-center" />
               <SortHeader label="Program" column="name" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="text-left min-w-[180px]" />
               <SortHeader label="Commission" column="commission" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-28 text-left" />
               <th className="w-24 py-3 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide hidden sm:table-cell">
@@ -273,6 +269,10 @@ function ProgramsTable({
               <SortHeader label="Payout" column="payout" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-24 text-left hidden lg:table-cell" />
               <SortHeader label="Category" column="category" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-32 text-left hidden lg:table-cell" />
               <SortHeader label="Network" column="network" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-28 text-left hidden md:table-cell" />
+              <SortHeader label="Score" column="score" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-16 text-center" />
+              <th className="w-14 py-3 px-2 text-center text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
+                Vote
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -283,17 +283,6 @@ function ProgramsTable({
               >
                 <td className="py-3 px-3 text-center">
                   <RankBadge rank={i + 1} />
-                </td>
-                <td className="py-3 px-2 text-center">
-                  <VoteButton
-                    slug={program.slug}
-                    initialCount={counts[program.slug] ?? 0}
-                  />
-                </td>
-                <td className="py-3 px-3 text-center">
-                  <span className="inline-flex items-center justify-center h-6 w-10 rounded-md bg-emerald-500/10 text-xs font-semibold text-emerald-600 dark:text-emerald-400 tabular-nums">
-                    {affiliateScore(program)}
-                  </span>
                 </td>
                 <td className="py-3 px-3">
                   <Link
@@ -348,6 +337,17 @@ function ProgramsTable({
                   <span className="text-xs text-muted-foreground">
                     {formatNetworkName(program.network ?? "In-house")}
                   </span>
+                </td>
+                <td className="py-3 px-3 text-center">
+                  <span className="inline-flex items-center justify-center h-6 w-10 rounded-md bg-emerald-500/10 text-xs font-semibold text-emerald-600 dark:text-emerald-400 tabular-nums">
+                    {affiliateScore(program)}
+                  </span>
+                </td>
+                <td className="py-3 px-2 text-center">
+                  <VoteButton
+                    slug={program.slug}
+                    initialCount={counts[program.slug] ?? 0}
+                  />
                 </td>
               </tr>
             ))}
