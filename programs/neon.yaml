@@ -1,7 +1,7 @@
 name: Neon
 slug: neon
 url: https://neon.com
-category: Database
+category: Infrastructure
 tags: [database, postgres, serverless, infrastructure]
 
 commission:

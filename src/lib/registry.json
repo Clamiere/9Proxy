@@ -1,29 +1,22 @@
 {
-  "generated_at": "2026-04-18T01:51:15.395Z",
+  "generated_at": "2026-04-18T01:56:38.380Z",
   "count": 349,
   "categories": [
     "AI",
-    "AI & APIs",
     "Business Operations",
     "Content Management",
     "Customer Support",
-    "Database",
     "Design",
-    "Design / No-code",
     "Developer Tools",
     "E-Commerce",
-    "Email",
     "Email Marketing",
     "Finance",
     "HR & Recruiting",
     "Infrastructure",
-    "Landing Pages",
-    "Link Management",
     "Marketing",
     "Productivity",
     "SaaS",
     "Sales",
-    "Scheduling",
     "Security",
     "Social Media"
   ],
@@ -2828,7 +2821,7 @@
       "name": "Cal.com",
       "slug": "cal-com",
       "url": "https://cal.com",
-      "category": "Scheduling",
+      "category": "Productivity",
       "tags": [
         "scheduling",
         "calendar",
@@ -2857,7 +2850,7 @@
         ]
       },
       "signup_url": "https://cal.com/affiliate-program",
-      "approval": "automatic",
+      "approval": "auto",
       "approval_time": "instant",
       "restrictions": [
         "No brand bidding on 'Cal.com' or 'Calendly alternative' in a misleading way",
@@ -5221,7 +5214,7 @@
         ]
       },
       "signup_url": "https://www.digitalocean.com/affiliates",
-      "approval": "automatic",
+      "approval": "auto",
       "approval_time": "instant",
       "restrictions": [
         "No brand bidding on 'DigitalOcean' or 'DO' keywords in paid search without pre-approval",
@@ -5231,7 +5224,7 @@
       "api_available": false,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": "CJ Affiliate",
+      "network": "cj-affiliate",
       "program_age": "8+ years",
       "description": "DigitalOcean is a cloud computing platform focused on simplicity and developer experience. It offers Droplets (virtual machines), Kubernetes, managed databases (PostgreSQL, MySQL, Redis, MongoDB), App Platform (PaaS), Spaces (S3-compatible object storage), and more. Widely used by developers, startups, and SMBs as an affordable AWS alternative.\nThe affiliate program runs through CJ Affiliate and pays 10% recurring commission on referred users' monthly cloud spend for 12 months. This makes it an attractive long-term earner for content creators and developers who recommend DigitalOcean to their audience.\n",
       "short_description": "Developer-friendly cloud platform for Droplets, Kubernetes, and managed databases",
@@ -5566,7 +5559,7 @@
       "name": "Dub",
       "slug": "dub",
       "url": "https://dub.co",
-      "category": "Link Management",
+      "category": "Marketing",
       "tags": [
         "links",
         "analytics",
@@ -5595,7 +5588,7 @@
         ]
       },
       "signup_url": "https://dub.co/affiliates",
-      "approval": "automatic",
+      "approval": "auto",
       "approval_time": "instant",
       "restrictions": [
         "No brand bidding on 'Dub' or 'dub.co' keywords in paid search",
@@ -6823,7 +6816,7 @@
         ]
       },
       "signup_url": "https://www.framer.com/creators",
-      "approval": "automatic",
+      "approval": "auto",
       "approval_time": "instant",
       "restrictions": [
         "No brand bidding on 'Framer' keywords in paid search",
@@ -9398,7 +9391,7 @@
         ]
       },
       "signup_url": "https://kit.com/affiliates",
-      "approval": "automatic",
+      "approval": "auto",
       "approval_time": "instant",
       "restrictions": [
         "No incentivized traffic or paid email campaigns promoting the affiliate link",
@@ -9632,7 +9625,7 @@
       "name": "Kyma API",
       "slug": "kyma-api",
       "url": "https://kymaapi.com",
-      "category": "AI & APIs",
+      "category": "AI",
       "tags": [
         "ai",
         "api",
@@ -9825,7 +9818,7 @@
       "name": "LanderLab",
       "slug": "landerlab",
       "url": "https://landerlab.io",
-      "category": "Landing Pages",
+      "category": "Marketing",
       "tags": [
         "landing-pages",
         "marketing",
@@ -11331,7 +11324,7 @@
       "name": "Neon",
       "slug": "neon",
       "url": "https://neon.com",
-      "category": "Database",
+      "category": "Infrastructure",
       "tags": [
         "database",
         "postgres",
@@ -11884,7 +11877,7 @@
       "api_available": false,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": "PartnerStack",
+      "network": "partnerstack",
       "program_age": "3+ years",
       "description": "Notion is the all-in-one workspace where teams write, plan, and organize. It combines notes, wikis, databases, and project management in a single flexible tool. Used by millions of individuals and companies ranging from startups to Fortune 500 enterprises.\nThe affiliate program offers up to $50 per activated signup plus 20% of first-year revenue, managed via PartnerStack with a 180-day cookie window. As of April 2026, the program is closed to new applicants — check the signup page for updates on availability.\n",
       "short_description": "All-in-one workspace for notes, wikis, and project management",
@@ -13537,7 +13530,7 @@
       "name": "Postmark",
       "slug": "postmark",
       "url": "https://postmarkapp.com",
-      "category": "Email",
+      "category": "Email Marketing",
       "tags": [
         "email",
         "transactional-email",
@@ -13574,7 +13567,7 @@
       "api_available": false,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": "Rewardful",
+      "network": "rewardful",
       "program_age": "5+ years",
       "description": "Postmark is a transactional email delivery service built for speed and reliability, consistently achieving industry-leading inbox delivery rates. Unlike bulk email services, Postmark is purpose-built for transactional messages — password resets, receipts, notifications, and onboarding emails — with a focus on inbox placement and deliverability transparency.\nThe referral partner program pays 20% recurring commission for 12 months on all charges, including overages and add-ons. The program is managed through Rewardful with a $100 minimum payout via PayPal. This is a real affiliate program with a public application page.\n",
       "short_description": "Fast, reliable transactional email delivery with industry-leading inbox rates",
@@ -20032,7 +20025,7 @@
       "api_available": true,
       "dedicated_manager": false,
       "dashboard_url": "https://partners.dub.co/v0",
-      "network": "Dub Partners",
+      "network": "dub",
       "program_age": "1+ year",
       "description": "v0 is Vercel's AI-powered UI generation tool that turns text prompts and screenshots into production-ready React components using shadcn/ui and Tailwind CSS. It integrates directly with Next.js and can deploy to Vercel with a single click. Widely used by developers and designers for rapid prototyping, landing pages, and component scaffolding.\nThe v0 affiliate program is available via Dub Partners. Earn $5 per qualified lead and 30% of subscription revenue for 6 months. The hybrid payout model rewards both top-of-funnel content and long-term subscription referrals. Apply at partners.dub.co/v0.\n",
       "short_description": "AI UI generator — turn prompts into React components and ship to Vercel",
@@ -20618,7 +20611,7 @@
       "name": "Webflow",
       "slug": "webflow",
       "url": "https://webflow.com",
-      "category": "Design / No-code",
+      "category": "Design",
       "tags": [
         "no-code",
         "website-builder",

@@ -1,7 +1,7 @@
 name: Postmark
 slug: postmark
 url: https://postmarkapp.com
-category: Email
+category: Email Marketing
 tags: [email, transactional-email, smtp, deliverability, developer-tools]
 
 commission:
@@ -32,7 +32,7 @@ marketing_materials: false
 api_available: false
 dedicated_manager: false
 dashboard_url: null
-network: Rewardful
+network: rewardful
 program_age: "5+ years"
 
 description: >

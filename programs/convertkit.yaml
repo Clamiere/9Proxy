@@ -22,7 +22,7 @@ payout:
   methods: [paypal, bank]
 
 signup_url: https://kit.com/affiliates
-approval: automatic
+approval: auto
 approval_time: "instant"
 restrictions:
   - "No incentivized traffic or paid email campaigns promoting the affiliate link"

@@ -1,7 +1,7 @@
 name: Dub
 slug: dub
 url: https://dub.co
-category: Link Management
+category: Marketing
 tags: [links, analytics, url-shortener, open-source, referral-tracking, marketing]
 
 commission:
@@ -22,7 +22,7 @@ payout:
   methods: [bank, paypal]
 
 signup_url: https://dub.co/affiliates
-approval: automatic
+approval: auto
 approval_time: "instant"
 restrictions:
   - "No brand bidding on 'Dub' or 'dub.co' keywords in paid search"

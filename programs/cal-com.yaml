@@ -1,7 +1,7 @@
 name: Cal.com
 slug: cal-com
 url: https://cal.com
-category: Scheduling
+category: Productivity
 tags: [scheduling, calendar, meetings, open-source, booking, productivity]
 
 commission:
@@ -22,7 +22,7 @@ payout:
   methods: [bank, paypal]
 
 signup_url: https://cal.com/affiliate-program
-approval: automatic
+approval: auto
 approval_time: "instant"
 restrictions:
   - "No brand bidding on 'Cal.com' or 'Calendly alternative' in a misleading way"

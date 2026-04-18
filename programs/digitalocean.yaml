@@ -22,7 +22,7 @@ payout:
   methods: [bank, paypal, wire]
 
 signup_url: https://www.digitalocean.com/affiliates
-approval: automatic
+approval: auto
 approval_time: "instant"
 restrictions:
   - "No brand bidding on 'DigitalOcean' or 'DO' keywords in paid search without pre-approval"
@@ -32,7 +32,7 @@ marketing_materials: true
 api_available: false
 dedicated_manager: false
 dashboard_url: null
-network: CJ Affiliate
+network: cj-affiliate
 program_age: "8+ years"
 
 description: >

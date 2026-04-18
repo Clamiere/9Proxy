@@ -34,7 +34,7 @@ marketing_materials: true
 api_available: false
 dedicated_manager: false
 dashboard_url: null
-network: PartnerStack
+network: partnerstack
 program_age: "3+ years"
 
 description: >
