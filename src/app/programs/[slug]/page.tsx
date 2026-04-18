@@ -27,7 +27,8 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { ProgramLogo } from "@/components/program-logo";
 import { CopyButton } from "@/components/copy-button";
-import { programs, getProgram } from "@/lib/programs";
+import { VoteButton } from "@/components/vote-button";
+import { programs, getProgram, parseCommissionRate } from "@/lib/programs";
 
 export function generateStaticParams() {
   return programs.map((p) => ({ slug: p.slug }));
@@ -103,6 +104,25 @@ export default async function ProgramPage({
   if (!program) notFound();
 
   const joinUrl = program.signupUrl ?? program.url;
+
+  // Affiliate Score
+  const commRate = parseCommissionRate(program.commission.rate);
+  const score = Math.round(
+    Math.min(commRate / 50, 1) * 50 +
+    Math.min(program.cookieDays / 90, 1) * 20 +
+    (program.commission.type === "recurring" ? 20 : program.commission.type === "tiered" ? 10 : 0) +
+    (program.verified ? 10 : 0)
+  );
+  const categoryPrograms = programs.filter((p) => p.category === program.category);
+  const categoryAvg = Math.round(
+    categoryPrograms.reduce((sum, p) => {
+      const r = parseCommissionRate(p.commission.rate);
+      return sum + Math.min(r / 50, 1) * 50 + Math.min(p.cookieDays / 90, 1) * 20 +
+        (p.commission.type === "recurring" ? 20 : p.commission.type === "tiered" ? 10 : 0) +
+        (p.verified ? 10 : 0);
+    }, 0) / categoryPrograms.length
+  );
+  const scoreDiff = score - categoryAvg;
 
   const approvalConfig = {
     auto: {
@@ -196,7 +216,13 @@ export default async function ProgramPage({
       </div>
 
       {/* Stat badges row */}
-      <div className="flex flex-wrap gap-2 mb-8">
+      <div className="flex flex-wrap items-center gap-2 mb-8">
+        <div className="inline-flex items-center gap-1.5 rounded-md border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+          Score: {score}
+          <span className={`text-[10px] font-normal ${scoreDiff >= 0 ? "text-emerald-600 dark:text-emerald-400" : "text-red-500"}`}>
+            ({scoreDiff >= 0 ? "+" : ""}{scoreDiff} vs avg)
+          </span>
+        </div>
         <StatBadge
           icon={<DollarSign className="h-3 w-3" />}
           label={`${program.commission.rate}% ${program.commission.type}`}
@@ -221,6 +247,9 @@ export default async function ProgramPage({
           icon={<Globe className="h-3 w-3" />}
           label={program.category}
         />
+        <div className="ml-auto">
+          <VoteButton slug={program.slug} initialCount={0} />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
