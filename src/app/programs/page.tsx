@@ -4,7 +4,6 @@ import { Suspense, useState, useMemo, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
 import {
-  Search,
   ChevronLeft,
   ChevronRight,
   LayoutGrid,
@@ -44,16 +43,6 @@ const COMMISSION_TYPE_LABELS: Record<string, string> = {
   tiered: "Tiered",
   hybrid: "Hybrid",
 };
-
-const SEARCH_SUGGESTIONS = [
-  "email marketing",
-  "database",
-  "design",
-  "AI tools",
-  "hosting",
-  "video",
-  "SEO",
-];
 
 type ViewMode = "grid" | "list";
 
@@ -197,7 +186,6 @@ function ProgramsContent() {
   );
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState<number>(25);
-  const [searchFocused, setSearchFocused] = useState(false);
   const [view, setView] = usePersistedView();
 
   // Sync state to URL
@@ -346,43 +334,6 @@ function ProgramsContent() {
         </p>
       </div>
 
-      {/* Search bar */}
-      <div className="relative mb-4">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-        <input
-          type="text"
-          aria-label="Search affiliate programs"
-          placeholder="Search by name, category, or keyword..."
-          className="w-full h-12 pl-12 pr-4 rounded-xl border border-border/50 bg-muted/30 text-sm focus:outline-none focus:border-border focus:bg-muted/50 transition-colors"
-          value={query}
-          onChange={(e) => handleSearch(e.target.value)}
-          onFocus={() => setSearchFocused(true)}
-          onBlur={() => setTimeout(() => setSearchFocused(false), 200)}
-        />
-
-        {/* Keyword suggestions */}
-        {searchFocused && !query && (
-          <div className="absolute top-full left-0 right-0 mt-2 rounded-xl border border-border/50 bg-card p-3 z-10">
-            <p className="text-[10px] text-muted-foreground/60 uppercase tracking-wide mb-2">
-              Popular searches
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {SEARCH_SUGGESTIONS.map((s) => (
-                <button
-                  key={s}
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    handleSearch(s);
-                  }}
-                  className="rounded-lg px-3 py-1.5 text-xs bg-muted/50 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-                >
-                  {s}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
 
       {/* Filter toolbar */}
       <div className="flex flex-wrap items-center gap-2 mb-4">
