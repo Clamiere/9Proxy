@@ -1,0 +1,76 @@
+name: "OpenAffiliate Validate"
+description: "Validate .openaffiliate.json programs against the OpenAffiliate registry"
+branding:
+  icon: "check-circle"
+  color: "blue"
+
+inputs:
+  config-path:
+    description: "Path to .openaffiliate.json"
+    required: false
+    default: ".openaffiliate.json"
+  api-base:
+    description: "OpenAffiliate API base URL"
+    required: false
+    default: "https://openaffiliate.dev"
+
+outputs:
+  valid:
+    description: "Whether all programs are valid"
+    value: ${{ steps.validate.outputs.valid }}
+  total:
+    description: "Total programs checked"
+    value: ${{ steps.validate.outputs.total }}
+  invalid:
+    description: "Number of invalid programs"
+    value: ${{ steps.validate.outputs.invalid }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Validate programs
+      id: validate
+      shell: bash
+      run: |
+        CONFIG="${{ inputs.config-path }}"
+        API="${{ inputs.api-base }}"
+
+        if [ ! -f "$CONFIG" ]; then
+          echo "No $CONFIG found — skipping validation"
+          echo "valid=true" >> $GITHUB_OUTPUT
+          echo "total=0" >> $GITHUB_OUTPUT
+          echo "invalid=0" >> $GITHUB_OUTPUT
+          exit 0
+        fi
+
+        SLUGS=$(node -e "
+          const c = require('./$CONFIG');
+          (c.programs || []).forEach(p => console.log(p.slug));
+        ")
+
+        TOTAL=0
+        INVALID=0
+        INVALID_LIST=""
+
+        for SLUG in $SLUGS; do
+          TOTAL=$((TOTAL + 1))
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$API/api/programs/$SLUG")
+          if [ "$STATUS" = "200" ]; then
+            echo "  ✓ $SLUG"
+          else
+            echo "  ✗ $SLUG (HTTP $STATUS)"
+            INVALID=$((INVALID + 1))
+            INVALID_LIST="$INVALID_LIST $SLUG"
+          fi
+        done
+
+        echo ""
+        echo "Checked $TOTAL programs, $INVALID invalid"
+        echo "valid=$( [ $INVALID -eq 0 ] && echo true || echo false )" >> $GITHUB_OUTPUT
+        echo "total=$TOTAL" >> $GITHUB_OUTPUT
+        echo "invalid=$INVALID" >> $GITHUB_OUTPUT
+
+        if [ $INVALID -gt 0 ]; then
+          echo "::error::Invalid programs:$INVALID_LIST"
+          exit 1
+        fi
