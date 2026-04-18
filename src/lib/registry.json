@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T00:05:01.850Z",
+  "generated_at": "2026-04-18T00:07:07.277Z",
   "count": 50,
   "categories": [
     "AI",
@@ -1418,7 +1418,7 @@
           "paypal"
         ]
       },
-      "signup_url": "https://kymaapi.com/affiliates",
+      "signup_url": "https://kymaapi.com",
       "approval": "auto",
       "approval_time": "instant",
       "restrictions": [],

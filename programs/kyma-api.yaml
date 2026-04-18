@@ -21,7 +21,7 @@ payout:
   frequency: monthly
   methods: [bank, paypal]
 
-signup_url: https://kymaapi.com/affiliates
+signup_url: https://kymaapi.com
 approval: auto
 approval_time: "instant"
 restrictions: []
