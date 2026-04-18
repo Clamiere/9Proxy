@@ -1,32 +1,81 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { CopyButton } from "@/components/copy-button";
 
 export const metadata: Metadata = {
   title: "Documentation — OpenAffiliate",
   description:
-    "Learn how to use the OpenAffiliate CLI, REST API, and MCP server to search and integrate affiliate programs.",
+    "Learn how to use the OpenAffiliate CLI, REST API, MCP server, and SDK to search and integrate affiliate programs.",
   openGraph: {
     title: "Documentation — OpenAffiliate",
     description:
-      "CLI, API, and MCP documentation for the open affiliate program registry.",
+      "CLI, API, MCP, and SDK documentation for the open affiliate program registry.",
     url: "https://openaffiliate.dev/docs",
     siteName: "OpenAffiliate",
   },
 };
 
+function CodeBlock({ code, label }: { code: string; label?: string }) {
+  return (
+    <div className="rounded-lg bg-muted/60 dark:bg-zinc-950 border border-border/50 overflow-hidden">
+      {label && (
+        <div className="flex items-center justify-between px-4 py-2 border-b border-border/30 bg-muted/30">
+          <span className="text-[10px] font-mono text-muted-foreground uppercase tracking-wide">
+            {label}
+          </span>
+          <CopyButton text={code} />
+        </div>
+      )}
+      <pre className="p-4 overflow-x-auto text-xs font-mono text-emerald-700 dark:text-emerald-400 leading-relaxed">
+        <code>{code}</code>
+      </pre>
+    </div>
+  );
+}
+
+function SectionNav() {
+  const sections = [
+    { id: "cli", label: "CLI" },
+    { id: "api", label: "API" },
+    { id: "mcp", label: "MCP" },
+    { id: "ai-sdk", label: "AI SDK" },
+    { id: "sdk", label: "SDK" },
+    { id: "yaml", label: "YAML Schema" },
+    { id: "contributing", label: "Contributing" },
+  ];
+
+  return (
+    <nav className="flex flex-wrap gap-2 mb-10 pb-6 border-b border-border/30">
+      {sections.map((s) => (
+        <a
+          key={s.id}
+          href={`#${s.id}`}
+          className="rounded-md border border-border/50 bg-muted/20 px-3 py-1.5 text-xs font-medium text-muted-foreground hover:text-foreground hover:bg-muted/40 transition-colors"
+        >
+          {s.label}
+        </a>
+      ))}
+    </nav>
+  );
+}
+
 export default function DocsPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-10">
       <h1 className="text-2xl font-bold tracking-tight">Documentation</h1>
-      <p className="text-sm text-muted-foreground mt-2">
+      <p className="text-sm text-muted-foreground mt-2 mb-8">
         How to use OpenAffiliate as a developer, agent builder, or contributor.
       </p>
 
-      <div className="mt-8 space-y-10">
+      <SectionNav />
+
+      <div className="space-y-12">
         {/* CLI */}
-        <section>
-          <h2 className="text-lg font-semibold mb-4">CLI</h2>
+        <section id="cli">
+          <h2 className="text-lg font-semibold mb-2">CLI</h2>
           <p className="text-sm text-muted-foreground mb-4">
-            Search and manage affiliate programs from your terminal.
+            Search and manage affiliate programs from your terminal. No install
+            required.
           </p>
           <div className="space-y-3">
             {[
@@ -35,20 +84,28 @@ export default function DocsPage() {
                 desc: "Search programs by keyword",
               },
               {
-                cmd: "npx openaffiliate search --category Database",
-                desc: "Filter by category",
+                cmd: "npx openaffiliate search --category Database --type recurring",
+                desc: "Filter by category and commission type",
               },
               {
-                cmd: "npx openaffiliate search --min-commission 20 --type recurring",
-                desc: "Filter by commission",
+                cmd: "npx openaffiliate search --min-commission 20 --json",
+                desc: "Filter by commission, output as JSON",
               },
               {
                 cmd: "npx openaffiliate info stripe",
-                desc: "Get program details",
+                desc: "Get full program details",
               },
               {
-                cmd: "npx openaffiliate add kyma-api",
-                desc: "Add program to your project",
+                cmd: "npx openaffiliate info stripe --json",
+                desc: "Get details as JSON (for scripting)",
+              },
+              {
+                cmd: "npx openaffiliate categories",
+                desc: "List all categories with program counts",
+              },
+              {
+                cmd: "npx openaffiliate add supabase",
+                desc: "Add program to your .openaffiliate.json",
               },
             ].map((item) => (
               <div
@@ -64,30 +121,42 @@ export default function DocsPage() {
               </div>
             ))}
           </div>
+          <p className="text-xs text-muted-foreground mt-3">
+            Tip: Use <code className="bg-muted px-1 py-0.5 rounded">--json</code> on
+            any command to get machine-readable output for piping into other tools.
+          </p>
         </section>
 
         {/* API */}
-        <section>
-          <h2 className="text-lg font-semibold mb-4">API</h2>
+        <section id="api">
+          <h2 className="text-lg font-semibold mb-2">API</h2>
           <p className="text-sm text-muted-foreground mb-4">
-            Public JSON API. No authentication required.
+            Public JSON API. No authentication required. Base URL:{" "}
+            <code className="bg-muted px-1.5 py-0.5 rounded text-xs">
+              https://openaffiliate.dev
+            </code>
           </p>
+
+          <h3 className="text-sm font-semibold mb-3 mt-6">Endpoints</h3>
           <div className="space-y-3">
             {[
               {
                 method: "GET",
                 path: "/api/programs",
-                desc: "List all programs (supports ?q=, ?category=, ?type=)",
+                desc: "List all programs",
+                params: "?q=, ?category=, ?type=, ?verified=",
               },
               {
                 method: "GET",
-                path: "/api/programs/[slug]",
-                desc: "Get program details",
+                path: "/api/programs/{slug}",
+                desc: "Get program details by slug",
+                params: null,
               },
               {
                 method: "GET",
                 path: "/api/categories",
-                desc: "List all categories with counts",
+                desc: "List all categories with program counts",
+                params: null,
               },
             ].map((item) => (
               <div
@@ -98,110 +167,294 @@ export default function DocsPage() {
                   {item.method}
                 </span>
                 <div className="min-w-0">
-                  <code className="text-xs font-mono whitespace-nowrap">{item.path}</code>
+                  <code className="text-xs font-mono whitespace-nowrap">
+                    {item.path}
+                  </code>
                   <p className="text-[11px] text-muted-foreground mt-0.5">
                     {item.desc}
+                    {item.params && (
+                      <span className="text-muted-foreground/60">
+                        {" "}
+                        ({item.params})
+                      </span>
+                    )}
                   </p>
                 </div>
               </div>
             ))}
           </div>
+
+          <h3 className="text-sm font-semibold mb-3 mt-6">Example</h3>
+          <CodeBlock
+            label="curl"
+            code={`curl "https://openaffiliate.dev/api/programs?q=database&type=recurring&verified=true"
+
+# Response
+[
+  {
+    "slug": "supabase",
+    "name": "Supabase",
+    "commission": { "type": "recurring", "rate": "10%" },
+    "cookieDays": 60,
+    "category": "Database",
+    "verified": true,
+    ...
+  }
+]`}
+          />
         </section>
 
         {/* MCP */}
-        <section>
-          <h2 className="text-lg font-semibold mb-4">MCP Connector</h2>
+        <section id="mcp">
+          <h2 className="text-lg font-semibold mb-2">MCP Server</h2>
           <p className="text-sm text-muted-foreground mb-4">
-            Connect AI agents to the registry via Model Context Protocol.
+            Connect AI agents to the registry via Model Context Protocol. Works
+            with Claude, ChatGPT, Cursor, and any MCP-compatible client.
           </p>
-          <div className="rounded-lg bg-muted/60 dark:bg-zinc-950 border border-border/50 p-4 overflow-x-auto">
-            <p className="text-xs text-muted-foreground mb-2">
-              Add to your MCP config:
-            </p>
-            <pre className="text-xs font-mono text-emerald-700/80 dark:text-emerald-400/80 leading-relaxed">
-              {`{
+
+          <h3 className="text-sm font-semibold mb-3">
+            HTTP transport (recommended)
+          </h3>
+          <p className="text-xs text-muted-foreground mb-2">
+            For Claude.ai, ChatGPT, and remote MCP clients:
+          </p>
+          <CodeBlock
+            label="mcp config"
+            code={`{
   "mcpServers": {
     "openaffiliate": {
       "url": "https://openaffiliate.dev/api/mcp"
     }
   }
 }`}
-            </pre>
-          </div>
-          <div className="mt-4">
-            <p className="text-xs text-muted-foreground mb-2">
-              Available tools:
-            </p>
-            <ul className="text-xs text-muted-foreground space-y-1.5">
-              <li>
-                <code className="bg-muted px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-400">
-                  search_programs
-                </code>{" "}
-                — Search by query, category, commission type
-              </li>
-              <li>
-                <code className="bg-muted px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-400">
-                  get_program
-                </code>{" "}
-                — Get full program details including agent instructions
-              </li>
-              <li>
-                <code className="bg-muted px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-400">
-                  list_categories
-                </code>{" "}
-                — Browse available categories
-              </li>
-            </ul>
+          />
+
+          <h3 className="text-sm font-semibold mb-3 mt-6">stdio transport</h3>
+          <p className="text-xs text-muted-foreground mb-2">
+            For Claude Code, Cursor, and local tools:
+          </p>
+          <CodeBlock
+            label="mcp config"
+            code={`{
+  "mcpServers": {
+    "openaffiliate": {
+      "command": "npx",
+      "args": ["-y", "openaffiliate-mcp"]
+    }
+  }
+}`}
+          />
+
+          <h3 className="text-sm font-semibold mb-3 mt-6">Available tools</h3>
+          <div className="space-y-2">
+            {[
+              {
+                name: "search_programs",
+                desc: "Search by query, category, commission type, verified status",
+              },
+              {
+                name: "get_program",
+                desc: "Get full program details including agent instructions, restrictions, signup URL",
+              },
+              {
+                name: "list_categories",
+                desc: "List all categories with program counts",
+              },
+            ].map((tool) => (
+              <div key={tool.name} className="flex items-start gap-3 text-xs">
+                <code className="bg-muted px-1.5 py-0.5 rounded text-emerald-700 dark:text-emerald-400 shrink-0">
+                  {tool.name}
+                </code>
+                <span className="text-muted-foreground">{tool.desc}</span>
+              </div>
+            ))}
           </div>
         </section>
 
-        {/* Contributing */}
-        <section>
-          <h2 className="text-lg font-semibold mb-4">Contributing</h2>
+        {/* AI SDK */}
+        <section id="ai-sdk">
+          <h2 className="text-lg font-semibold mb-2">AI SDK</h2>
           <p className="text-sm text-muted-foreground mb-4">
-            OpenAffiliate is open source. Contributions welcome.
+            Use the{" "}
+            <a
+              href="https://sdk.vercel.ai"
+              className="text-foreground hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Vercel AI SDK
+            </a>{" "}
+            to connect your AI application to OpenAffiliate via MCP.
+          </p>
+          <CodeBlock
+            label="TypeScript"
+            code={`import { createMCPClient } from "@ai-sdk/mcp";
+import { generateText } from "ai";
+import { anthropic } from "@ai-sdk/anthropic";
+
+const mcpClient = await createMCPClient({
+  transport: {
+    type: "sse",
+    url: "https://openaffiliate.dev/api/mcp",
+  },
+});
+const tools = await mcpClient.tools();
+
+const { text } = await generateText({
+  model: anthropic("claude-sonnet-4.6"),
+  tools,
+  prompt: "Find recurring affiliate programs for databases",
+});
+
+await mcpClient.close();`}
+          />
+        </section>
+
+        {/* SDK */}
+        <section id="sdk">
+          <h2 className="text-lg font-semibold mb-2">SDK</h2>
+          <p className="text-sm text-muted-foreground mb-4">
+            TypeScript SDK for direct programmatic access. Install via npm:
+          </p>
+          <CodeBlock label="install" code="npm install openaffiliate-sdk" />
+          <div className="mt-4" />
+          <CodeBlock
+            label="TypeScript"
+            code={`import { searchPrograms, getProgram } from "openaffiliate-sdk";
+
+// Search with filters
+const results = await searchPrograms("email", {
+  commission_type: "recurring",
+  category: "Email Marketing",
+});
+
+// Get a specific program
+const stripe = await getProgram("stripe");
+console.log(stripe.commission.rate); // "25%"
+console.log(stripe.agentPrompt);     // When to recommend`}
+          />
+        </section>
+
+        {/* YAML Schema */}
+        <section id="yaml">
+          <h2 className="text-lg font-semibold mb-2">YAML Schema</h2>
+          <p className="text-sm text-muted-foreground mb-4">
+            Every program is a YAML file in{" "}
+            <code className="bg-muted px-1 py-0.5 rounded text-xs">programs/</code>.
+            Key fields:
+          </p>
+          <CodeBlock
+            label="programs/your-product.yaml"
+            code={`name: Your Product
+slug: your-product
+url: https://yourproduct.com
+category: Developer Tools
+tags: [saas, api, developer]
+
+commission:
+  type: recurring          # recurring | one-time | tiered | hybrid
+  rate: "25%"
+  currency: USD
+  duration: "12 months"
+
+cookie_days: 30
+signup_url: https://yourproduct.com/affiliates
+approval: auto             # auto | manual | invite-only
+approval_time: "instant"
+
+payout:
+  minimum: 50
+  currency: USD
+  frequency: monthly
+  methods: [bank, paypal, crypto]
+
+description: >
+  What your product does and what the affiliate program offers.
+short_description: "One-line description for search results"
+
+agents:
+  prompt: >
+    When AI agents should recommend this product and why.
+  keywords: [keyword1, keyword2]
+  use_cases:
+    - "When a user needs X"
+    - "Replacing Y with a better alternative"
+
+verified: false
+submitted_by: "@your-github"`}
+          />
+          <p className="text-xs text-muted-foreground mt-3">
+            See{" "}
+            <a
+              href="https://github.com/Affitor/open-affiliate/blob/main/schema/program.schema.json"
+              className="text-foreground hover:underline"
+            >
+              program.schema.json
+            </a>{" "}
+            for the full specification. CI validates every PR against this schema.
+          </p>
+        </section>
+
+        {/* Contributing */}
+        <section id="contributing">
+          <h2 className="text-lg font-semibold mb-2">Contributing</h2>
+          <p className="text-sm text-muted-foreground mb-4">
+            OpenAffiliate is open source. All contributions welcome.
           </p>
           <div className="space-y-3 text-sm text-muted-foreground">
-            <div className="flex gap-3">
-              <span className="text-xs font-mono text-muted-foreground/50 mt-0.5">
-                01
-              </span>
-              <p>
-                Fork{" "}
-                <a
-                  href="https://github.com/Affitor/open-affiliate"
-                  className="text-foreground hover:underline"
-                >
-                  Affitor/open-affiliate
-                </a>
-              </p>
-            </div>
-            <div className="flex gap-3">
-              <span className="text-xs font-mono text-muted-foreground/50 mt-0.5">
-                02
-              </span>
-              <p>
-                Add your program YAML to{" "}
-                <code className="bg-muted px-1.5 py-0.5 rounded text-xs">
-                  programs/
-                </code>
-              </p>
-            </div>
-            <div className="flex gap-3">
-              <span className="text-xs font-mono text-muted-foreground/50 mt-0.5">
-                03
-              </span>
-              <p>Open a pull request. CI validates the schema automatically.</p>
-            </div>
-            <div className="flex gap-3">
-              <span className="text-xs font-mono text-muted-foreground/50 mt-0.5">
-                04
-              </span>
-              <p>
-                Community reviews. Merged programs appear on the site within
-                minutes.
-              </p>
-            </div>
+            {[
+              {
+                step: "01",
+                content: (
+                  <>
+                    Fork{" "}
+                    <a
+                      href="https://github.com/Affitor/open-affiliate"
+                      className="text-foreground hover:underline"
+                    >
+                      Affitor/open-affiliate
+                    </a>
+                  </>
+                ),
+              },
+              {
+                step: "02",
+                content: (
+                  <>
+                    Create a YAML file in{" "}
+                    <code className="bg-muted px-1.5 py-0.5 rounded text-xs">
+                      programs/your-product.yaml
+                    </code>
+                  </>
+                ),
+              },
+              {
+                step: "03",
+                content:
+                  "Open a pull request. CI validates the schema and verifies your signup URL automatically.",
+              },
+              {
+                step: "04",
+                content:
+                  "Community reviews and merges. Your program appears on the site within minutes.",
+              },
+            ].map((item) => (
+              <div key={item.step} className="flex gap-3">
+                <span className="text-xs font-mono text-muted-foreground/50 mt-0.5">
+                  {item.step}
+                </span>
+                <p>{item.content}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-6 rounded-lg border border-border/40 bg-muted/10 p-4">
+            <p className="text-xs text-muted-foreground">
+              Or submit via the web:{" "}
+              <Link href="/submit" className="text-foreground hover:underline">
+                openaffiliate.dev/submit
+              </Link>
+            </p>
           </div>
         </section>
       </div>

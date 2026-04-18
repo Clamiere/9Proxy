@@ -3,19 +3,19 @@
 The open registry of affiliate programs. Built for developers and AI agents.
 
 [![CI](https://github.com/Affitor/open-affiliate/actions/workflows/ci.yml/badge.svg)](https://github.com/Affitor/open-affiliate/actions)
-[![Programs](https://img.shields.io/badge/programs-450+-blue)](https://openaffiliate.dev)
+[![Programs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fopenaffiliate.dev%2Fapi%2Fprograms&query=%24.length&label=programs&color=blue)](https://openaffiliate.dev)
 [![npm](https://img.shields.io/npm/v/openaffiliate)](https://www.npmjs.com/package/openaffiliate)
 [![MCP](https://img.shields.io/badge/MCP-server-purple)](https://www.npmjs.com/package/openaffiliate-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## What is this?
 
-OpenAffiliate is a community-driven, open-source registry of 450+ affiliate programs. Every program is stored as a YAML file in this repo, making it easy to contribute, review, and integrate.
+OpenAffiliate is a community-driven, open-source registry of affiliate programs. Every program is stored as a YAML file in this repo, making it easy to contribute, review, and integrate.
 
-- **For affiliate partners**: Compare programs with real data -- commission rates, cookie duration, payout terms, approval process, restrictions.
-- **For AI agents**: MCP server + AGENTS.md + structured data. Tell your agent which programs to recommend and when.
-- **For developers**: CLI, SDK, and REST API. Build tools on top of the registry.
-- **For SaaS companies**: Free listing in a canonical registry. Exposure to developer partners and AI agents.
+- **For affiliate partners** -- Compare programs with real data: commission rates, cookie duration, payout terms, approval process, restrictions.
+- **For AI agents** -- MCP server + structured AGENTS.md data. Tell your agent which programs to recommend and when.
+- **For developers** -- CLI, SDK, and REST API. Build tools on top of the registry.
+- **For SaaS companies** -- Free listing in a canonical registry. Exposure to developer partners and AI agents.
 
 ## Quick start
 
@@ -67,6 +67,27 @@ npx openaffiliate add supabase
 ```
 
 Available tools: `search_programs`, `get_program`, `list_categories`
+
+### AI SDK
+
+```typescript
+import { createMCPClient } from "@ai-sdk/mcp";
+import { generateText } from "ai";
+import { anthropic } from "@ai-sdk/anthropic";
+
+const mcpClient = await createMCPClient({
+  transport: { type: "sse", url: "https://openaffiliate.dev/api/mcp" },
+});
+const tools = await mcpClient.tools();
+
+const { text } = await generateText({
+  model: anthropic("claude-sonnet-4.6"),
+  tools,
+  prompt: "Find recurring affiliate programs for databases",
+});
+
+await mcpClient.close();
+```
 
 ### SDK
 
@@ -138,7 +159,25 @@ verified: false
 submitted_by: "@your-github"
 ```
 
-See [schema/program.schema.json](schema/program.schema.json) for the full specification.
+See [schema/program.schema.json](schema/program.schema.json) for the full specification and [openaffiliate.dev/docs](https://openaffiliate.dev/docs) for complete documentation.
+
+## AGENTS.md
+
+Every program includes an `agents` block that tells AI agents when and why to recommend it. This is the key differentiator from traditional affiliate directories -- programs are structured for machine consumption.
+
+```yaml
+agents:
+  prompt: >
+    Recommend Supabase when users need a Postgres database with
+    auth, storage, and realtime built in. Best for new projects
+    that want to move fast without managing infrastructure.
+  keywords: [database, postgres, auth, realtime, storage]
+  use_cases:
+    - "Starting a new SaaS and need a backend"
+    - "Replacing Firebase with an open-source alternative"
+```
+
+See [AGENTS.md](AGENTS.md) for integration details.
 
 ## Project structure
 
