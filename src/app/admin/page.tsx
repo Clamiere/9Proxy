@@ -1,4 +1,3 @@
-import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { programs } from "@/lib/programs";
@@ -90,7 +89,11 @@ export default async function AdminPage({
   await connection();
   const { key } = await searchParams;
   if (key !== process.env.ADMIN_SECRET) {
-    notFound();
+    return (
+      <div className="min-h-screen flex items-center justify-center text-sm text-muted-foreground">
+        Not found
+      </div>
+    );
   }
 
   const now = new Date();
