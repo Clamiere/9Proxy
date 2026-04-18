@@ -91,11 +91,25 @@ See [schema/program.schema.json](schema/program.schema.json) for all fields.
 
 ## Updating a program
 
-Open a PR modifying the existing YAML file. Include a link to the source of the updated information.
+Commission rates, cookie durations, and program terms change. Help keep the registry accurate:
+
+1. Fork this repo
+2. Edit the existing `programs/{slug}.yaml` file
+3. Open a pull request to `main`
+
+**What CI does automatically:**
+- Validates your changes against the schema
+- Verifies the signup URL still works
+- Shows a diff of exactly what changed
+- Auto-merges if all checks pass
+
+You can update any field. No need to create a new file.
+
+> **Tip:** Include a link to the source of the updated information in your PR description.
 
 ## Reporting issues
 
-If you find incorrect data, open an issue with the program slug and what needs to be corrected.
+If you find incorrect data, [open an issue](https://github.com/Affitor/open-affiliate/issues/new?template=bug_report.yml) with the program slug and what needs to be corrected.
 
 ## Maintainer docs
 

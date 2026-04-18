@@ -155,6 +155,27 @@ async function downloadLogo(slug: string, url: string): Promise<boolean> {
   return false;
 }
 
+function getNewFiles(): Set<string> {
+  try {
+    const diff = execSync("git diff --name-only --diff-filter=A origin/main...HEAD -- programs/", {
+      encoding: "utf-8",
+      cwd: ROOT,
+    }).trim();
+    return new Set(diff.split("\n").filter(Boolean));
+  } catch {
+    // If we can't determine, treat all as new (safe default)
+    return new Set(["__all__"]);
+  }
+}
+
+const newFiles = getNewFiles();
+
+function isNewFile(filePath: string): boolean {
+  if (newFiles.has("__all__")) return true;
+  const relative = filePath.replace(ROOT + "/", "");
+  return newFiles.has(relative);
+}
+
 async function enrichProgram(filePath: string): Promise<EnrichResult> {
   const slug = basename(filePath, ".yaml");
   const result: EnrichResult = {
@@ -173,20 +194,22 @@ async function enrichProgram(filePath: string): Promise<EnrichResult> {
     return result;
   }
 
-  // 0. Dedup check against existing registry
-  const index = loadRegistryIndex();
-  if (index && data.url) {
-    const dup = checkDuplicate(slug, data.url, index);
-    if (dup) {
-      result.duplicate = dup;
-      if (dup.match_type === "fuzzy") {
-        result.errors.push(
-          `Possible duplicate: "${slug}" is similar to existing program "${dup.matched_slug}" (distance: ${dup.distance}). Please verify this is a new program.`
-        );
-      } else {
-        result.errors.push(
-          `Duplicate detected: "${slug}" already exists in registry (matched by ${dup.match_type} → "${dup.matched_slug}"). If this is an update, modify the existing file instead.`
-        );
+  // 0. Dedup check against existing registry (only for NEW files, not updates)
+  if (isNewFile(filePath)) {
+    const index = loadRegistryIndex();
+    if (index && data.url) {
+      const dup = checkDuplicate(slug, data.url, index);
+      if (dup) {
+        result.duplicate = dup;
+        if (dup.match_type === "fuzzy") {
+          result.errors.push(
+            `Possible duplicate: "${slug}" is similar to existing program "${dup.matched_slug}" (distance: ${dup.distance}). Please verify this is a new program.`
+          );
+        } else {
+          result.errors.push(
+            `Duplicate detected: "${slug}" already exists in registry (matched by ${dup.match_type} → "${dup.matched_slug}"). If this is an update, modify the existing file instead.`
+          );
+        }
       }
     }
   }
