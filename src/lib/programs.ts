@@ -210,6 +210,15 @@ export function slugToCategory(slug: string): string | undefined {
   return categories.find((c) => categoryToSlug(c) === slug)
 }
 
+export function networkToSlug(network: string): string {
+  return network.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "")
+}
+
+export function slugToNetwork(slug: string): string | undefined {
+  const networks = [...new Set(programs.map((p) => p.network ?? "In-house"))]
+  return networks.find((n) => networkToSlug(n) === slug)
+}
+
 export interface NetworkStats {
   network: string
   programCount: number
