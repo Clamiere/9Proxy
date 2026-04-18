@@ -83,3 +83,12 @@ Open a PR modifying the existing YAML file. Include a link to the source of the 
 ## Reporting issues
 
 If you find incorrect data, open an issue with the program slug and what needs to be corrected.
+
+## Maintainer docs
+
+For batch imports and discovery work:
+
+- [docs/data-pipeline.md](docs/data-pipeline.md) — 8-step import flow, timing, batch sizing
+- [docs/sources.md](docs/sources.md) — where to discover new programs (tiered)
+- [docs/discovery-keywords.md](docs/discovery-keywords.md) — keyword/URL patterns for detecting affiliate programs
+

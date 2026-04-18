@@ -40,10 +40,15 @@ const RELEVANCE_KEYWORDS = [
 function isRelevant(title: string, programName: string): boolean {
   const t = title.toLowerCase()
   const name = programName.toLowerCase()
-  // Must mention program name OR have affiliate-intent keywords
-  const mentionsName = t.includes(name)
-  const hasKeyword = RELEVANCE_KEYWORDS.some((kw) => t.includes(kw))
-  return mentionsName || hasKeyword
+  // Word-boundary match for short names to avoid false positives
+  // e.g. "notion" shouldn't match "emotional notion of freedom"
+  const mentionsName = name.length <= 4
+    ? new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`).test(t)
+    : t.includes(name)
+  // Search queries already target affiliate content, so name match alone is enough.
+  // Without name match, require at least 1 affiliate keyword.
+  if (mentionsName) return true
+  return RELEVANCE_KEYWORDS.some((kw) => t.includes(kw))
 }
 
 function relevanceMultiplier(title: string): number {
@@ -194,7 +199,7 @@ async function fetchTikTok(query: string): Promise<SocialItem[]> {
   return data.item_list.slice(0, 6).map((item: Record<string, unknown>) => {
     const author = item.author as Record<string, unknown> | undefined
     const video = item.video as Record<string, unknown> | undefined
-    const stats = item.statistics as Record<string, unknown> | undefined
+    const stats = (item.stats ?? item.statistics) as Record<string, unknown> | undefined
     const desc = String(item.desc ?? "")
     return {
       platform: "tiktok" as const,
