@@ -6,6 +6,7 @@ import { Trophy, Medal, Award, ArrowUpDown, CheckCircle2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ProgramLogo } from "@/components/program-logo";
 import { FilterSelect } from "@/components/filter-select";
+import { VoteButton, useVoteCounts } from "@/components/vote-button";
 import {
   programs,
   categories,
@@ -155,6 +156,9 @@ function ProgramsTable({
 }: {
   rankedPrograms: Program[];
 }) {
+  const slugs = useMemo(() => rankedPrograms.map((p) => p.slug), [rankedPrograms]);
+  const { counts } = useVoteCounts(slugs);
+
   return (
     <div className="rounded-xl border border-border/40 overflow-hidden">
       <div className="overflow-x-auto">
@@ -163,6 +167,9 @@ function ProgramsTable({
             <tr className="border-b border-border/40 bg-muted/30">
               <th className="w-12 py-3 px-3 text-center text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
                 #
+              </th>
+              <th className="w-14 py-3 px-2 text-center text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
+                Vote
               </th>
               <th className="py-3 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide min-w-[180px]">
                 Program
@@ -195,6 +202,12 @@ function ProgramsTable({
               >
                 <td className="py-3 px-3 text-center">
                   <RankBadge rank={i + 1} />
+                </td>
+                <td className="py-3 px-2 text-center">
+                  <VoteButton
+                    slug={program.slug}
+                    initialCount={counts[program.slug] ?? 0}
+                  />
                 </td>
                 <td className="py-3 px-3">
                   <Link
