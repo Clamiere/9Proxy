@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import Link from "next/link";
-import { Trophy, Medal, Award, ArrowUpDown, CheckCircle2 } from "lucide-react";
+import { Trophy, Medal, Award, ArrowUpDown, ArrowUp, ArrowDown, CheckCircle2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { ProgramLogo } from "@/components/program-logo";
 import { FilterSelect } from "@/components/filter-select";
@@ -151,12 +151,93 @@ function TopThreeCards({ top3 }: { top3: Program[] }) {
   );
 }
 
+type ColumnSort = "commission" | "cookie" | "payout" | "category" | "network" | "name";
+type SortDir = "asc" | "desc";
+
+function SortHeader({
+  label,
+  column,
+  activeColumn,
+  activeDir,
+  onSort,
+  className,
+}: {
+  label: string;
+  column: ColumnSort;
+  activeColumn: ColumnSort;
+  activeDir: SortDir;
+  onSort: (col: ColumnSort) => void;
+  className?: string;
+}) {
+  const isActive = activeColumn === column;
+  return (
+    <th
+      className={`py-3 px-3 text-[11px] font-medium uppercase tracking-wide cursor-pointer select-none transition-colors hover:text-foreground ${
+        isActive ? "text-foreground" : "text-muted-foreground"
+      } ${className ?? ""}`}
+      onClick={() => onSort(column)}
+    >
+      <span className="inline-flex items-center gap-1">
+        {label}
+        {isActive ? (
+          activeDir === "desc" ? (
+            <ArrowDown className="h-3 w-3" />
+          ) : (
+            <ArrowUp className="h-3 w-3" />
+          )
+        ) : (
+          <ArrowUpDown className="h-2.5 w-2.5 opacity-30" />
+        )}
+      </span>
+    </th>
+  );
+}
+
 function ProgramsTable({
   rankedPrograms,
 }: {
   rankedPrograms: Program[];
 }) {
-  const slugs = useMemo(() => rankedPrograms.map((p) => p.slug), [rankedPrograms]);
+  const [sortCol, setSortCol] = useState<ColumnSort>("commission");
+  const [sortDir, setSortDir] = useState<SortDir>("desc");
+
+  const handleSort = useCallback(
+    (col: ColumnSort) => {
+      if (sortCol === col) {
+        setSortDir((d) => (d === "desc" ? "asc" : "desc"));
+      } else {
+        setSortCol(col);
+        setSortDir(col === "name" ? "asc" : "desc");
+      }
+    },
+    [sortCol]
+  );
+
+  const sorted = useMemo(() => {
+    const list = [...rankedPrograms];
+    const dir = sortDir === "desc" ? -1 : 1;
+    list.sort((a, b) => {
+      switch (sortCol) {
+        case "commission":
+          return (parseCommissionRate(a.commission.rate) - parseCommissionRate(b.commission.rate)) * dir;
+        case "cookie":
+          return (a.cookieDays - b.cookieDays) * dir;
+        case "payout":
+          return (a.payout.minimum - b.payout.minimum) * dir;
+        case "category":
+          return a.category.localeCompare(b.category) * dir;
+        case "network":
+          return (a.network ?? "").localeCompare(b.network ?? "") * dir;
+        case "name":
+          return a.name.localeCompare(b.name) * dir;
+        default:
+          return 0;
+      }
+    });
+    return list;
+  }, [rankedPrograms, sortCol, sortDir]);
+
+  const slugs = useMemo(() => sorted.map((p) => p.slug), [sorted]);
   const { counts } = useVoteCounts(slugs);
 
   return (
@@ -171,31 +252,19 @@ function ProgramsTable({
               <th className="w-14 py-3 px-2 text-center text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
                 Vote
               </th>
-              <th className="py-3 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide min-w-[180px]">
-                Program
-              </th>
-              <th className="w-28 py-3 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide">
-                Commission
-              </th>
+              <SortHeader label="Program" column="name" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="text-left min-w-[180px]" />
+              <SortHeader label="Commission" column="commission" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-28 text-left" />
               <th className="w-24 py-3 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide hidden sm:table-cell">
                 Type
               </th>
-              <th className="w-20 py-3 px-3 text-center text-[11px] font-medium text-muted-foreground uppercase tracking-wide hidden sm:table-cell">
-                Cookie
-              </th>
-              <th className="w-24 py-3 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide hidden lg:table-cell">
-                Payout
-              </th>
-              <th className="w-32 py-3 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide hidden lg:table-cell">
-                Category
-              </th>
-              <th className="w-28 py-3 px-3 text-left text-[11px] font-medium text-muted-foreground uppercase tracking-wide hidden md:table-cell">
-                Network
-              </th>
+              <SortHeader label="Cookie" column="cookie" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-20 text-center hidden sm:table-cell" />
+              <SortHeader label="Payout" column="payout" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-24 text-left hidden lg:table-cell" />
+              <SortHeader label="Category" column="category" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-32 text-left hidden lg:table-cell" />
+              <SortHeader label="Network" column="network" activeColumn={sortCol} activeDir={sortDir} onSort={handleSort} className="w-28 text-left hidden md:table-cell" />
             </tr>
           </thead>
           <tbody>
-            {rankedPrograms.map((program, i) => (
+            {sorted.map((program, i) => (
               <tr
                 key={program.slug}
                 className="border-t border-border/20 hover:bg-muted/20 transition-colors group"
@@ -268,7 +337,7 @@ function ProgramsTable({
           </tbody>
         </table>
       </div>
-      {rankedPrograms.length === 0 && (
+      {sorted.length === 0 && (
         <div className="text-center py-12">
           <p className="text-sm text-muted-foreground">
             No programs match your filters.
