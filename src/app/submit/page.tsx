@@ -366,7 +366,7 @@ created_at: "${new Date().toISOString().split("T")[0]}"`;
                 {copied ? "Copied" : "Copy"}
               </button>
             </div>
-            <pre className="rounded-xl bg-zinc-950 border border-border/50 p-5 text-xs font-mono text-muted-foreground overflow-x-auto leading-relaxed">
+            <pre className="rounded-xl bg-muted/60 dark:bg-zinc-950 border border-border/50 p-5 text-xs font-mono text-muted-foreground overflow-x-auto leading-relaxed">
               {generateYaml()}
             </pre>
           </div>

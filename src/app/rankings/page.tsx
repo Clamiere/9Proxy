@@ -597,7 +597,7 @@ export default function RankingsPage() {
         <p className="text-xs text-muted-foreground mt-1">
           Use the CLI to find the highest-paying programs in any category.
         </p>
-        <div className="mt-3 overflow-x-auto rounded-lg bg-zinc-950 border border-border/50">
+        <div className="mt-3 overflow-x-auto rounded-lg bg-muted/60 dark:bg-zinc-950 border border-border/50">
           <code className="block px-4 py-2.5 text-xs font-mono text-muted-foreground whitespace-nowrap">
             npx openaffiliate search --category &quot;AI&quot; --sort
             commission --json
