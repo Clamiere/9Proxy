@@ -42,8 +42,9 @@ export async function generateMetadata({
   const program = getProgram(slug);
   if (!program) return { title: "Program Not Found" };
 
-  const title = `${program.name} Affiliate Program — ${program.commission.rate} ${program.commission.type} | OpenAffiliate`;
-  const description = `${program.shortDescription}. ${program.commission.rate} ${program.commission.type} commission, ${program.cookieDays}-day cookie. Join the ${program.name} affiliate program.`;
+  const rate = typeof program.commission.rate === "number" ? `${program.commission.rate}%` : program.commission.rate;
+  const title = `${program.name} Affiliate Program — ${rate} ${program.commission.type} | OpenAffiliate`;
+  const description = `${program.shortDescription}. ${rate} ${program.commission.type} commission, ${program.cookieDays}-day cookie. Join the ${program.name} affiliate program.`;
 
   return {
     title,

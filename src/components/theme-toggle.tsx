@@ -13,9 +13,9 @@ export function ThemeToggle() {
   if (!mounted) {
     return (
       <div className="flex items-center gap-1">
-        <div className="h-7 w-7" />
-        <div className="h-7 w-7" />
-        <div className="h-7 w-7" />
+        <div className="h-7 w-7 rounded-md bg-muted/40 animate-pulse" />
+        <div className="h-7 w-7 rounded-md bg-muted/40 animate-pulse" />
+        <div className="h-7 w-7 rounded-md bg-muted/40 animate-pulse" />
       </div>
     );
   }

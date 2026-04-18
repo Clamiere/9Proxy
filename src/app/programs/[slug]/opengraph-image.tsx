@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { programs, getProgram } from "@/lib/programs";
 
-export const alt = "OpenAffiliate Program";
+export const alt = "OpenAffiliate — Affiliate Program Details";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

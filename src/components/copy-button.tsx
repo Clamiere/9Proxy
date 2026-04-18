@@ -13,6 +13,7 @@ export function CopyButton({ text }: { text: string }) {
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
       }}
+      aria-label={copied ? "Copied" : "Copy to clipboard"}
       className="p-1 hover:bg-muted rounded transition-colors shrink-0"
     >
       {copied ? (

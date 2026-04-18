@@ -41,8 +41,8 @@ function ProgramCard({ program }: { program: (typeof programs)[0] }) {
 
       <div className="flex items-center gap-2 flex-wrap">
         <Badge variant="secondary" className="text-[11px]">
-          {program.commission.rate}%{" "}
-          {program.commission.type === "recurring" ? "recurring" : "one-time"}
+          {typeof program.commission.rate === "number" ? `${program.commission.rate}%` : program.commission.rate}{" "}
+          {program.commission.type}
         </Badge>
         <Badge variant="outline" className="text-[11px]">
           {program.cookieDays}d cookie
@@ -241,7 +241,7 @@ export default function Home() {
               Featured Programs
             </h2>
             <p className="text-sm text-muted-foreground mt-1">
-              Top programs sorted by community stars
+              Curated programs from the registry
             </p>
           </div>
           <Link
@@ -327,7 +327,7 @@ export default function Home() {
                 Submit Program
               </Link>
               <a
-                href="https://github.com/openaffiliate/registry"
+                href="https://github.com/Affitor/open-affiliate"
                 className="inline-flex items-center justify-center gap-2 rounded-lg border border-border/60 px-5 py-2.5 text-sm font-medium hover:bg-muted transition-colors"
               >
                 <GitFork className="h-4 w-4" />

@@ -21,6 +21,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { ProgramLogo } from "@/components/program-logo";
 import { programs, getProgram, type Program } from "@/lib/programs";
+import { CopyButton } from "@/components/copy-button";
 
 const MAX_COMPARE = 4;
 
@@ -123,9 +124,9 @@ function ProgramSearch({
 }
 
 const POPULAR_COMPARISONS = [
-  ["vercel", "netlify", "cloudflare"],
-  ["notion", "clickup", "monday"],
-  ["stripe", "braintree", "paddle"],
+  ["vercel", "netlify", "digitalocean"],
+  ["notion", "clickup", "convertkit"],
+  ["neon", "webflow", "activecampaign"],
 ];
 
 function CompareContent() {
@@ -251,10 +252,10 @@ function CompareContent() {
                         key={p.slug}
                         className="py-4 px-4 min-w-[180px]"
                       >
-                        <div className="flex flex-col items-center gap-2">
+                        <div className="relative flex flex-col items-center gap-2">
                           <button
                             onClick={() => removeProgram(p.slug)}
-                            className="absolute-ish self-end text-muted-foreground/40 hover:text-foreground transition-colors"
+                            className="absolute top-0 right-0 text-muted-foreground/40 hover:text-foreground transition-colors"
                             aria-label={`Remove ${p.name}`}
                           >
                             <X className="h-3.5 w-3.5" />
@@ -524,13 +525,14 @@ function CompareContent() {
           </div>
 
           {/* Share link */}
-          <div className="text-center">
+          <div className="flex items-center justify-center gap-2">
             <p className="text-xs text-muted-foreground">
               Share this comparison:{" "}
               <code className="text-[11px] bg-muted/50 px-2 py-0.5 rounded">
                 openaffiliate.dev/compare?p={slugs.join(",")}
               </code>
             </p>
+            <CopyButton text={`https://openaffiliate.dev/compare?p=${slugs.join(",")}`} />
           </div>
         </div>
       )}

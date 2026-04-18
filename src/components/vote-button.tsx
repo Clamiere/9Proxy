@@ -20,6 +20,10 @@ export function VoteButton({ slug, initialCount = 0, className }: VoteButtonProp
   }, [initialCount]);
 
   useEffect(() => {
+    setCount(initialCount);
+  }, [initialCount]);
+
+  useEffect(() => {
     fetch(`/api/votes/check?slugs=${slug}`)
       .then((r) => r.json())
       .then((data) => {
