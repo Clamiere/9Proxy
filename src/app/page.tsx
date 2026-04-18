@@ -116,12 +116,12 @@ export default function Home() {
 
             {/* Right — Terminal mockup */}
             <div className="hidden lg:block">
-              <div className="rounded-xl border border-border/50 bg-zinc-950 overflow-hidden shadow-2xl">
+              <div className="rounded-xl border border-border/60 bg-card overflow-hidden shadow-xl dark:border-border/50 dark:bg-zinc-950 dark:shadow-2xl">
                 {/* Title bar */}
-                <div className="flex items-center gap-2 px-4 py-3 border-b border-border/40 bg-zinc-900/80">
-                  <span className="h-3 w-3 rounded-full bg-zinc-600" />
-                  <span className="h-3 w-3 rounded-full bg-zinc-600" />
-                  <span className="h-3 w-3 rounded-full bg-zinc-600" />
+                <div className="flex items-center gap-2 px-4 py-3 border-b border-border/40 bg-muted/60 dark:bg-zinc-900/80">
+                  <span className="h-3 w-3 rounded-full bg-zinc-300 dark:bg-zinc-600" />
+                  <span className="h-3 w-3 rounded-full bg-zinc-300 dark:bg-zinc-600" />
+                  <span className="h-3 w-3 rounded-full bg-zinc-300 dark:bg-zinc-600" />
                   <span className="ml-3 text-xs text-muted-foreground font-mono">
                     openaffiliate
                   </span>
@@ -129,7 +129,7 @@ export default function Home() {
                 {/* Terminal body */}
                 <div className="p-5 font-mono text-sm leading-relaxed">
                   <p className="text-muted-foreground">
-                    <span className="text-emerald-400">$</span>{" "}
+                    <span className="text-emerald-600 dark:text-emerald-400">$</span>{" "}
                     <span className="text-foreground">
                       npx openaffiliate search &quot;email&quot;
                     </span>
@@ -142,12 +142,12 @@ export default function Home() {
                     </div>
                     <div className="grid grid-cols-[1fr_auto_auto] gap-x-6 py-1.5">
                       <span className="text-foreground/80">ConvertKit</span>
-                      <span className="text-emerald-400/80">50% rec</span>
+                      <span className="text-emerald-600/80 dark:text-emerald-400/80">50% rec</span>
                       <span>90d</span>
                     </div>
                     <div className="grid grid-cols-[1fr_auto_auto] gap-x-6 py-1.5">
                       <span className="text-foreground/80">Postmark</span>
-                      <span className="text-emerald-400/80">$100/ref</span>
+                      <span className="text-emerald-600/80 dark:text-emerald-400/80">$100/ref</span>
                       <span>30d</span>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ export default function Home() {
                     </span>
                   </p>
                   <p className="mt-3 text-muted-foreground">
-                    <span className="text-emerald-400">$</span>{" "}
+                    <span className="text-emerald-600 dark:text-emerald-400">$</span>{" "}
                     <span className="animate-pulse">_</span>
                   </p>
                 </div>
