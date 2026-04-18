@@ -23,7 +23,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.smtp.com
+signup_url: https://try.smtp.com/affiliate-program/
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

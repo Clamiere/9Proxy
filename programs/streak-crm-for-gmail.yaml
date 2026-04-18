@@ -21,7 +21,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.streak.com?utm_source=growsumo&utm_medium=lp&utm_campaign=gs+referral+lp
+signup_url: https://www.streak.com/for/partnerships-crm-inside-google-gmail
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

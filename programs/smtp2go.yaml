@@ -21,7 +21,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.smtp2go.com
+signup_url: https://www.smtp2go.com/resellers
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

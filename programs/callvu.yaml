@@ -25,7 +25,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://callvu.com
+signup_url: https://callvu.com/partnership-programs/
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

@@ -23,7 +23,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.pitneybowes.com/us
+signup_url: https://www.pitneybowes.com/us/partner-locator-ms.html
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

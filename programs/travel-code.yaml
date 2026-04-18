@@ -23,7 +23,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://travel-code.com
+signup_url: https://travel-code.com/user/referrals
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

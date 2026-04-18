@@ -25,7 +25,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.softr.io
+signup_url: https://www.softr.io/partners
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

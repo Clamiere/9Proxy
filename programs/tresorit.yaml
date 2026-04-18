@@ -22,7 +22,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.tresorit.com
+signup_url: https://tresorit.com/blog/tresorit-named-2022-gartner-peer-insights-customers-choice-for-the-second-year-in-a-row?utm_source=sp&amp;utm_medium=referral&amp;utm_campaign=gartner_2022_pr
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

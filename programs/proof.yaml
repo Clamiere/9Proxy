@@ -21,7 +21,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://useproof.com
+signup_url: https://proof.partnerstack.com/
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

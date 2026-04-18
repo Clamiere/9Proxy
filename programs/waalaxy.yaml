@@ -22,7 +22,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.waalaxy.com
+signup_url: https://www.waalaxy.com/affiliate-program
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

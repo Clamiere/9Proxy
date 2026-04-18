@@ -22,7 +22,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.taxfyle.com
+signup_url: https://www.taxfyle.com/partnerships
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

@@ -22,7 +22,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://practicebetter.io
+signup_url: https://practicebetter.io/become-a-partner
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

@@ -24,7 +24,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.servicem8.com
+signup_url: https://www.servicem8.com/partner-enquiry?uuid=PARTNER_UUID
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

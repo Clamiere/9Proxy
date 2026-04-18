@@ -21,7 +21,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.tenable.com
+signup_url: https://www.tenable.com/partner-locator/resellers
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

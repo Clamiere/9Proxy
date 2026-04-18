@@ -21,7 +21,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://thegogame.com
+signup_url: https://www.thegogame.com/partner-programs
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

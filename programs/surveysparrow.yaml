@@ -23,7 +23,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://surveysparrow.com
+signup_url: https://surveysparrow.com/partners/?itm_source=website&amp;itm_medium=footer1&amp;itm_campaign=internal-page&amp;itm_content=/partners
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

@@ -21,7 +21,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: http://playroll.com
+signup_url: http://playroll.com/partners
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

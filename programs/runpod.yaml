@@ -22,7 +22,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.runpod.io
+signup_url: https://www.runpod.io/referral-and-affiliate-program
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

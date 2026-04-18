@@ -24,7 +24,7 @@ payout:
   methods:
     - bank
     - paypal
-signup_url: https://www.owner.com
+signup_url: https://www.owner.com/partner-request
 approval: manual
 approval_time: 1-5 business days
 restrictions: null
