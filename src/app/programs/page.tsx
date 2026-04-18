@@ -67,6 +67,21 @@ function usePersistedView(): [ViewMode, (v: ViewMode) => void] {
   return [view, setView];
 }
 
+function isNew(createdAt: string): boolean {
+  if (!createdAt) return false;
+  const created = new Date(createdAt).getTime();
+  if (isNaN(created)) return false;
+  return Date.now() - created < 14 * 86400000;
+}
+
+function NewBadge() {
+  return (
+    <Badge className="text-[10px] px-1.5 py-0 bg-blue-500/15 text-blue-600 dark:text-blue-400 border-blue-500/30">
+      New
+    </Badge>
+  );
+}
+
 function ProgramCardGrid({ program }: { program: Program }) {
   return (
     <Link
@@ -79,6 +94,7 @@ function ProgramCardGrid({ program }: { program: Program }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2">
             <h3 className="text-sm font-semibold truncate">{program.name}</h3>
+            {isNew(program.createdAt) && <NewBadge />}
             {program.verified && (
               <Badge
                 variant="outline"
@@ -130,6 +146,7 @@ function ProgramRowList({ program }: { program: Program }) {
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2">
           <h3 className="text-sm font-semibold truncate">{program.name}</h3>
+          {isNew(program.createdAt) && <NewBadge />}
           {program.verified && (
             <Badge
               variant="outline"

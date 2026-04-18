@@ -49,13 +49,13 @@ export function DocsSidebar({ nav }: { nav: DocsSidebarGroup[] }) {
         {sidebar}
       </aside>
 
-      {/* Mobile toggle */}
+      {/* Mobile toggle — only visible on docs pages */}
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-4 left-4 z-40 lg:hidden flex items-center justify-center h-10 w-10 rounded-full bg-foreground text-background shadow-lg"
+        className="fixed bottom-4 right-4 z-40 lg:hidden flex items-center gap-1.5 rounded-full bg-foreground text-background shadow-lg px-3 h-10 text-xs font-medium"
         aria-label="Toggle docs menu"
       >
-        {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+        {open ? <X className="h-4 w-4" /> : <><Menu className="h-4 w-4" /><span>Docs</span></>}
       </button>
 
       {/* Mobile overlay */}
