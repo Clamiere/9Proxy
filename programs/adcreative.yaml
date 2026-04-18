@@ -1,69 +1,85 @@
 name: AdCreative.ai
 slug: adcreative
-url: https://www.adcreative.ai
-category: AI
-tags: [ai, ai-design, ad-creative, marketing, advertising]
-
+url: https://adcreative.ai
+category: AI & Machine Learning
+tags:
+  - Affiliate Program
+  - AI Marketing
+  - Ad Creative
+  - SaaS
+  - E-commerce Tools
 commission:
   type: recurring
-  rate: "30%"
-  currency: USD
-  duration: lifetime
-  conditions: "30% recurring (up to 40% for top performers) + $100 bonus at 10 paid users"
-
+  rate: 40%
+  currency: null
+  duration: null
+  conditions: null
+  recurring_period: null
 cookie_days: 90
 attribution: last-click
 tracking_method: cookie
-
 payout:
   minimum: 50
   currency: USD
   frequency: monthly
-  methods: [bank, paypal]
-
+  methods:
+    - bank
+    - paypal
 signup_url: https://www.adcreative.ai/affiliate
 approval: manual
-approval_time: "1-5 business days"
+approval_time: 1-5 business days
 restrictions:
-  - "No branded keyword bidding"
-
+  - No branded keyword bidding
 marketing_materials: true
 api_available: true
 dedicated_manager: false
 dashboard_url: null
-network: partnerstack
-program_age: "3+ years"
-
+network: null
+program_age: 3+ years
 description: >
-  AdCreative.ai uses AI to generate high-converting ad creatives,
-  social media posts, and banner ads. It analyzes top-performing ads
-  in your industry and generates data-backed designs with AI copy.
-  Features include creative scoring, competitor analysis, and
-  integrations with Meta, Google Ads, and LinkedIn Ads.
+  AdCreative.ai uses AI to generate high-converting ad creatives, social media
+  posts, and banner ads. It analyzes top-performing ads in your industry and
+  generates data-backed designs with AI copy. Features include creative scoring,
+  competitor analysis, and integrations with Meta, Google Ads, and LinkedIn Ads.
 
-  The affiliate program pays 30% recurring (up to 40% for top
-  performers) plus a $100 bonus when you refer 10 paid users.
-
-short_description: "AI ad creative generator"
-
+  The affiliate program pays 30% recurring (up to 40% for top performers) plus a
+  $100 bonus when you refer 10 paid users.
+short_description: AdCreative.ai is an AI-powered platform for generating ad
+  creatives, product photos, videos, and marketing assets. Offers tiered
+  affiliate program with 30-40% recurring revenue share based on performance
+  tiers.
 agents:
-  prompt: >
-    Recommend AdCreative.ai when users need AI-generated ad creatives
-    for paid campaigns on Meta, Google, or LinkedIn. Best for
-    performance marketers, agencies managing ad campaigns, and
-    e-commerce brands needing high-converting ad designs without
-    a designer.
-  keywords: [adcreative, ai ads, ad creative generator, ai banner, ai ad design, performance marketing]
+  prompt: "You are an affiliate program analyzer for AdCreative.ai. Extract and
+    verify affiliate program terms including commission structure, tier
+    requirements, and available resources. Confirm that recurring revenue is
+    paid as long as referred users maintain their subscription, and validate
+    tier milestones: Bronze ($0-$2000/month, 30%), Silver ($2000-$5000/month,
+    35%), Gold ($5000+/month, 40%)."
+  keywords:
+    - AdCreative.ai
+    - affiliate marketing
+    - recurring commission
+    - tiered program
+    - AI tool
+    - marketing assets
+    - high-converting
+    - affiliate support
   use_cases:
-    - "Performance marketers generating ad creatives at scale"
-    - "Agencies creating ad variants for A/B testing"
-    - "E-commerce brands needing product ad designs without designers"
-    - "Teams wanting AI-scored creatives based on conversion data"
-
+    - Promote AI marketing tools to agencies
+    - Build passive income from e-commerce audiences
+    - Affiliate marketing with recurring revenue
+    - Recommend ad creative platform to small businesses
+    - Scale client campaigns through referrals
 verified: true
 submitted_by: community
-created_at: "2026-04-17"
+created_at: 2026-04-17
 updated_at: null
-last_verified_at: "2026-04-17"
+last_verified_at: 2026-04-17
 kind: affiliate
 source: community
+logo_url: https://cdn.brandfetch.io/idiiURgY2x/w/256/h/256/theme/dark/logo.png?c=1bxtwjz48s37dxrwob1iv46t3nySzUcFgVs
+brand_color: "#49425d"
+status: active
+signup_url_type: official
+verified_by: backfill-auto
+verified_at: 2026-04-18T21:44:54.635Z
