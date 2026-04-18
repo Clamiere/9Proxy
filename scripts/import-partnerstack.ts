@@ -240,7 +240,7 @@ function buildYaml(program: PsProgram): Record<string, unknown> {
       methods: ["bank", "paypal"],
     },
 
-    signup_url: program.url,
+    signup_url: `https://market.partnerstack.com/${program.slug}`,
     approval: "manual",
     approval_time: "1-5 business days",
     restrictions: null,
