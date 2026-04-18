@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Nav } from "@/components/nav";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -135,6 +136,7 @@ function Footer() {
               OpenAffiliate. Open source, community-driven.
             </span>
           </div>
+          <ThemeToggle />
         </div>
       </div>
     </footer>
