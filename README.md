@@ -158,4 +158,4 @@ MIT
 
 ---
 
-Built by [Affitor](https://affitor.com)
+[GitHub](https://github.com/Affitor/open-affiliate)
