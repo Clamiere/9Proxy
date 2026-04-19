@@ -21,7 +21,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://superhuman.com/ambassador
+signup_url: https://superhuman.com
 approval: invite-only
 approval_time: N/A
 restrictions: null

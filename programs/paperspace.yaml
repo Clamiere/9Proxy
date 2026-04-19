@@ -23,7 +23,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://www.paperspace.com/referral
+signup_url: https://www.paperspace.com
 approval: auto
 approval_time: instant
 restrictions: null

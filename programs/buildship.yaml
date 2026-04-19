@@ -22,7 +22,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://buildship.com/affiliate
+signup_url: https://buildship.com
 approval: auto
 approval_time: instant
 restrictions: null

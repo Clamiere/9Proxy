@@ -23,7 +23,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://www.resemble.ai/partners
+signup_url: https://www.resemble.ai
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

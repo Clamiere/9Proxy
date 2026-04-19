@@ -21,7 +21,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://www.relume.io/affiliate
+signup_url: https://www.relume.io
 approval: auto
 approval_time: instant
 restrictions: null

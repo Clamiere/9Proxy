@@ -22,7 +22,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://gleap.io/partners
+signup_url: https://gleap.io
 approval: auto
 approval_time: instant
 restrictions: null

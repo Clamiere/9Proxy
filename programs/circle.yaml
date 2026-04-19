@@ -23,7 +23,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://circle.so/affiliate
+signup_url: https://circle.so
 approval: auto
 approval_time: instant
 restrictions: null

@@ -25,7 +25,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://betterstack.com/affiliate
+signup_url: https://betterstack.com
 approval: auto
 approval_time: instant
 restrictions: null

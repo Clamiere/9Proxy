@@ -25,7 +25,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://tldv.io/affiliate-program
+signup_url: https://tldv.io
 approval: auto
 approval_time: instant
 restrictions: null

@@ -24,7 +24,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://fathom.video/partners
+signup_url: https://fathom.video
 approval: auto
 approval_time: instant
 restrictions: null

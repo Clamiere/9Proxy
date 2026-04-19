@@ -22,7 +22,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://cursor.com/referrals
+signup_url: https://cursor.com
 approval: auto
 approval_time: instant
 restrictions: null

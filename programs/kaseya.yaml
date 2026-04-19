@@ -21,7 +21,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://www.kaseya.com/partners
+signup_url: https://www.kaseya.com
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

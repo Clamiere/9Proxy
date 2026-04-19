@@ -23,7 +23,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://playground.com/affiliate
+signup_url: https://playground.com
 approval: auto
 approval_time: instant
 restrictions: null

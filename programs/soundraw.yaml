@@ -21,7 +21,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://soundraw.io/partner
+signup_url: https://soundraw.io
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

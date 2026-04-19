@@ -23,7 +23,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://www.magicschool.ai/affiliate
+signup_url: https://www.magicschool.ai
 approval: auto
 approval_time: instant
 restrictions: null

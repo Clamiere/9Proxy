@@ -21,7 +21,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://www.tella.tv/affiliate
+signup_url: https://www.tella.tv
 approval: auto
 approval_time: instant
 restrictions: null
