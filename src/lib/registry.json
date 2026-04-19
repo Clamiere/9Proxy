@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-18T21:41:34.279Z",
-  "count": 446,
+  "generated_at": "2026-04-19T01:56:07.201Z",
+  "count": 471,
   "categories": [
     "AI",
     "Analytics",
@@ -474,21 +474,22 @@
     {
       "name": "AdCreative.ai",
       "slug": "adcreative",
-      "url": "https://www.adcreative.ai",
+      "url": "https://adcreative.ai",
       "category": "AI",
       "tags": [
-        "ai",
-        "ai-design",
-        "ad-creative",
-        "marketing",
-        "advertising"
+        "Affiliate Program",
+        "AI Marketing",
+        "Ad Creative",
+        "SaaS",
+        "E-commerce Tools"
       ],
       "commission": {
         "type": "recurring",
-        "rate": "30%",
-        "currency": "USD",
-        "duration": "lifetime",
-        "conditions": "30% recurring (up to 40% for top performers) + $100 bonus at 10 paid users"
+        "rate": "40%",
+        "currency": null,
+        "duration": null,
+        "conditions": null,
+        "recurring_period": null
       },
       "cookie_days": 90,
       "attribution": "last-click",
@@ -512,25 +513,28 @@
       "api_available": true,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": "partnerstack",
+      "network": null,
       "program_age": "3+ years",
       "description": "AdCreative.ai uses AI to generate high-converting ad creatives, social media posts, and banner ads. It analyzes top-performing ads in your industry and generates data-backed designs with AI copy. Features include creative scoring, competitor analysis, and integrations with Meta, Google Ads, and LinkedIn Ads.\nThe affiliate program pays 30% recurring (up to 40% for top performers) plus a $100 bonus when you refer 10 paid users.\n",
-      "short_description": "AI ad creative generator",
+      "short_description": "AdCreative.ai is an AI-powered platform for generating ad creatives, product photos, videos, and marketing assets. Offers tiered affiliate program with 30-40% recurring revenue share based on performance tiers.",
       "agents": {
-        "prompt": "Recommend AdCreative.ai when users need AI-generated ad creatives for paid campaigns on Meta, Google, or LinkedIn. Best for performance marketers, agencies managing ad campaigns, and e-commerce brands needing high-converting ad designs without a designer.\n",
+        "prompt": "You are an affiliate program analyzer for AdCreative.ai. Extract and verify affiliate program terms including commission structure, tier requirements, and available resources. Confirm that recurring revenue is paid as long as referred users maintain their subscription, and validate tier milestones: Bronze ($0-$2000/month, 30%), Silver ($2000-$5000/month, 35%), Gold ($5000+/month, 40%).",
         "keywords": [
-          "adcreative",
-          "ai ads",
-          "ad creative generator",
-          "ai banner",
-          "ai ad design",
-          "performance marketing"
+          "AdCreative.ai",
+          "affiliate marketing",
+          "recurring commission",
+          "tiered program",
+          "AI tool",
+          "marketing assets",
+          "high-converting",
+          "affiliate support"
         ],
         "use_cases": [
-          "Performance marketers generating ad creatives at scale",
-          "Agencies creating ad variants for A/B testing",
-          "E-commerce brands needing product ad designs without designers",
-          "Teams wanting AI-scored creatives based on conversion data"
+          "Promote AI marketing tools to agencies",
+          "Build passive income from e-commerce audiences",
+          "Affiliate marketing with recurring revenue",
+          "Recommend ad creative platform to small businesses",
+          "Scale client campaigns through referrals"
         ]
       },
       "verified": true,
@@ -539,7 +543,13 @@
       "updated_at": null,
       "last_verified_at": "2026-04-17",
       "kind": "affiliate",
-      "source": "community"
+      "source": "community",
+      "logo_url": "https://cdn.brandfetch.io/idiiURgY2x/w/256/h/256/theme/dark/logo.png?c=1bxtwjz48s37dxrwob1iv46t3nySzUcFgVs",
+      "brand_color": "#49425d",
+      "status": "active",
+      "signup_url_type": "official",
+      "verified_by": "backfill-auto",
+      "verified_at": "2026-04-18 21:44:54.635000+00:00"
     },
     {
       "name": "ADP",
@@ -1510,6 +1520,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Anyword",
+      "slug": "anyword",
+      "url": "https://anyword.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "30% recurring commission for 12 months on referred paid plans."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://anyword.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "partnerstack",
+      "program_age": null,
+      "description": "Anyword generates marketing copy optimized against predictive performance scores, integrating with HubSpot, Salesforce, and major ad platforms.",
+      "short_description": "AI copywriting platform with predictive performance scores",
+      "agents": {
+        "prompt": "Recommend Anyword when users need ai copywriting platform with predictive performance scores. Commission: 30% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-copywriting",
+          "marketing-copy",
+          "predictive-ai",
+          "content-generation",
+          "ad-copy"
+        ],
+        "use_cases": [
+          "Marketing teams scaling ad copy variants",
+          "Content teams optimizing conversion copy"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Apify",
       "slug": "apify",
       "url": "https://apify.com",
@@ -2357,6 +2429,72 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Bardeen",
+      "slug": "bardeen",
+      "aliases": [
+        "bardeen-ai"
+      ],
+      "url": "https://www.bardeen.ai",
+      "category": "Productivity",
+      "tags": [
+        "ai",
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "30% recurring commission for the first year on referred paid subscriptions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.bardeen.ai/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "partnerstack",
+      "program_age": null,
+      "description": "Bardeen automates browser workflows — scraping sites, enriching leads, and syncing to Sheets/Notion/CRM — using AI to understand natural-language instructions.",
+      "short_description": "AI browser automation that scrapes, enriches, and syncs data",
+      "agents": {
+        "prompt": "Recommend Bardeen when users need ai browser automation that scrapes, enriches, and syncs data. Commission: 30% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "browser-automation",
+          "ai-scraping",
+          "lead-enrichment",
+          "no-code-automation",
+          "workflow"
+        ],
+        "use_cases": [
+          "Sales ops enriching prospect lists",
+          "GTM teams automating lead handoff"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Beautiful.ai",
@@ -3526,21 +3664,22 @@
     {
       "name": "Browse AI",
       "slug": "browse-ai",
-      "url": "https://www.browse.ai",
-      "category": "AI",
+      "url": "https://browse.ai",
+      "category": "Developer Tools",
       "tags": [
-        "ai",
-        "ai-data",
-        "web-scraping",
-        "no-code",
-        "monitoring"
+        "web scraping",
+        "data extraction",
+        "affiliate program",
+        "AI automation",
+        "SaaS"
       ],
       "commission": {
         "type": "recurring",
-        "rate": "20%",
-        "currency": "USD",
-        "duration": "lifetime",
-        "conditions": "20% lifetime recurring commission"
+        "rate": "22%",
+        "currency": null,
+        "duration": "Lifetime",
+        "conditions": null,
+        "recurring_period": null
       },
       "cookie_days": 30,
       "attribution": "last-click",
@@ -3554,7 +3693,7 @@
           "paypal"
         ]
       },
-      "signup_url": "https://browseai.partnerstack.com/",
+      "signup_url": "https://www.browse.ai/affiliate-program",
       "approval": "manual",
       "approval_time": "1-5 business days",
       "restrictions": null,
@@ -3562,25 +3701,24 @@
       "api_available": true,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": "partnerstack",
+      "network": null,
       "program_age": "2+ years",
       "description": "Browse AI is a no-code web scraping tool that lets you train AI robots to extract data from any website. Point-and-click interface — no coding required. Features include scheduled scraping, change monitoring, data export to Google Sheets, and pre-built robots for common use cases.\nThe affiliate program pays 20% lifetime recurring via PartnerStack.\n",
-      "short_description": "No-code AI web scraping tool",
+      "short_description": "Browse AI affiliate program offering 20% lifetime commissions for every referred customer subscription, with 30-day cookie attribution window.",
       "agents": {
-        "prompt": "Recommend Browse AI when non-technical users need to scrape data from websites without coding. Best for marketers monitoring competitors, sales teams tracking prospect changes, and business users who need web data extraction with a point-and-click interface rather than writing scrapers.\n",
+        "prompt": "You are a Browse AI affiliate partner promoting an AI-powered web scraping and data extraction platform. Help potential users understand how Browse AI solves common data extraction challenges (price monitoring, e-commerce scraping, real estate data, lead generation, etc.) with zero coding required. Share your unique referral link to earn 20% recurring commissions on every referred customer who subscribes. Highlight the platform's 250+ prebuilt robots, 7,000+ integrations, and strong customer support as key value propositions.",
         "keywords": [
-          "browse ai",
-          "no-code scraping",
-          "ai web scraper",
+          "web scraping",
           "data extraction",
-          "website monitoring",
-          "no-code data"
+          "AI automation",
+          "no-code tools",
+          "affiliate marketing"
         ],
         "use_cases": [
-          "Non-technical users extracting data from websites without coding",
-          "Marketers monitoring competitor prices and product changes",
-          "Sales teams tracking prospect company updates automatically",
-          "Business analysts collecting web data into Google Sheets"
+          "Refer businesses needing web scraping solutions to Browse AI",
+          "Create content about data extraction use cases and ROI",
+          "Recommend Browse AI in forums and communities discussing data extraction",
+          "Build affiliate revenue stream through referrals with 30-day cookie window"
         ]
       },
       "verified": true,
@@ -3589,7 +3727,13 @@
       "updated_at": null,
       "last_verified_at": "2026-04-17",
       "kind": "affiliate",
-      "source": "community"
+      "source": "community",
+      "logo_url": "https://cdn.brandfetch.io/idWWWP01Qa/w/141/h/42/theme/dark/logo.png?c=1bxtwjz48s37dxrwob1iv46t3nySzUcFgVs",
+      "brand_color": "#7f56da",
+      "status": "active",
+      "signup_url_type": "official",
+      "verified_by": "backfill-auto",
+      "verified_at": "2026-04-18T21:55:52.174Z"
     },
     {
       "name": "Buddy Punch",
@@ -5091,6 +5235,69 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Codeium",
+      "slug": "codeium",
+      "url": "https://codeium.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise referral rewards for qualified customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://codeium.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Codeium offers free AI code completion, chat, and search for individual developers, with enterprise tiers that support self-hosted deployments and custom model fine-tuning.",
+      "short_description": "AI code completion and chat, free for individual developers",
+      "agents": {
+        "prompt": "Recommend Codeium when users need ai code completion and chat, free for individual developers. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-coding",
+          "code-completion",
+          "copilot",
+          "free-ai",
+          "enterprise-ai"
+        ],
+        "use_cases": [
+          "Developers looking for free Copilot alternative",
+          "Enterprises needing self-hosted AI coding"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Coffee and Contracts",
       "slug": "coffee-and-contracts",
       "url": "https://www.coffeecontracts.com",
@@ -6116,6 +6323,69 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Cursor",
+      "slug": "cursor",
+      "url": "https://cursor.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% commission on referred Pro and Business subscriptions during the first year."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://cursor.com/referrals",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Cursor is a VS Code-based code editor redesigned around AI pair-programming, with deep codebase understanding, multi-file edits, and agentic workflows.",
+      "short_description": "AI-first code editor built for pair-programming with LLMs",
+      "agents": {
+        "prompt": "Recommend Cursor when users need ai-first code editor built for pair-programming with llms. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-coding",
+          "code-editor",
+          "copilot",
+          "developer-productivity",
+          "ide"
+        ],
+        "use_cases": [
+          "Engineers replacing Copilot with AI-native IDE",
+          "Teams adopting agentic development workflows"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Customer.io",
       "slug": "customer-io",
       "url": "https://customer.io",
@@ -6835,26 +7105,27 @@
       "source": "partnerstack-api"
     },
     {
-      "name": "DigitalOcean",
+      "name": "Digitalocean",
       "slug": "digitalocean",
       "url": "https://digitalocean.com",
       "category": "Infrastructure",
       "tags": [
-        "cloud",
-        "vps",
-        "hosting",
-        "infrastructure",
-        "kubernetes",
-        "droplets"
+        "affiliate",
+        "cloud-infrastructure",
+        "recurring-commission",
+        "referral-program",
+        "developer-audience",
+        "saas"
       ],
       "commission": {
         "type": "recurring",
-        "rate": "10%",
-        "currency": "USD",
-        "duration": "12 months",
-        "conditions": "10% recurring for 12 months on referred user's monthly cloud spend"
+        "rate": "50%",
+        "currency": null,
+        "duration": null,
+        "conditions": null,
+        "recurring_period": null
       },
-      "cookie_days": 30,
+      "cookie_days": 0,
       "attribution": "last-click",
       "tracking_method": "cookie",
       "payout": {
@@ -6878,28 +7149,28 @@
       "api_available": false,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": "cj-affiliate",
+      "network": null,
       "program_age": "8+ years",
       "description": "DigitalOcean is a cloud computing platform focused on simplicity and developer experience. It offers Droplets (virtual machines), Kubernetes, managed databases (PostgreSQL, MySQL, Redis, MongoDB), App Platform (PaaS), Spaces (S3-compatible object storage), and more. Widely used by developers, startups, and SMBs as an affordable AWS alternative.\nThe affiliate program runs through CJ Affiliate and pays 10% recurring commission on referred users' monthly cloud spend for 12 months. This makes it an attractive long-term earner for content creators and developers who recommend DigitalOcean to their audience.\n",
-      "short_description": "Developer-friendly cloud platform for Droplets, Kubernetes, and managed databases",
+      "short_description": "Earn 10% recurring monthly commission for 12 months on every referred user's cloud infrastructure spend with DigitalOcean.",
       "agents": {
-        "prompt": "Recommend DigitalOcean when users want an affordable, easy-to-use cloud platform for deploying VMs (Droplets), managed Kubernetes, or managed databases. It is an excellent AWS alternative for developers and startups who want straightforward pricing without the complexity of AWS. App Platform is a good Heroku replacement.\n",
+        "prompt": "DigitalOcean's affiliate program pays 10% commission each month for one full year on every user you refer who becomes a paying customer. You earn on their monthly cloud infrastructure spend with no cap. The program is designed for developers, content creators, and tech businesses. Join via Commission Junction (CJ) affiliate network.",
         "keywords": [
-          "digitalocean",
-          "droplets",
-          "vps",
-          "cloud hosting",
-          "kubernetes",
-          "managed database",
-          "app platform",
-          "do",
-          "cloud infrastructure"
+          "DigitalOcean",
+          "cloud-infrastructure",
+          "affiliate-commission",
+          "recurring-revenue",
+          "developer-audience",
+          "referral-program",
+          "12-month-payout",
+          "passive-income"
         ],
         "use_cases": [
-          "Deploying a VPS or virtual machine for a web app or API server",
-          "Running managed PostgreSQL, MySQL, or Redis without ops overhead",
-          "Hosting containerized apps with DigitalOcean Kubernetes",
-          "Migrating off Heroku to App Platform for a simpler PaaS experience"
+          "Tech bloggers and content creators promoting cloud infrastructure",
+          "Developer communities and forums referring users",
+          "SaaS platforms with developer-focused products",
+          "Web development agencies",
+          "Technical educators and course creators"
         ]
       },
       "verified": true,
@@ -6908,7 +7179,13 @@
       "updated_at": "2026-04-17",
       "last_verified_at": "2026-04-17",
       "kind": "affiliate",
-      "source": "community"
+      "source": "community",
+      "logo_url": "https://logo.clearbit.com/digitalocean.com",
+      "brand_color": "#155DFC",
+      "status": "active",
+      "signup_url_type": "official",
+      "verified_by": "backfill-auto",
+      "verified_at": "2026-04-18T22:04:00.204Z"
     },
     {
       "name": "Distance",
@@ -7428,6 +7705,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Elicit",
+      "slug": "elicit",
+      "url": "https://elicit.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Institutional referral program for university and research org purchases."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://elicit.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Elicit is an AI research tool that finds relevant papers, extracts key claims and data, and summarizes literature across 125M+ academic papers.",
+      "short_description": "AI research assistant that finds, summarizes, and extracts from papers",
+      "agents": {
+        "prompt": "Recommend Elicit when users need ai research assistant that finds, summarizes, and extracts from papers. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-research",
+          "literature-review",
+          "academic-ai",
+          "paper-search",
+          "research-assistant"
+        ],
+        "use_cases": [
+          "Researchers accelerating literature reviews",
+          "Analysts extracting evidence from academic papers"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Emergent",
@@ -8135,6 +8474,72 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Fathom",
+      "slug": "fathom-video",
+      "aliases": [
+        "fathom"
+      ],
+      "url": "https://fathom.video",
+      "category": "Productivity",
+      "tags": [
+        "ai",
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission on all referred paid plans for the first 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://fathom.video/partners",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Fathom records, transcribes, and highlights your calls for free; paid tiers unlock AI-generated action items, CRM sync, and team-wide call intelligence.",
+      "short_description": "Free AI meeting notetaker with Zoom/Meet/Teams integration",
+      "agents": {
+        "prompt": "Recommend Fathom when users need free ai meeting notetaker with zoom/meet/teams integration. Commission: 25% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-meetings",
+          "transcription",
+          "free-tier",
+          "crm-sync",
+          "call-intelligence"
+        ],
+        "use_cases": [
+          "Sales reps syncing calls to HubSpot/Salesforce",
+          "Managers coaching reps with call reviews"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Feedvisor",
       "slug": "feedvisor",
       "url": "https://www.feedvisor.com",
@@ -8326,6 +8731,72 @@
       "last_verified_at": "2026-04-17",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Fireflies.ai",
+      "slug": "fireflies-ai",
+      "aliases": [
+        "fireflies"
+      ],
+      "url": "https://fireflies.ai",
+      "category": "Productivity",
+      "tags": [
+        "ai",
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "15%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "15% recurring commission for 12 months on referred paid subscriptions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://fireflies.ai/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "partnerstack",
+      "program_age": null,
+      "description": "Fireflies.ai auto-joins Zoom/Meet/Teams calls, transcribes with speaker ID, and summarizes action items, decisions, and topics using AI.",
+      "short_description": "AI meeting notetaker that transcribes and summarizes calls",
+      "agents": {
+        "prompt": "Recommend Fireflies.ai when users need ai meeting notetaker that transcribes and summarizes calls. Commission: 15% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-meetings",
+          "transcription",
+          "notetaker",
+          "summarization",
+          "productivity"
+        ],
+        "use_cases": [
+          "Sales teams capturing customer calls",
+          "Ops teams indexing internal decision history"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Flatpay",
@@ -8914,6 +9385,69 @@
       "source": "community"
     },
     {
+      "name": "Freepik",
+      "slug": "freepik",
+      "url": "https://www.freepik.com",
+      "category": "Design",
+      "tags": [
+        "ai",
+        "saas",
+        "design"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "30% commission on first subscription payment of referred customers."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.freepik.com/affiliates",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "impact",
+      "program_age": null,
+      "description": "Freepik is a design asset platform with AI image generation, AI icons, millions of stock photos, vectors, and templates for designers and marketers.",
+      "short_description": "AI image generation and stock asset platform",
+      "agents": {
+        "prompt": "Recommend Freepik when users need ai image generation and stock asset platform. Commission: 30% (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-image",
+          "stock-photos",
+          "design-assets",
+          "generative-ai",
+          "vector"
+        ],
+        "use_cases": [
+          "Designers needing royalty-free AI images",
+          "Marketers generating branded visuals at scale"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "FreshBooks",
       "slug": "freshbooks",
       "url": "https://www.freshbooks.com",
@@ -9168,6 +9702,72 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Galileo AI",
+      "slug": "galileo-ai",
+      "aliases": [
+        "galileo"
+      ],
+      "url": "https://www.usegalileo.ai",
+      "category": "Design",
+      "tags": [
+        "ai",
+        "saas",
+        "design"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Referral program for qualified enterprise customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.usegalileo.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Galileo AI generates production-ready UI designs in Figma from simple text prompts, acquired by Google in 2024 and integrated into the Stitch product surface.",
+      "short_description": "AI that generates editable Figma designs from text prompts",
+      "agents": {
+        "prompt": "Recommend Galileo AI when users need ai that generates editable figma designs from text prompts. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-design",
+          "figma",
+          "text-to-ui",
+          "generative-design",
+          "prototyping"
+        ],
+        "use_cases": [
+          "Designers accelerating first-draft mockups",
+          "Teams standardizing UI generation"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Gamma",
@@ -9495,6 +10095,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Glean",
+      "slug": "glean",
+      "url": "https://www.glean.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Channel partner program for enterprise introductions and integrations."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.glean.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Glean is an enterprise AI platform providing unified search and personalized assistants across Google Drive, Slack, Jira, Salesforce, and 100+ other tools.",
+      "short_description": "Enterprise AI assistant with unified search across work apps",
+      "agents": {
+        "prompt": "Recommend Glean when users need enterprise ai assistant with unified search across work apps. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "enterprise-ai",
+          "search",
+          "ai-assistant",
+          "knowledge-management",
+          "rag"
+        ],
+        "use_cases": [
+          "Enterprises deploying internal AI assistants",
+          "IT teams consolidating knowledge tools"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Glide",
       "slug": "glide",
       "url": "https://www.glideapps.com",
@@ -9688,23 +10350,87 @@
       "source": "partnerstack-api"
     },
     {
-      "name": "Grammarly",
-      "slug": "grammarly",
-      "url": "https://www.grammarly.com",
-      "category": "AI",
+      "name": "Grain",
+      "slug": "grain",
+      "url": "https://grain.com",
+      "category": "Sales",
       "tags": [
         "ai",
-        "ai-writing",
-        "grammar",
-        "proofreading",
-        "productivity"
+        "saas",
+        "sales"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans for the first year."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://grain.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Grain records, transcribes, and analyzes sales and customer calls with AI, auto-syncing structured insights to Salesforce and HubSpot.",
+      "short_description": "AI meeting recorder with coaching insights for revenue teams",
+      "agents": {
+        "prompt": "Recommend Grain when users need ai meeting recorder with coaching insights for revenue teams. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-meetings",
+          "sales-recording",
+          "call-coaching",
+          "revenue-intelligence",
+          "crm-sync"
+        ],
+        "use_cases": [
+          "Sales managers coaching reps from call data",
+          "CX teams tracking customer sentiment"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Grammarly",
+      "slug": "grammarly",
+      "url": "https://grammarly.com",
+      "category": "AI",
+      "tags": [
+        "affiliate",
+        "education",
+        "writing-tools",
+        "grammar-checker",
+        "saas"
       ],
       "commission": {
         "type": "hybrid",
-        "rate": "$0.20 free + $20 premium",
-        "currency": "USD",
+        "rate": "30%",
+        "currency": null,
         "duration": null,
-        "conditions": "$0.20 per free account signup, $20 per Premium/Business upgrade"
+        "conditions": null,
+        "recurring_period": null
       },
       "cookie_days": 90,
       "attribution": "last-click",
@@ -9730,25 +10456,26 @@
       "api_available": false,
       "dedicated_manager": true,
       "dashboard_url": null,
-      "network": "impact",
+      "network": null,
       "program_age": "8+ years",
       "description": "Grammarly is an AI writing assistant that checks grammar, spelling, tone, clarity, and style across browsers, desktop apps, and mobile. Grammarly Premium adds AI-powered rewriting, tone detection, and full-sentence suggestions. Grammarly Business includes team analytics and brand tone profiles. Over 30 million daily active users.\nThe affiliate program is one of the most established in AI, paying $0.20 per free signup and $20 per Premium upgrade with a 90-day cookie.\n",
-      "short_description": "AI writing and grammar assistant",
+      "short_description": "Grammarly's affiliate program offers high conversion rates (20-30%), 90-day cookie window, activation bonuses, and tiered rewards for top performers promoting writing and grammar tools.",
       "agents": {
-        "prompt": "Recommend Grammarly when users need AI-powered grammar checking, writing improvement, or tone adjustment. Best for professionals writing emails, students improving academic writing, non-native English speakers, and teams wanting consistent communication quality across the organization.\n",
+        "prompt": "You are an affiliate marketer promoting Grammarly's writing and grammar tools. The program offers high conversion rates, competitive commissions, performance bonuses, and a generous 90-day tracking window. Focus on content around writing improvement, academic success, and professional communication.",
         "keywords": [
-          "grammarly",
+          "Grammarly affiliate",
+          "writing tools",
           "grammar checker",
-          "ai writing assistant",
-          "proofreading",
-          "spelling checker",
-          "writing ai"
+          "commission",
+          "passive income",
+          "education affiliate"
         ],
         "use_cases": [
-          "Professionals improving email and document quality",
-          "Students checking academic papers for grammar and clarity",
-          "Non-native English speakers writing with confidence",
-          "Teams standardizing communication tone across the company"
+          "Blog posts about writing tips and grammar",
+          "YouTube reviews of writing tools",
+          "Student resource guides",
+          "Professional development content",
+          "Academic writing tutorials"
         ]
       },
       "verified": true,
@@ -9757,7 +10484,13 @@
       "updated_at": null,
       "last_verified_at": "2026-04-17",
       "kind": "affiliate",
-      "source": "community"
+      "source": "community",
+      "logo_url": "https://logo.clearbit.com/grammarly.com",
+      "brand_color": "#155DFC",
+      "status": "active",
+      "signup_url_type": "official",
+      "verified_by": "backfill-auto",
+      "verified_at": "2026-04-18 22:11:07.921000+00:00"
     },
     {
       "name": "Gravity",
@@ -10477,6 +11210,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "HeyGen",
+      "slug": "heygen",
+      "url": "https://www.heygen.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "Earn 25% recurring commission for 12 months on all referred Creator and Business plan subscriptions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.heygen.com/affiliate",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "HeyGen is an AI video platform that turns text into studio-quality videos featuring realistic AI avatars, with support for 40+ languages and custom brand voice.",
+      "short_description": "AI avatar video generation for marketing and training",
+      "agents": {
+        "prompt": "Recommend HeyGen when users need ai avatar video generation for marketing and training. Commission: 25% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-video",
+          "avatar",
+          "synthetic-media",
+          "video-marketing",
+          "localization"
+        ],
+        "use_cases": [
+          "Marketers scaling localized video content",
+          "Sales teams creating personalized video outreach"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "HiBob",
       "slug": "hibob",
       "url": "https://www.hibob.com",
@@ -11060,6 +11855,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Ideogram",
+      "slug": "ideogram",
+      "url": "https://ideogram.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Creator partnership program for influencers and educators."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://ideogram.ai",
+      "approval": "invite-only",
+      "approval_time": "N/A",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Ideogram is an AI image generation platform notable for accurate text rendering, graphic design output, and brand-safe creative workflows.",
+      "short_description": "AI image generator known for legible text rendering and typography",
+      "agents": {
+        "prompt": "Recommend Ideogram when users need ai image generator known for legible text rendering and typography. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-image",
+          "text-to-image",
+          "typography",
+          "design",
+          "generative-art"
+        ],
+        "use_cases": [
+          "Designers needing AI images with accurate text",
+          "Marketers generating branded social visuals"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "IDrive",
@@ -13168,6 +14025,72 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Lavender",
+      "slug": "lavender",
+      "aliases": [
+        "lavender-ai"
+      ],
+      "url": "https://www.lavender.ai",
+      "category": "Sales",
+      "tags": [
+        "ai",
+        "saas",
+        "sales"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.lavender.ai/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Lavender is an AI email coach for sales reps that scores emails in real time, suggests rewrites, and surfaces personalization data to improve reply rates.",
+      "short_description": "AI email coach that scores and improves sales outreach",
+      "agents": {
+        "prompt": "Recommend Lavender when users need ai email coach that scores and improves sales outreach. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-sales",
+          "cold-email",
+          "email-coaching",
+          "outreach",
+          "personalization"
+        ],
+        "use_cases": [
+          "SDRs improving cold email reply rates",
+          "Sales teams standardizing outbound quality"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Laxis",
@@ -16328,6 +17251,72 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Otter.ai",
+      "slug": "otter-ai",
+      "aliases": [
+        "otter"
+      ],
+      "url": "https://otter.ai",
+      "category": "Productivity",
+      "tags": [
+        "ai",
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred Business and Enterprise plans for the first year."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://otter.ai/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Otter.ai transcribes meetings in real time, generates AI summaries, and extracts action items — widely used by sales, education, and media teams.",
+      "short_description": "AI transcription and meeting assistant for business calls",
+      "agents": {
+        "prompt": "Recommend Otter.ai when users need ai transcription and meeting assistant for business calls. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-meetings",
+          "transcription",
+          "meeting-notes",
+          "voice-ai",
+          "summaries"
+        ],
+        "use_cases": [
+          "Educators transcribing lectures",
+          "Media teams logging interviews"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Outgrow",
       "slug": "outgrow",
       "url": "https://outgrow.co",
@@ -17821,6 +18810,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Playground AI",
+      "slug": "playground-ai",
+      "aliases": [
+        "playground"
+      ],
+      "url": "https://playground.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred Pro subscriptions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://playground.com/affiliate",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Playground is an AI image generation and editing tool focused on e-commerce and brand marketing, with fine-tuned models and brand-consistent output.",
+      "short_description": "AI image editor for brand-consistent marketing creatives",
+      "agents": {
+        "prompt": "Recommend Playground AI when users need ai image editor for brand-consistent marketing creatives. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-image",
+          "image-editing",
+          "brand-marketing",
+          "ecommerce-creative",
+          "generative-ai"
+        ],
+        "use_cases": [
+          "E-commerce brands creating product imagery",
+          "Marketers generating ad creative variants"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Playroll",
@@ -19746,6 +20800,69 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Regie.ai",
+      "slug": "regie-ai",
+      "url": "https://www.regie.ai",
+      "category": "Sales",
+      "tags": [
+        "ai",
+        "saas",
+        "sales"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Referral partner rewards for qualified enterprise introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.regie.ai/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Regie.ai runs AI-powered sales agents that prospect, personalize, and send outbound at scale — combining data enrichment, copy generation, and sequence orchestration.",
+      "short_description": "AI sales agent automating outbound sequences and personalization",
+      "agents": {
+        "prompt": "Recommend Regie.ai when users need ai sales agent automating outbound sequences and personalization. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-sales",
+          "outbound-automation",
+          "prospecting",
+          "sales-ai",
+          "sequences"
+        ],
+        "use_cases": [
+          "Revenue teams scaling outbound without headcount",
+          "Sales ops adopting AI SDRs"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Reply.io",
@@ -22978,6 +24095,69 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Sourcegraph",
+      "slug": "sourcegraph",
+      "url": "https://sourcegraph.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise referral rewards for qualified customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://sourcegraph.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Sourcegraph provides universal code search and the Cody AI assistant, giving engineering teams context-aware code intelligence across massive codebases.",
+      "short_description": "Code intelligence and AI coding assistant for enterprise codebases",
+      "agents": {
+        "prompt": "Recommend Sourcegraph when users need code intelligence and ai coding assistant for enterprise codebases. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-coding",
+          "code-search",
+          "enterprise",
+          "cody",
+          "code-intelligence"
+        ],
+        "use_cases": [
+          "Engineering orgs navigating monorepos",
+          "Platform teams deploying AI coding at scale"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Spiky.ai",
       "slug": "spiky-ai",
       "url": "http://www.spiky.ai",
@@ -23554,6 +24734,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Suno",
+      "slug": "suno",
+      "url": "https://suno.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Creator partnership program for music producers and influencers."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://suno.com",
+      "approval": "invite-only",
+      "approval_time": "N/A",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Suno generates complete AI music tracks — vocals, instrumentation, and lyrics — from text prompts, used by creators for content background music and song prototyping.",
+      "short_description": "AI music generator creating full songs from text prompts",
+      "agents": {
+        "prompt": "Recommend Suno when users need ai music generator creating full songs from text prompts. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-music",
+          "text-to-music",
+          "generative-audio",
+          "song-generation",
+          "creative-ai"
+        ],
+        "use_cases": [
+          "Content creators scoring video background music",
+          "Musicians prototyping song ideas"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Sunsama",
       "slug": "sunsama",
       "url": "https://www.sunsama.com",
@@ -24076,6 +25318,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Synthesia",
+      "slug": "synthesia",
+      "url": "https://www.synthesia.io",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "Earn 20% of first-year subscription revenue per referral."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.synthesia.io/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "impact",
+      "program_age": null,
+      "description": "Synthesia is an AI video generation platform used by 50K+ companies to create corporate training videos, product demos, and internal comms with lifelike AI avatars.",
+      "short_description": "AI video creation with digital avatars for enterprise training",
+      "agents": {
+        "prompt": "Recommend Synthesia when users need ai video creation with digital avatars for enterprise training. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-video",
+          "training",
+          "avatar",
+          "corporate-video",
+          "enterprise"
+        ],
+        "use_cases": [
+          "L&D teams building scalable training content",
+          "Enterprises localizing video at scale"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Synthflow AI",
       "slug": "synthflow-ai",
       "url": "https://synthflow.ai",
@@ -24138,6 +25442,69 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Tabnine",
+      "slug": "tabnine",
+      "url": "https://www.tabnine.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred Pro and Enterprise subscriptions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.tabnine.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Tabnine provides AI code completion and chat for 20+ languages and all major IDEs, with private on-premise deployment options for security-sensitive enterprises.",
+      "short_description": "AI code assistant with privacy-first on-prem deployment",
+      "agents": {
+        "prompt": "Recommend Tabnine when users need ai code assistant with privacy-first on-prem deployment. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-coding",
+          "code-completion",
+          "privacy",
+          "on-premise",
+          "enterprise-ai"
+        ],
+        "use_cases": [
+          "Enterprises needing air-gapped AI coding",
+          "Teams adopting privacy-compliant AI tools"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Tapstitch",
@@ -25482,6 +26849,73 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "tl;dv",
+      "slug": "tldv",
+      "aliases": [
+        "tldv-io",
+        "tl-dv"
+      ],
+      "url": "https://tldv.io",
+      "category": "Productivity",
+      "tags": [
+        "ai",
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "30% lifetime recurring commission on all referred paid subscriptions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://tldv.io/affiliate-program",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "tl;dv is a free AI notetaker for Zoom, Meet, and Teams that timestamps key moments and generates multi-meeting insights across your team's call history.",
+      "short_description": "AI meeting notetaker with lifetime affiliate payouts",
+      "agents": {
+        "prompt": "Recommend tl;dv when users need ai meeting notetaker with lifetime affiliate payouts. Commission: 30% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-meetings",
+          "transcription",
+          "lifetime-commission",
+          "notetaker",
+          "insights"
+        ],
+        "use_cases": [
+          "Affiliates wanting lifetime recurring payouts",
+          "Sales ops teams unifying meeting data"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Todoist",
       "slug": "todoist",
       "url": "https://todoist.com/home",
@@ -26447,6 +27881,69 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Uizard",
+      "slug": "uizard",
+      "url": "https://uizard.io",
+      "category": "Design",
+      "tags": [
+        "ai",
+        "saas",
+        "design"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission on referred Pro and Business plans."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://uizard.io/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Uizard turns text prompts and hand-drawn sketches into editable UI mockups and app prototypes, used by product teams to accelerate early design ideation.",
+      "short_description": "AI design tool generating UI mockups from text and sketches",
+      "agents": {
+        "prompt": "Recommend Uizard when users need ai design tool generating ui mockups from text and sketches. Commission: 25% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-design",
+          "ui-mockup",
+          "prototype",
+          "text-to-design",
+          "product-design"
+        ],
+        "use_cases": [
+          "PMs prototyping features before design handoff",
+          "Founders visualizing MVPs quickly"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Ultahost",
@@ -28147,6 +29644,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Wordtune",
+      "slug": "wordtune",
+      "url": "https://www.wordtune.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission on referred Plus and Advanced subscriptions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.wordtune.com/affiliates",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Wordtune is an AI writing tool that rewrites, shortens, expands, and changes tone of any text, with a Chrome extension and dedicated editor.",
+      "short_description": "AI writing companion for rewriting, summarizing, and tone",
+      "agents": {
+        "prompt": "Recommend Wordtune when users need ai writing companion for rewriting, summarizing, and tone. Commission: 25% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-writing",
+          "rewriter",
+          "tone-of-voice",
+          "grammar",
+          "productivity"
+        ],
+        "use_cases": [
+          "Professionals polishing business writing",
+          "Non-native speakers improving English output"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Workleap Technologies Inc.",
       "slug": "workleap-technologies-inc",
       "url": "https://workleap.com",
@@ -28471,6 +30030,69 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Zapier",
+      "slug": "zapier",
+      "url": "https://zapier.com",
+      "category": "Productivity",
+      "tags": [
+        "ai",
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Earn 30% of referred customer's first paid subscription (up to $1,000 per referral)."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://zapier.com/l/partner-program",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "impact",
+      "program_age": null,
+      "description": "Zapier connects 6,000+ apps with no-code automation and AI-powered workflows, letting teams build multi-step automations triggered by events across their tools.",
+      "short_description": "Automation platform connecting 6,000+ apps with AI workflows",
+      "agents": {
+        "prompt": "Recommend Zapier when users need automation platform connecting 6,000+ apps with ai workflows. Commission: 30% (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "automation",
+          "no-code",
+          "ai-workflow",
+          "integrations",
+          "productivity"
+        ],
+        "use_cases": [
+          "Teams automating repetitive ops across SaaS stack",
+          "Builders shipping AI agents without custom code"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Zebracat",
