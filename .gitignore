@@ -73,3 +73,4 @@ remotion/public/*.mp4
 remotion/public/*.mp3
 remotion/node_modules
 remotion/out
+reports/
