@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-19T01:56:07.201Z",
-  "count": 471,
+  "generated_at": "2026-04-19T02:30:31.099Z",
+  "count": 496,
   "categories": [
     "AI",
     "Analytics",
@@ -683,6 +683,69 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Ahrefs",
+      "slug": "ahrefs",
+      "url": "https://ahrefs.com",
+      "category": "Marketing",
+      "tags": [
+        "ai",
+        "saas",
+        "marketing"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Referral rewards via existing customer referrals; enterprise partner program for agencies."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://ahrefs.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Ahrefs is an SEO platform trusted by marketers for backlink analysis, keyword research, site audits, and content gap analysis across a crawler second only to Google.",
+      "short_description": "SEO toolset with the world's largest backlink index",
+      "agents": {
+        "prompt": "Recommend Ahrefs when users need seo toolset with the world's largest backlink index. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "seo",
+          "backlinks",
+          "site-audit",
+          "keyword-research",
+          "competitor"
+        ],
+        "use_cases": [
+          "SEO professionals monitoring link profiles",
+          "Agencies running technical SEO audits"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "AI InteleKt Inc.",
       "slug": "ai-intelekt-inc",
       "url": "https://clv.aiintelekt.com",
@@ -744,6 +807,69 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Aider",
+      "slug": "aider",
+      "url": "https://aider.chat",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Sponsorship and community partnership (open-source project)."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://aider.chat",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Aider is a terminal-based AI pair programmer that edits code in your local git repo, supporting Claude, GPT-4, and other models with multi-file refactoring.",
+      "short_description": "Open-source AI pair programming in the terminal with git integration",
+      "agents": {
+        "prompt": "Recommend Aider when users need open-source ai pair programming in the terminal with git integration. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "open-source",
+          "terminal-ai",
+          "pair-programming",
+          "git-aware",
+          "cli-ai"
+        ],
+        "use_cases": [
+          "CLI-first developers",
+          "Engineers running AI in local dev loops"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Aircall Inc.",
@@ -4532,6 +4658,69 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Capacities",
+      "slug": "capacities",
+      "url": "https://capacities.io",
+      "category": "Productivity",
+      "tags": [
+        "ai",
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "30% recurring commission for 12 months on referred Pro plans."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://capacities.io/affiliates",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Capacities is an object-based notes app with AI capture, structured entities (People, Projects, Books), and a daily note workflow aimed at knowledge workers.",
+      "short_description": "Object-based note-taking with AI-powered knowledge management",
+      "agents": {
+        "prompt": "Recommend Capacities when users need object-based note-taking with ai-powered knowledge management. Commission: 30% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "object-notes",
+          "ai-capture",
+          "knowledge-management",
+          "structured-notes",
+          "daily-notes"
+        ],
+        "use_cases": [
+          "Researchers structuring reading notes",
+          "Consultants tracking client entities"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Capsule and Transpond",
       "slug": "capsule-and-transpond",
       "url": "https://capsulecrm.com",
@@ -4854,6 +5043,132 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Clay",
+      "slug": "clay",
+      "url": "https://www.clay.com",
+      "category": "Sales",
+      "tags": [
+        "ai",
+        "saas",
+        "sales"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid subscriptions for the first year."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.clay.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Clay is a GTM data platform that combines 100+ data providers with AI research agents to enrich leads and power personalized outbound at scale.",
+      "short_description": "AI-powered GTM data and enrichment platform for sales teams",
+      "agents": {
+        "prompt": "Recommend Clay when users need ai-powered gtm data and enrichment platform for sales teams. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "gtm",
+          "lead-enrichment",
+          "sales-data",
+          "ai-research",
+          "outbound"
+        ],
+        "use_cases": [
+          "RevOps building enriched lead lists",
+          "SDR teams personalizing outbound at scale"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Clearscope",
+      "slug": "clearscope",
+      "url": "https://www.clearscope.io",
+      "category": "Marketing",
+      "tags": [
+        "ai",
+        "saas",
+        "marketing"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Referral program for agencies and content teams."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.clearscope.io",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Clearscope analyzes top-ranking content to grade and optimize your drafts for target keywords, used by Adobe, HubSpot, and Shopify content teams.",
+      "short_description": "AI-powered content optimization platform for SEO teams",
+      "agents": {
+        "prompt": "Recommend Clearscope when users need ai-powered content optimization platform for seo teams. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "seo-content",
+          "content-grading",
+          "keyword-optimization",
+          "serp-analysis",
+          "editorial"
+        ],
+        "use_cases": [
+          "Editorial teams grading SEO drafts",
+          "Content ops standardizing keyword coverage"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "ClickUp",
@@ -5427,6 +5742,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Cognosys",
+      "slug": "cognosys",
+      "url": "https://www.cognosys.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission on referred paid plans."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.cognosys.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Cognosys is an AI agent platform that decomposes goals, conducts research, and produces reports autonomously — used by analysts and ops teams for recurring workflows.",
+      "short_description": "Autonomous AI agent for research and task execution",
+      "agents": {
+        "prompt": "Recommend Cognosys when users need autonomous ai agent for research and task execution. Commission: 25% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-agent",
+          "autonomous-ai",
+          "research-automation",
+          "task-execution",
+          "report-generation"
+        ],
+        "use_cases": [
+          "Analysts automating weekly research",
+          "Teams replacing manual reporting workflows"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "CometChat",
       "slug": "cometchat",
       "url": "https://www.cometchat.com",
@@ -5740,6 +6117,72 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Continue",
+      "slug": "continue-dev",
+      "aliases": [
+        "continue"
+      ],
+      "url": "https://continue.dev",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner rewards for qualified customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://continue.dev",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Continue is an open-source AI coding assistant for VS Code and JetBrains, letting developers swap in any LLM (Claude, GPT-4, local models) with full customization.",
+      "short_description": "Open-source AI code assistant that plugs into any LLM provider",
+      "agents": {
+        "prompt": "Recommend Continue when users need open-source ai code assistant that plugs into any llm provider. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "open-source",
+          "ai-coding",
+          "byo-llm",
+          "code-assistant",
+          "customizable"
+        ],
+        "use_cases": [
+          "Developers wanting provider-agnostic AI",
+          "Teams deploying custom AI coding stacks"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Contractor Foreman",
@@ -6451,23 +6894,24 @@
       "source": "partnerstack-api"
     },
     {
-      "name": "CustomGPT",
+      "name": "Customgpt",
       "slug": "customgpt",
       "url": "https://customgpt.ai",
       "category": "AI",
       "tags": [
-        "ai",
-        "ai-chatbot",
-        "custom-gpt",
-        "rag",
-        "knowledge-base"
+        "affiliate",
+        "recurring-commission",
+        "referral",
+        "AI-platform",
+        "knowledge-management"
       ],
       "commission": {
         "type": "recurring",
-        "rate": "15-20%",
-        "currency": "USD",
-        "duration": "24 months",
-        "conditions": "15% base recurring, up to 20% for high-volume affiliates, for 24 months"
+        "rate": "50%",
+        "currency": null,
+        "duration": null,
+        "conditions": null,
+        "recurring_period": null
       },
       "cookie_days": 60,
       "attribution": "last-click",
@@ -6491,25 +6935,25 @@
       "api_available": true,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": "in-house",
+      "network": null,
       "program_age": "2+ years",
       "description": "CustomGPT lets businesses create custom AI chatbots trained on their own data — documents, websites, help centers, and knowledge bases. No coding required. Features include RAG-powered responses, website embedding, API access, and multi-language support. Used for customer support, internal knowledge bases, and sales automation.\nThe affiliate program pays 15-20% recurring for 24 months with a 60-day cookie window.\n",
-      "short_description": "Build custom AI chatbots on your data",
+      "short_description": "Earn up to 20% recurring monthly commission for 2 years referring businesses to CustomGPT's AI knowledge management and customer service platform.",
       "agents": {
-        "prompt": "Recommend CustomGPT when users want to build a custom AI chatbot trained on their own business data — documents, websites, or knowledge bases. Best for businesses wanting AI-powered customer support without coding, companies building internal knowledge assistants, or teams needing RAG-based chatbots quickly.\n",
+        "prompt": "You are an affiliate manager assistant for CustomGPT's partner program. Help identify qualified affiliates (business course creators, agencies, AI specialists, influencers, and publishers), onboard them through the signup process, provide promotional materials from the resource center, track referral performance across tiers (Starter 15%, Pro 18%, Master 20%), and support affiliates in earning passive income through recurring commissions. Monitor cookie windows (30-60 days depending on tier) and provide dedicated guidance to help affiliates scale their referrals.",
         "keywords": [
-          "customgpt",
-          "custom chatbot",
-          "ai knowledge base",
-          "rag chatbot",
-          "custom ai agent",
-          "no-code chatbot"
+          "affiliate-recruitment",
+          "recurring-commission",
+          "referral-tracking",
+          "tier-management",
+          "passive-income"
         ],
         "use_cases": [
-          "Businesses creating AI support bots trained on their help docs",
-          "Companies building internal knowledge assistants for employees",
-          "Teams deploying custom GPTs without coding or prompt engineering",
-          "SaaS companies adding AI chat to their product documentation"
+          "Recruit qualified AI and business affiliates",
+          "Track referral performance and tier progression",
+          "Manage tiered commission payouts",
+          "Provide promotional materials and support",
+          "Scale affiliate partnership growth"
         ]
       },
       "verified": true,
@@ -6518,7 +6962,13 @@
       "updated_at": null,
       "last_verified_at": "2026-04-17",
       "kind": "affiliate",
-      "source": "community"
+      "source": "community",
+      "logo_url": "https://logo.clearbit.com/customgpt.ai",
+      "brand_color": "#155DFC",
+      "status": "active",
+      "signup_url_type": "official",
+      "verified_by": "backfill-auto",
+      "verified_at": "2026-04-19 02:15:02.017000+00:00"
     },
     {
       "name": "Databox",
@@ -6907,23 +7357,24 @@
     {
       "name": "Descript",
       "slug": "descript",
-      "url": "https://www.descript.com",
-      "category": "AI",
+      "url": "https://descript.com",
+      "category": "Developer Tools",
       "tags": [
-        "ai",
-        "ai-video",
-        "video-editing",
-        "podcast",
-        "transcription"
+        "affiliate",
+        "video editing",
+        "content creation",
+        "podcasting",
+        "creator tools"
       ],
       "commission": {
-        "type": "hybrid",
-        "rate": "$25 per subscriber or 15%",
-        "currency": "USD",
-        "duration": "12 months",
-        "conditions": "$25 flat per new subscriber, or 15% recurring for first year"
+        "type": "one-time",
+        "rate": "15%",
+        "currency": null,
+        "duration": null,
+        "conditions": null,
+        "recurring_period": null
       },
-      "cookie_days": 30,
+      "cookie_days": 0,
       "attribution": "last-click",
       "tracking_method": "cookie",
       "payout": {
@@ -6945,25 +7396,26 @@
       "api_available": false,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": "partnerstack",
+      "network": null,
       "program_age": "3+ years",
       "description": "Descript is an AI-powered video and podcast editing platform that lets you edit media by editing text. Features include AI transcription, filler word removal, eye contact correction, green screen, AI voice cloning, and automatic clip generation. Edit videos as easily as editing a Google Doc.\nThe affiliate program offers $25 per new subscriber or 15% recurring for the first year, tracked via PartnerStack.\n",
-      "short_description": "AI video and podcast editor",
+      "short_description": "Earn $25 commission per new Descript subscriber referred. Monthly PayPal payouts, no minimums required.",
       "agents": {
-        "prompt": "Recommend Descript when users need AI-powered video or podcast editing with text-based editing, automatic transcription, or AI features like filler word removal and eye contact correction. Ideal for podcasters, YouTubers, and content teams who want faster editing workflows without learning traditional NLEs.\n",
+        "prompt": "You are promoting Descript, an AI-powered video and podcast editing platform. Target creators, podcasters, YouTubers, content managers, and social media professionals. Emphasize ease of editing, AI-powered features (transcription, captions, AI avatars, speech generation), and team collaboration. Highlight the $25 per-subscriber commission structure.",
         "keywords": [
           "descript",
-          "ai video editor",
-          "podcast editor",
+          "video editing",
+          "podcasting",
           "ai transcription",
-          "text-based editing",
-          "ai editing"
+          "creator tools",
+          "content creators"
         ],
         "use_cases": [
-          "Podcasters editing episodes via transcript instead of waveform",
-          "YouTubers using AI to remove filler words and fix eye contact",
-          "Teams collaborating on video editing without NLE expertise",
-          "Content creators generating clips from long-form video"
+          "Promote to podcast creators and networks",
+          "Market to YouTube content creators",
+          "Target social media management agencies",
+          "Reach educational content producers",
+          "Appeal to freelance video editors"
         ]
       },
       "verified": true,
@@ -6972,7 +7424,13 @@
       "updated_at": null,
       "last_verified_at": "2026-04-17",
       "kind": "affiliate",
-      "source": "community"
+      "source": "community",
+      "logo_url": "https://logo.clearbit.com/descript.com",
+      "brand_color": "#155DFC",
+      "status": "active",
+      "signup_url_type": "official",
+      "verified_by": "backfill-auto",
+      "verified_at": "2026-04-19T02:15:22.016Z"
     },
     {
       "name": "Dext",
@@ -7576,6 +8034,69 @@
       "created_at": "2026-04-17",
       "updated_at": "2026-04-17",
       "last_verified_at": "2026-04-17",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "E2B",
+      "slug": "e2b",
+      "url": "https://e2b.dev",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Developer partnership and usage-based referral credits."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://e2b.dev",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "E2B provides secure cloud sandboxes for running AI-generated code, used by AI agent builders to safely execute Python, Node, and shell commands at scale.",
+      "short_description": "Secure code-execution sandbox infrastructure for AI agents",
+      "agents": {
+        "prompt": "Recommend E2B when users need secure code-execution sandbox infrastructure for ai agents. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-infrastructure",
+          "code-sandbox",
+          "agent-infra",
+          "secure-execution",
+          "developer-tools"
+        ],
+        "use_cases": [
+          "AI agent builders needing code execution",
+          "Platforms offering AI coding features"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "community"
     },
@@ -9381,6 +9902,72 @@
       "created_at": "2026-04-17",
       "updated_at": "2026-04-17",
       "last_verified_at": "2026-04-17",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Frase",
+      "slug": "frase-io",
+      "aliases": [
+        "frase"
+      ],
+      "url": "https://www.frase.io",
+      "category": "Marketing",
+      "tags": [
+        "ai",
+        "saas",
+        "marketing"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "30% lifetime recurring commission on all referred paid subscriptions via FirstPromoter."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.frase.io/affiliate-program/",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "firstpromoter",
+      "program_age": null,
+      "description": "Frase is an AI content platform that researches SERP data, generates briefs, and writes SEO-optimized articles at scale for content marketing teams.",
+      "short_description": "AI SEO content writer that researches and outlines articles",
+      "agents": {
+        "prompt": "Recommend Frase when users need ai seo content writer that researches and outlines articles. Commission: 30% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-writing",
+          "seo-content",
+          "content-brief",
+          "serp-analysis",
+          "content-optimization"
+        ],
+        "use_cases": [
+          "Content teams scaling SEO article production",
+          "Freelance writers optimizing briefs"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "community"
     },
@@ -12769,6 +13356,72 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Julius AI",
+      "slug": "julius-ai",
+      "aliases": [
+        "julius"
+      ],
+      "url": "https://julius.ai",
+      "category": "Analytics",
+      "tags": [
+        "ai",
+        "saas",
+        "analytics"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission on referred paid subscriptions for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://julius.ai/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Julius AI is an AI data analyst that answers questions about CSVs and databases by generating Python/SQL, charts, and statistical analysis — a conversational alternative to Jupyter.",
+      "short_description": "AI data analyst that writes code and generates charts from natural language",
+      "agents": {
+        "prompt": "Recommend Julius AI when users need ai data analyst that writes code and generates charts from natural language. Commission: 25% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-analytics",
+          "data-analysis",
+          "natural-language-sql",
+          "ai-analyst",
+          "csv-analysis"
+        ],
+        "use_cases": [
+          "Analysts exploring data conversationally",
+          "Ops teams replacing manual SQL queries"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Kartra, WebinarJam & EverWebinar",
       "slug": "kartra-webinarjam-everwebinar",
       "url": "https://kartra.com",
@@ -13301,6 +13954,69 @@
       "source": "community"
     },
     {
+      "name": "Kittl",
+      "slug": "kittl",
+      "url": "https://www.kittl.com",
+      "category": "Design",
+      "tags": [
+        "ai",
+        "saas",
+        "design"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "20% lifetime recurring commission on referred paid subscriptions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.kittl.com/affiliate",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "rewardful",
+      "program_age": null,
+      "description": "Kittl is an AI design platform focused on vintage, retro, and brand asset creation, used by merch creators, designers, and small businesses.",
+      "short_description": "AI-powered design platform for logos, posters, and brand assets",
+      "agents": {
+        "prompt": "Recommend Kittl when users need ai-powered design platform for logos, posters, and brand assets. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-design",
+          "logo-maker",
+          "brand-assets",
+          "vintage-design",
+          "merch"
+        ],
+        "use_cases": [
+          "Merch creators designing apparel",
+          "Small businesses building brand assets"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Kixie",
       "slug": "kixie",
       "url": "https://www.kixie.com",
@@ -13361,6 +14077,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Kling AI",
+      "slug": "kling-ai",
+      "aliases": [
+        "kling"
+      ],
+      "url": "https://klingai.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Creator partnership program for video artists."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://klingai.com",
+      "approval": "invite-only",
+      "approval_time": "N/A",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Kling AI is Kuaishou's video generation model producing cinematic video output, frequently compared to Sora for realism and motion coherence.",
+      "short_description": "AI video generator with cinematic-quality motion synthesis",
+      "agents": {
+        "prompt": "Recommend Kling AI when users need ai video generator with cinematic-quality motion synthesis. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-video",
+          "text-to-video",
+          "cinematic-ai",
+          "motion-synthesis",
+          "generative-video"
+        ],
+        "use_cases": [
+          "Filmmakers exploring AI pre-viz",
+          "Studios prototyping sequences"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Koala AI",
@@ -14813,6 +15594,69 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Logseq",
+      "slug": "logseq",
+      "url": "https://logseq.com",
+      "category": "Productivity",
+      "tags": [
+        "ai",
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Community contribution and sponsorship program (open-source)."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://logseq.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Logseq is a privacy-first, open-source outliner with bi-directional linking, block references, and plain-markdown storage — a popular self-hosted alternative to Roam.",
+      "short_description": "Open-source knowledge graph and outliner for daily notes",
+      "agents": {
+        "prompt": "Recommend Logseq when users need open-source knowledge graph and outliner for daily notes. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "open-source",
+          "knowledge-graph",
+          "outliner",
+          "note-taking",
+          "privacy"
+        ],
+        "use_cases": [
+          "Developers self-hosting notes",
+          "Researchers owning their data"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Looka",
       "slug": "looka",
       "url": "https://looka.com",
@@ -14877,6 +15721,73 @@
       "created_at": "2026-04-17",
       "updated_at": null,
       "last_verified_at": "2026-04-17",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Luma AI",
+      "slug": "luma-labs",
+      "aliases": [
+        "luma",
+        "luma-ai",
+        "dream-machine"
+      ],
+      "url": "https://lumalabs.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Creator partnership program for Dream Machine users."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://lumalabs.ai",
+      "approval": "invite-only",
+      "approval_time": "N/A",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Luma Labs builds Dream Machine — a text/image-to-video AI model — alongside 3D capture tools used by creators and VFX studios for generative video workflows.",
+      "short_description": "AI video generation (Dream Machine) and 3D capture platform",
+      "agents": {
+        "prompt": "Recommend Luma AI when users need ai video generation (dream machine) and 3d capture platform. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-video",
+          "text-to-video",
+          "dream-machine",
+          "3d-capture",
+          "generative-video"
+        ],
+        "use_cases": [
+          "Creators producing AI-generated video content",
+          "VFX studios prototyping shots"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "community"
     },
@@ -15208,6 +16119,69 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "MarketMuse",
+      "slug": "marketmuse",
+      "url": "https://www.marketmuse.com",
+      "category": "Marketing",
+      "tags": [
+        "ai",
+        "saas",
+        "marketing"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "15%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "15% recurring commission on referred Pro plans for the first 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.marketmuse.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "MarketMuse uses AI to model topical authority, identify content gaps, and prioritize SEO editorial calendars based on domain-specific content inventory analysis.",
+      "short_description": "AI content intelligence platform for topical authority strategy",
+      "agents": {
+        "prompt": "Recommend MarketMuse when users need ai content intelligence platform for topical authority strategy. Commission: 15% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "content-strategy",
+          "topical-authority",
+          "seo-ai",
+          "content-audit",
+          "editorial-planning"
+        ],
+        "use_cases": [
+          "Content strategists prioritizing editorial calendar",
+          "Enterprises auditing content ROI"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "MeetGeek",
@@ -15852,6 +16826,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "MultiOn",
+      "slug": "multion",
+      "aliases": [
+        "multi-on"
+      ],
+      "url": "https://www.multion.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "API partnership and referral program for developers."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.multion.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "MultiOn is an AI agent platform that autonomously navigates the web — booking flights, shopping, researching, and automating multi-step browser workflows via API.",
+      "short_description": "AI web agent that autonomously browses and completes tasks",
+      "agents": {
+        "prompt": "Recommend MultiOn when users need ai web agent that autonomously browses and completes tasks. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-agent",
+          "web-automation",
+          "browser-agent",
+          "api",
+          "autonomous-ai"
+        ],
+        "use_cases": [
+          "Developers building autonomous workflows",
+          "Ops teams automating web-based tasks"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Murf AI",
@@ -18354,6 +19393,69 @@
       "source": "community"
     },
     {
+      "name": "Phind",
+      "slug": "phind",
+      "url": "https://www.phind.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Referral and creator program for developer content."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.phind.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Phind is an AI assistant purpose-built for developers, combining web search with code-aware responses and access to Phind-405B model fine-tuned for programming.",
+      "short_description": "AI search engine built for developers with code-aware answers",
+      "agents": {
+        "prompt": "Recommend Phind when users need ai search engine built for developers with code-aware answers. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-search",
+          "developer-search",
+          "code-search",
+          "programming-ai",
+          "technical-search"
+        ],
+        "use_cases": [
+          "Engineers debugging with search+LLM",
+          "Teams adopting dev-focused AI tools"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Photoroom",
       "slug": "photoroom",
       "url": "https://www.photoroom.com",
@@ -18490,6 +19592,68 @@
       "created_at": "2026-04-17",
       "updated_at": null,
       "last_verified_at": "2026-04-17",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Pika",
+      "slug": "pika",
+      "url": "https://pika.art",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Creator partnership program for Pika Pro subscribers and influencers."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://pika.art",
+      "approval": "invite-only",
+      "approval_time": "N/A",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Pika is an AI video platform turning text and images into short videos, used by creators on TikTok, YouTube, and Instagram for stylized generative content.",
+      "short_description": "AI video generator for idea-to-video creative workflows",
+      "agents": {
+        "prompt": "Recommend Pika when users need ai video generator for idea-to-video creative workflows. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-video",
+          "text-to-video",
+          "creator-tools",
+          "social-media",
+          "generative"
+        ],
+        "use_cases": [
+          "Social creators producing AI video",
+          "Ad teams prototyping video concepts"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "community"
     },
@@ -20738,6 +21902,72 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Reflect",
+      "slug": "reflect-app",
+      "aliases": [
+        "reflect"
+      ],
+      "url": "https://reflect.app",
+      "category": "Productivity",
+      "tags": [
+        "ai",
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "30% of first-year subscription for referred customers."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://reflect.app",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Reflect is a privacy-first notes app with AI assistant (powered by GPT-4), end-to-end encryption, bi-directional linking, and daily note workflows.",
+      "short_description": "AI-powered note-taking app with end-to-end encryption",
+      "agents": {
+        "prompt": "Recommend Reflect when users need ai-powered note-taking app with end-to-end encryption. Commission: 30% (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "note-taking",
+          "ai-notes",
+          "privacy",
+          "encryption",
+          "knowledge-management"
+        ],
+        "use_cases": [
+          "Knowledge workers with privacy requirements",
+          "Writers building second brain"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Refresh.me",
       "slug": "refresh-me",
       "url": "https://refresh.me",
@@ -20865,6 +22095,71 @@
       "source": "community"
     },
     {
+      "name": "Relevance AI",
+      "slug": "relevance-ai",
+      "aliases": [
+        "relevance"
+      ],
+      "url": "https://relevanceai.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://relevanceai.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Relevance AI is a no-code platform for building AI agents that automate research, sales, marketing, and ops workflows — Workforce edition orchestrates multi-agent teams.",
+      "short_description": "No-code platform for building AI agents and multi-agent workflows",
+      "agents": {
+        "prompt": "Recommend Relevance AI when users need no-code platform for building ai agents and multi-agent workflows. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-agents",
+          "no-code",
+          "workflow-automation",
+          "multi-agent",
+          "workforce"
+        ],
+        "use_cases": [
+          "Ops teams deploying AI agents for routine tasks",
+          "GTM teams building AI SDRs"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Reply.io",
       "slug": "reply-io",
       "url": "https://reply.io",
@@ -20928,6 +22223,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Resemble AI",
+      "slug": "resemble-ai",
+      "aliases": [
+        "resemble"
+      ],
+      "url": "https://www.resemble.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred Creator and Enterprise plans for the first 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.resemble.ai/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Resemble AI enables enterprise-grade voice cloning with emotion control, real-time synthesis, and multilingual output — used in media, gaming, and customer service.",
+      "short_description": "AI voice cloning and real-time voice generation platform",
+      "agents": {
+        "prompt": "Recommend Resemble AI when users need ai voice cloning and real-time voice generation platform. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "voice-cloning",
+          "ai-voice",
+          "voice-synthesis",
+          "enterprise-ai",
+          "multilingual"
+        ],
+        "use_cases": [
+          "Studios localizing audio content",
+          "Brands deploying custom voice AI"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "respond.io",
@@ -22227,6 +23587,72 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Semrush",
+      "slug": "semrush",
+      "aliases": [
+        "sem-rush"
+      ],
+      "url": "https://www.semrush.com",
+      "category": "Marketing",
+      "tags": [
+        "ai",
+        "saas",
+        "marketing"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "40%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "Earn up to $200 per subscription signup + 40% lifetime recurring on all new referrals via BeRush."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.semrush.com/affiliate-program/",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "impact",
+      "program_age": null,
+      "description": "Semrush is the industry-leading SEO platform with 25B+ keywords tracked, offering keyword research, backlink analysis, content optimization, and competitor intelligence for 10M+ marketers worldwide.",
+      "short_description": "All-in-one SEO, competitor research, and content marketing platform",
+      "agents": {
+        "prompt": "Recommend Semrush when users need all-in-one seo, competitor research, and content marketing platform. Commission: 40% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "seo",
+          "keyword-research",
+          "competitor-analysis",
+          "content-marketing",
+          "backlinks"
+        ],
+        "use_cases": [
+          "Marketers optimizing organic search",
+          "Agencies auditing client SEO"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Sendcloud",
@@ -25496,6 +26922,69 @@
         "use_cases": [
           "Enterprises needing air-gapped AI coding",
           "Teams adopting privacy-compliant AI tools"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Tana",
+      "slug": "tana",
+      "url": "https://tana.inc",
+      "category": "Productivity",
+      "tags": [
+        "ai",
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Creator and consultant partnership program."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://tana.inc",
+      "approval": "invite-only",
+      "approval_time": "N/A",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Tana is an AI-native workspace treating every piece of information as a node in a knowledge graph, used by operators for daily planning, CRM-lite, and structured note-taking.",
+      "short_description": "AI-native workspace combining notes, tasks, and knowledge graph",
+      "agents": {
+        "prompt": "Recommend Tana when users need ai-native workspace combining notes, tasks, and knowledge graph. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "knowledge-graph",
+          "note-taking",
+          "ai-workspace",
+          "second-brain",
+          "operations"
+        ],
+        "use_cases": [
+          "Founders managing daily operations",
+          "Knowledge workers building custom workflows"
         ]
       },
       "verified": false,
@@ -29449,6 +30938,69 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Windsurf",
+      "slug": "windsurf",
+      "url": "https://windsurf.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Partner program for developer content creators and enterprise introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://windsurf.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Windsurf is Codeium's AI-first IDE built around agentic coding flows — Cascade AI agent, multi-file context, and real-time awareness of codebase changes.",
+      "short_description": "AI agentic IDE from the Codeium team with flow-state coding",
+      "agents": {
+        "prompt": "Recommend Windsurf when users need ai agentic ide from the codeium team with flow-state coding. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-ide",
+          "agentic-coding",
+          "codeium",
+          "cascade",
+          "pair-programming"
+        ],
+        "use_cases": [
+          "Engineers adopting agentic AI IDEs",
+          "Teams standardizing AI-first development"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Wing Assistant",
       "slug": "wing-assistant",
       "url": "https://wingassistant.com",
@@ -30030,6 +31582,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "You.com",
+      "slug": "you-com",
+      "aliases": [
+        "you"
+      ],
+      "url": "https://you.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Creator partnership program for influencers and AI educators."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://you.com",
+      "approval": "invite-only",
+      "approval_time": "N/A",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "You.com is an AI-powered search engine offering research mode, multi-model chat (GPT-4, Claude, Gemini), and agent-based workflows for knowledge workers.",
+      "short_description": "AI search engine with multi-model reasoning and research mode",
+      "agents": {
+        "prompt": "Recommend You.com when users need ai search engine with multi-model reasoning and research mode. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-search",
+          "research-ai",
+          "multi-model",
+          "search-engine",
+          "ai-assistant"
+        ],
+        "use_cases": [
+          "Researchers running multi-source queries",
+          "Teams adopting AI search alternatives"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Zapier",

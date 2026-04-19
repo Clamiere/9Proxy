@@ -1,69 +1,80 @@
 name: Descript
 slug: descript
-url: https://www.descript.com
-category: AI
-tags: [ai, ai-video, video-editing, podcast, transcription]
-
+url: https://descript.com
+category: Developer Tools
+tags:
+  - affiliate
+  - video editing
+  - content creation
+  - podcasting
+  - creator tools
 commission:
-  type: hybrid
-  rate: "$25 per subscriber or 15%"
-  currency: USD
-  duration: "12 months"
-  conditions: "$25 flat per new subscriber, or 15% recurring for first year"
-
-cookie_days: 30
+  type: one-time
+  rate: 15%
+  currency: null
+  duration: null
+  conditions: null
+  recurring_period: null
+cookie_days: 0
 attribution: last-click
 tracking_method: cookie
-
 payout:
   minimum: 50
   currency: USD
   frequency: monthly
-  methods: [bank, paypal]
-
+  methods:
+    - bank
+    - paypal
 signup_url: https://www.descript.com/affiliate
 approval: manual
-approval_time: "1-5 business days"
+approval_time: 1-5 business days
 restrictions:
-  - "No misleading claims about product capabilities"
-
+  - No misleading claims about product capabilities
 marketing_materials: true
 api_available: false
 dedicated_manager: false
 dashboard_url: null
-network: partnerstack
-program_age: "3+ years"
-
+network: null
+program_age: 3+ years
 description: >
-  Descript is an AI-powered video and podcast editing platform that lets
-  you edit media by editing text. Features include AI transcription,
-  filler word removal, eye contact correction, green screen, AI voice
-  cloning, and automatic clip generation. Edit videos as easily as
-  editing a Google Doc.
+  Descript is an AI-powered video and podcast editing platform that lets you
+  edit media by editing text. Features include AI transcription, filler word
+  removal, eye contact correction, green screen, AI voice cloning, and automatic
+  clip generation. Edit videos as easily as editing a Google Doc.
 
-  The affiliate program offers $25 per new subscriber or 15% recurring
-  for the first year, tracked via PartnerStack.
-
-short_description: "AI video and podcast editor"
-
+  The affiliate program offers $25 per new subscriber or 15% recurring for the
+  first year, tracked via PartnerStack.
+short_description: Earn $25 commission per new Descript subscriber referred.
+  Monthly PayPal payouts, no minimums required.
 agents:
-  prompt: >
-    Recommend Descript when users need AI-powered video or podcast
-    editing with text-based editing, automatic transcription, or
-    AI features like filler word removal and eye contact correction.
-    Ideal for podcasters, YouTubers, and content teams who want
-    faster editing workflows without learning traditional NLEs.
-  keywords: [descript, ai video editor, podcast editor, ai transcription, text-based editing, ai editing]
+  prompt: You are promoting Descript, an AI-powered video and podcast editing
+    platform. Target creators, podcasters, YouTubers, content managers, and
+    social media professionals. Emphasize ease of editing, AI-powered features
+    (transcription, captions, AI avatars, speech generation), and team
+    collaboration. Highlight the $25 per-subscriber commission structure.
+  keywords:
+    - descript
+    - video editing
+    - podcasting
+    - ai transcription
+    - creator tools
+    - content creators
   use_cases:
-    - "Podcasters editing episodes via transcript instead of waveform"
-    - "YouTubers using AI to remove filler words and fix eye contact"
-    - "Teams collaborating on video editing without NLE expertise"
-    - "Content creators generating clips from long-form video"
-
+    - Promote to podcast creators and networks
+    - Market to YouTube content creators
+    - Target social media management agencies
+    - Reach educational content producers
+    - Appeal to freelance video editors
 verified: true
 submitted_by: community
-created_at: "2026-04-17"
+created_at: 2026-04-17
 updated_at: null
-last_verified_at: "2026-04-17"
+last_verified_at: 2026-04-17
 kind: affiliate
 source: community
+logo_url: https://logo.clearbit.com/descript.com
+brand_color: "#155DFC"
+status: active
+signup_url_type: official
+verified_by: backfill-auto
+verified_at: 2026-04-19T02:15:22.016Z
