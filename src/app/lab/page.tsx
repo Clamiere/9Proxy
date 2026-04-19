@@ -460,6 +460,18 @@ export default function LabPage() {
           </a>
           {" "}and the OpenAffiliate registry.
         </p>
+        <p className="text-muted-foreground/50 text-xs mt-2">
+          Want to build your own?{" "}
+          <a
+            href="https://kymaapi.com/signup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-emerald-600 dark:text-emerald-400 hover:underline underline-offset-2"
+          >
+            Get a free Kyma API key
+          </a>
+          {" "}- free credits on signup, no card required.
+        </p>
       </div>
 
       {/* Pipeline visualization */}
@@ -633,9 +645,20 @@ export default function LabPage() {
       {/* Code example */}
       {!output && !loading && (
         <div className="mt-16">
-          <h2 className="text-sm font-semibold mb-4 text-muted-foreground/60">
+          <h2 className="text-sm font-semibold mb-2 text-muted-foreground/60">
             Build your own with the Kyma API
           </h2>
+          <p className="text-xs text-muted-foreground/40 mb-4">
+            <a
+              href="https://kymaapi.com/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-600 dark:text-emerald-400 hover:underline underline-offset-2"
+            >
+              Sign up for free
+            </a>
+            {" "}- get API credits instantly, use any open-source model.
+          </p>
           <div className="rounded-xl border border-border/40 bg-card/30 overflow-hidden">
             <div className="flex items-center gap-2 px-4 py-2 border-b border-border/30 bg-muted/20">
               <div className="flex gap-1.5">
