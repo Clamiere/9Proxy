@@ -196,8 +196,10 @@ function SortHeader({
 
 function ProgramsTable({
   rankedPrograms,
+  initialVoteCounts,
 }: {
   rankedPrograms: Program[];
+  initialVoteCounts: Record<string, number>;
 }) {
   const [sortCol, setSortCol] = useState<ColumnSort>("score");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
@@ -237,7 +239,7 @@ function ProgramsTable({
   }, [rankedPrograms, sortCol, sortDir]);
 
   const slugs = useMemo(() => sorted.map((p) => p.slug), [sorted]);
-  const { counts } = useVoteCounts(slugs);
+  const { counts } = useVoteCounts(slugs, initialVoteCounts);
 
   return (
     <div className="rounded-xl border border-border/40 overflow-hidden">
@@ -506,7 +508,11 @@ function CategoriesTable() {
   );
 }
 
-export default function RankingsPage() {
+export default function RankingsContent({
+  initialVoteCounts,
+}: {
+  initialVoteCounts: Record<string, number>;
+}) {
   const [activeTab, setActiveTab] = useState<Tab>("programs");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedType, setSelectedType] = useState("");
@@ -651,7 +657,7 @@ export default function RankingsPage() {
 
       {/* Table content */}
       {activeTab === "programs" && (
-        <ProgramsTable rankedPrograms={rankedPrograms} />
+        <ProgramsTable rankedPrograms={rankedPrograms} initialVoteCounts={initialVoteCounts} />
       )}
       {activeTab === "networks" && <NetworksTable />}
       {activeTab === "categories" && <CategoriesTable />}
