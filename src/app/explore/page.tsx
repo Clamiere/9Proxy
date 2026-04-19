@@ -45,8 +45,8 @@ async function ExploreContent({
 
   const platform =
     typeof params.platform === "string" ? params.platform : undefined;
-  const program =
-    typeof params.program === "string" ? params.program : undefined;
+  const category =
+    typeof params.category === "string" ? params.category : undefined;
   const timeRange =
     typeof params.time === "string" ? params.time : undefined;
   const sort = typeof params.sort === "string" ? params.sort : "quality";
@@ -57,7 +57,7 @@ async function ExploreContent({
     typeof params.page === "string" ? parseInt(params.page, 10) : 1;
 
   const [data, platformCounts] = await Promise.all([
-    fetchExploreData({ platform, program, timeRange, sort, quality, q, page }),
+    fetchExploreData({ platform, category, timeRange, sort, quality, q, page }),
     fetchPlatformCounts(),
   ]);
 
@@ -77,7 +77,7 @@ async function ExploreContent({
 
       <Suspense fallback={null}>
         <ExploreFilters
-          programs={data.programs}
+          categories={data.categories}
           platformCounts={platformCounts}
           total={data.total}
         />

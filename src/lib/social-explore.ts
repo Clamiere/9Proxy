@@ -1,4 +1,6 @@
 import { createClient } from "@supabase/supabase-js"
+import { readdirSync, readFileSync } from "fs"
+import { join } from "path"
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? ""
 const supabaseAnonKey = process.env.SUPABASE_SERVICE_ROLE_KEY ?? ""
@@ -16,7 +18,6 @@ export interface ExploreItem {
   thumbnail: string | null
   author: string
   views: number
-  likes: number
   snippet: string | null
   sift_score: number | null
   sift_tag: string | null
@@ -26,7 +27,6 @@ export interface ExploreItem {
 
 export interface ExploreFilters {
   platform?: string
-  program?: string
   category?: string
   timeRange?: string
   sort?: string
@@ -42,7 +42,30 @@ export interface ExploreResult {
   page: number
   pageSize: number
   platforms: { platform: string; count: number }[]
-  programs: string[]
+  categories: string[]
+}
+
+// Build category → slugs map from YAML files (cached at module level)
+let _categoryMap: Record<string, string[]> | null = null
+
+function getCategoryMap(): Record<string, string[]> {
+  if (_categoryMap) return _categoryMap
+  _categoryMap = {}
+  try {
+    const programDir = join(process.cwd(), "programs")
+    const files = readdirSync(programDir).filter((f) => f.endsWith(".yaml"))
+    for (const f of files) {
+      const content = readFileSync(join(programDir, f), "utf8")
+      const catMatch = content.match(/category:\s*(.+)/)
+      const cat = catMatch ? catMatch[1].trim() : "Other"
+      const slug = f.replace(".yaml", "")
+      if (!_categoryMap[cat]) _categoryMap[cat] = []
+      _categoryMap[cat].push(slug)
+    }
+  } catch {
+    // fallback if programs dir not available
+  }
+  return _categoryMap
 }
 
 function getDateThreshold(timeRange: string): string | null {
@@ -77,9 +100,16 @@ export async function fetchExploreData(
     query = query.eq("platform", filters.platform)
   }
 
-  // Program filter
-  if (filters.program) {
-    query = query.eq("program_slug", filters.program)
+  // Category filter — get all program slugs in this category
+  if (filters.category && filters.category !== "all") {
+    const catMap = getCategoryMap()
+    const slugs = catMap[filters.category] ?? []
+    if (slugs.length > 0) {
+      query = query.in("program_slug", slugs)
+    } else {
+      // No programs in this category
+      return { items: [], total: 0, page, pageSize, platforms: [], categories: [] }
+    }
   }
 
   // Time range filter
@@ -105,9 +135,6 @@ export async function fetchExploreData(
 
   // Sort
   switch (filters.sort) {
-    case "likes":
-      query = query.order("likes", { ascending: false, nullsFirst: false })
-      break
     case "quality":
       query = query.order("sift_score", { ascending: false, nullsFirst: false })
       break
@@ -115,8 +142,10 @@ export async function fetchExploreData(
       query = query.order("published_at", { ascending: false, nullsFirst: false })
       break
     case "views":
-    default:
       query = query.order("views", { ascending: false, nullsFirst: false })
+      break
+    default:
+      query = query.order("sift_score", { ascending: false, nullsFirst: false })
       break
   }
 
@@ -130,15 +159,9 @@ export async function fetchExploreData(
     return { items: [], total: 0, page, pageSize, platforms: [], programs: [] }
   }
 
-  // Get unique programs for filter dropdown
-  const { data: programSlugs } = await supabase
-    .from("social_items")
-    .select("program_slug")
-    .limit(1000)
-
-  const uniquePrograms = [
-    ...new Set((programSlugs ?? []).map((r: { program_slug: string }) => r.program_slug)),
-  ].sort() as string[]
+  // Get categories for filter dropdown
+  const catMap = getCategoryMap()
+  const categories = Object.keys(catMap).sort()
 
   return {
     items: (data ?? []) as ExploreItem[],
@@ -146,7 +169,7 @@ export async function fetchExploreData(
     page,
     pageSize,
     platforms: [],
-    programs: uniquePrograms,
+    categories,
   }
 }
 

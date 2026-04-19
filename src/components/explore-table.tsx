@@ -41,11 +41,6 @@ function PlatformBadge({ platform }: { platform: string }) {
   );
 }
 
-function engagementRate(views: number, likes: number): string {
-  if (!views || views === 0) return "—";
-  return `${((likes / views) * 100).toFixed(2)}%`;
-}
-
 interface ExploreTableProps {
   items: ExploreItem[];
 }
@@ -71,16 +66,10 @@ export function ExploreTable({ items }: ExploreTableProps) {
               Program
             </th>
             <th className="py-3 px-3 text-right font-medium">Views</th>
-            <th className="py-3 px-3 text-right font-medium hidden sm:table-cell">
-              Likes
-            </th>
-            <th className="py-3 px-3 text-right font-medium hidden lg:table-cell">
-              Engagement
-            </th>
-            <th className="py-3 px-3 text-right font-medium hidden lg:table-cell">
+            <th className="py-3 px-3 text-right font-medium">
               Score
             </th>
-            <th className="py-3 pl-3 text-left font-medium hidden xl:table-cell">
+            <th className="py-3 pl-3 text-left font-medium hidden md:table-cell">
               Tag
             </th>
           </tr>
@@ -155,18 +144,8 @@ export function ExploreTable({ items }: ExploreTableProps) {
                 {formatNumber(item.views)}
               </td>
 
-              {/* Likes */}
-              <td className="py-3 px-3 text-right tabular-nums text-sm text-muted-foreground hidden sm:table-cell">
-                {formatNumber(item.likes)}
-              </td>
-
-              {/* Engagement */}
-              <td className="py-3 px-3 text-right tabular-nums text-sm text-muted-foreground hidden lg:table-cell">
-                {engagementRate(item.views, item.likes)}
-              </td>
-
               {/* SIFT Score */}
-              <td className="py-3 px-3 text-right hidden lg:table-cell">
+              <td className="py-3 px-3 text-right">
                 {item.sift_score != null ? (
                   <span
                     className={`inline-flex items-center rounded-md px-1.5 py-0.5 text-[10px] font-medium tabular-nums ${
@@ -187,7 +166,7 @@ export function ExploreTable({ items }: ExploreTableProps) {
               </td>
 
               {/* SIFT Tag */}
-              <td className="py-3 pl-3 hidden xl:table-cell">
+              <td className="py-3 pl-3 hidden md:table-cell">
                 {item.sift_tag ? (
                   <span className="text-[10px] text-muted-foreground">
                     {item.sift_tag.replace(/_/g, " ")}

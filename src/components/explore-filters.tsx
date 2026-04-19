@@ -21,9 +21,8 @@ const TIME_RANGES = [
 ];
 
 const SORT_OPTIONS = [
-  { value: "views", label: "Top Views" },
-  { value: "likes", label: "Top Likes" },
   { value: "quality", label: "SIFT Score" },
+  { value: "views", label: "Top Views" },
   { value: "recent", label: "Most Recent" },
 ];
 
@@ -35,13 +34,13 @@ const QUALITY_OPTIONS = [
 ];
 
 interface ExploreFiltersProps {
-  programs: string[];
+  categories: string[];
   platformCounts: Record<string, number>;
   total: number;
 }
 
 export function ExploreFilters({
-  programs,
+  categories,
   platformCounts,
   total,
 }: ExploreFiltersProps) {
@@ -51,7 +50,7 @@ export function ExploreFilters({
   const platform = searchParams.get("platform") ?? "all";
   const timeRange = searchParams.get("time") ?? "all";
   const sort = searchParams.get("sort") ?? "quality";
-  const program = searchParams.get("program") ?? "";
+  const category = searchParams.get("category") ?? "all";
   const quality = searchParams.get("quality") ?? "3";
   const q = searchParams.get("q") ?? "";
 
@@ -73,9 +72,9 @@ export function ExploreFilters({
 
   const totalAll = Object.values(platformCounts).reduce((a, b) => a + b, 0);
 
-  const programOptions = [
-    { value: "", label: "All Programs" },
-    ...programs.map((p) => ({ value: p, label: p.replace(/-/g, " ") })),
+  const categoryOptions = [
+    { value: "all", label: "All Categories" },
+    ...categories.map((c) => ({ value: c, label: c })),
   ];
 
   return (
@@ -134,10 +133,10 @@ export function ExploreFilters({
         />
 
         <FilterSelect
-          label="Program"
-          value={program}
-          onChange={(v) => updateParams({ program: v })}
-          options={programOptions}
+          label="Category"
+          value={category}
+          onChange={(v) => updateParams({ category: v })}
+          options={categoryOptions}
         />
 
         <FilterSelect
