@@ -58,6 +58,7 @@ function Footer() {
                 { label: "Categories", href: "/categories" },
                 { label: "Submit", href: "/submit" },
                 { label: "Docs", href: "/docs" },
+                { label: "Changelog", href: "/changelog" },
               ].map(({ label, href }) => (
                 <li key={label}>
                   <Link
