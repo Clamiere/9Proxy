@@ -352,13 +352,14 @@ export default function LabPage() {
   const [selected, setSelected] = useState<Program | null>(null);
   const [competitors, setCompetitors] = useState<Program[]>([]);
   const [contentType, setContentType] = useState("toplist");
+  const [apiKey, setApiKey] = useState("");
   const [output, setOutput] = useState("");
   const [loading, setLoading] = useState(false);
   const [activeStep, setActiveStep] = useState(-1);
   const abortRef = useRef<AbortController | null>(null);
 
   const selectedType = CONTENT_TYPES.find((t) => t.id === contentType)!;
-  const canGenerate = selected && !loading;
+  const canGenerate = selected && apiKey.startsWith("ky-") && !loading;
 
   async function handleGenerate() {
     if (!selected || loading) return;
@@ -386,6 +387,7 @@ export default function LabPage() {
           slug: selected.slug,
           type: contentType,
           compareSlugs: competitors.map((c) => c.slug),
+          apiKey,
         }),
         signal: controller.signal,
       });
@@ -459,18 +461,6 @@ export default function LabPage() {
             Kyma API
           </a>
           {" "}and the OpenAffiliate registry.
-        </p>
-        <p className="text-muted-foreground/50 text-xs mt-2">
-          Want to build your own?{" "}
-          <a
-            href="https://kymaapi.com/signup"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-emerald-600 dark:text-emerald-400 hover:underline underline-offset-2"
-          >
-            Get a free Kyma API key
-          </a>
-          {" "}- free credits on signup, no card required.
         </p>
       </div>
 
@@ -615,6 +605,36 @@ export default function LabPage() {
           </div>
         )}
 
+        {/* Step 3: API Key */}
+        <div>
+          <label className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60 mb-2 block">
+            3. Your Kyma API Key
+          </label>
+          <div className="flex items-center gap-2 rounded-xl border border-border/50 bg-card/50 px-4 py-3">
+            <input
+              type="password"
+              placeholder="ky-..."
+              className="bg-transparent text-sm outline-none w-full placeholder:text-muted-foreground/40 font-mono"
+              value={apiKey}
+              onChange={(e) => setApiKey(e.target.value)}
+            />
+          </div>
+          {!apiKey && (
+            <p className="text-xs text-muted-foreground/50 mt-1.5">
+              Don&apos;t have a key?{" "}
+              <a
+                href="https://kymaapi.com/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-600 dark:text-emerald-400 hover:underline underline-offset-2"
+              >
+                Sign up for free
+              </a>
+              {" "}- get credits instantly, no card required.
+            </p>
+          )}
+        </div>
+
         {/* Generate button */}
         <button
           onClick={handleGenerate}
@@ -642,64 +662,6 @@ export default function LabPage() {
       {/* Output */}
       <StreamOutput content={output} loading={loading} />
 
-      {/* Code example */}
-      {!output && !loading && (
-        <div className="mt-16">
-          <h2 className="text-sm font-semibold mb-2 text-muted-foreground/60">
-            Build your own with the Kyma API
-          </h2>
-          <p className="text-xs text-muted-foreground/40 mb-4">
-            <a
-              href="https://kymaapi.com/signup"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-emerald-600 dark:text-emerald-400 hover:underline underline-offset-2"
-            >
-              Sign up for free
-            </a>
-            {" "}- get API credits instantly, use any open-source model.
-          </p>
-          <div className="rounded-xl border border-border/40 bg-card/30 overflow-hidden">
-            <div className="flex items-center gap-2 px-4 py-2 border-b border-border/30 bg-muted/20">
-              <div className="flex gap-1.5">
-                <div className="h-2.5 w-2.5 rounded-full bg-border/50" />
-                <div className="h-2.5 w-2.5 rounded-full bg-border/50" />
-                <div className="h-2.5 w-2.5 rounded-full bg-border/50" />
-              </div>
-              <span className="text-[10px] text-muted-foreground/50 font-mono ml-2">
-                generate.ts
-              </span>
-            </div>
-            <pre className="p-4 text-xs font-mono text-muted-foreground overflow-x-auto leading-relaxed">
-              <code>{`import OpenAI from "openai";
-
-const kyma = new OpenAI({
-  baseURL: "https://kymaapi.com/v1",
-  apiKey: process.env.KYMA_API_KEY,
-});
-
-// Fetch program data from OpenAffiliate
-const program = await fetch(
-  "https://openaffiliate.dev/api/programs/notion"
-).then(r => r.json());
-
-// Generate affiliate content
-const stream = await kyma.chat.completions.create({
-  model: "deepseek-v3",
-  stream: true,
-  messages: [
-    { role: "system", content: "You are an affiliate content expert." },
-    { role: "user", content: \`Write a review for \${program.name}...\` },
-  ],
-});
-
-for await (const chunk of stream) {
-  process.stdout.write(chunk.choices[0]?.delta?.content ?? "");
-}`}</code>
-            </pre>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

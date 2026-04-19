@@ -7,7 +7,6 @@ import {
 } from "@/lib/programs";
 
 const KYMA_API_URL = "https://kymaapi.com/v1/chat/completions";
-const KYMA_API_KEY = process.env.KYMA_API_KEY ?? "";
 
 const CONTENT_TYPES: Record<
   string,
@@ -238,19 +237,20 @@ Rules:
 /* ── Route handler ────────────────────────────────────────────── */
 
 export async function POST(request: NextRequest) {
-  if (!KYMA_API_KEY) {
-    return new Response(
-      JSON.stringify({ error: "KYMA_API_KEY not configured" }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
-    );
-  }
-
   const body = await request.json();
-  const { slug, type, compareSlugs } = body as {
+  const { slug, type, compareSlugs, apiKey } = body as {
     slug: string;
     type: string;
     compareSlugs?: string[];
+    apiKey: string;
   };
+
+  if (!apiKey || !apiKey.startsWith("ky-")) {
+    return new Response(
+      JSON.stringify({ error: "Valid Kyma API key required (ky-...)" }),
+      { status: 401, headers: { "Content-Type": "application/json" } }
+    );
+  }
 
   const program = getProgram(slug);
   if (!program) {
@@ -279,7 +279,7 @@ export async function POST(request: NextRequest) {
   const response = await fetch(KYMA_API_URL, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${KYMA_API_KEY}`,
+      Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json",
       "X-App-Name": "OpenAffiliate Content Lab",
     },
