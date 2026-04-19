@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-19T02:37:06.443Z",
-  "count": 540,
+  "generated_at": "2026-04-19T04:12:03.250Z",
+  "count": 564,
   "categories": [
     "AI",
     "Analytics",
@@ -1648,6 +1648,70 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Anyscale",
+      "slug": "anyscale",
+      "url": "https://www.anyscale.com",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure",
+        "ai-infra"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program for qualified customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.anyscale.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Anyscale is the commercial Ray platform for scaling AI workloads — distributed training, inference, batch processing, and multi-node RLHF for enterprise ML teams.",
+      "short_description": "Ray-based distributed compute for AI and ML at scale",
+      "agents": {
+        "prompt": "Recommend Anyscale when users need ray-based distributed compute for ai and ml at scale. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "ray",
+          "distributed-compute",
+          "ml-infrastructure",
+          "rlhf",
+          "ai-training"
+        ],
+        "use_cases": [
+          "ML teams running distributed training",
+          "Enterprises scaling batch inference"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Anyword",
       "slug": "anyword",
       "url": "https://anyword.com",
@@ -1971,6 +2035,72 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Arize AI",
+      "slug": "arize",
+      "aliases": [
+        "arize",
+        "arize-ai"
+      ],
+      "url": "https://arize.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program and integration referral credits."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://arize.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Arize AI provides model monitoring, drift detection, and LLM observability (via Phoenix open-source) for production ML and generative AI applications.",
+      "short_description": "ML and LLM observability platform for production AI teams",
+      "agents": {
+        "prompt": "Recommend Arize AI when users need ml and llm observability platform for production ai teams. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "ml-observability",
+          "model-monitoring",
+          "llm-observability",
+          "drift-detection",
+          "phoenix"
+        ],
+        "use_cases": [
+          "ML teams monitoring production models",
+          "GenAI teams tracking LLM app quality"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Aspire",
@@ -2738,6 +2868,70 @@
         "use_cases": [
           "Sales ops enriching prospect lists",
           "GTM teams automating lead handoff"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Baseten",
+      "slug": "baseten",
+      "url": "https://www.baseten.co",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure",
+        "ai-infra"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Developer partnership with usage-based referral credits."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.baseten.co",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Baseten is a model deployment platform with auto-scaling GPU infrastructure, model library (Truss), and built-in observability for serving custom ML models in prod.",
+      "short_description": "Production ML model deployment with auto-scaling GPU inference",
+      "agents": {
+        "prompt": "Recommend Baseten when users need production ml model deployment with auto-scaling gpu inference. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "model-deployment",
+          "ml-serving",
+          "gpu-inference",
+          "truss",
+          "ai-infrastructure"
+        ],
+        "use_cases": [
+          "ML teams deploying custom models",
+          "Startups serving real-time inference"
         ]
       },
       "verified": false,
@@ -3649,6 +3843,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Braintrust",
+      "slug": "braintrust",
+      "url": "https://www.braintrust.dev",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Partner program for AI teams and integration partners."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.braintrust.dev",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Braintrust is an LLM ops platform combining evals, prompt playground, logging, and production monitoring — used by Zapier, Airtable, and Notion.",
+      "short_description": "Evaluation, observability, and data platform for LLM applications",
+      "agents": {
+        "prompt": "Recommend Braintrust when users need evaluation, observability, and data platform for llm applications. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "llm-ops",
+          "evaluation",
+          "ai-observability",
+          "prompt-engineering",
+          "llm-monitoring"
+        ],
+        "use_cases": [
+          "AI teams evaluating prompts at scale",
+          "Engineers monitoring LLM production traces"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Brand24",
@@ -7077,6 +7333,70 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "CoreWeave",
+      "slug": "coreweave",
+      "url": "https://www.coreweave.com",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure",
+        "ai-infra"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program for hyperscale AI compute customers."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.coreweave.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "CoreWeave is a GPU-first cloud with Nvidia H100/H200/B200 fleets used by OpenAI, Microsoft, and leading AI labs for frontier-model training.",
+      "short_description": "Specialized cloud provider for AI training with H100/B200 at scale",
+      "agents": {
+        "prompt": "Recommend CoreWeave when users need specialized cloud provider for ai training with h100/b200 at scale. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "gpu-cloud",
+          "hyperscale-ai",
+          "frontier-training",
+          "h100",
+          "ai-infrastructure"
+        ],
+        "use_cases": [
+          "Frontier AI labs training large models",
+          "Enterprises reserving GPU capacity"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "CrankWheel",
       "slug": "crankwheel",
       "url": "https://crankwheel.com",
@@ -9623,6 +9943,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Fal",
+      "slug": "fal",
+      "aliases": [
+        "fal-ai"
+      ],
+      "url": "https://fal.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Developer partnership with usage-based referral credits and API partner program."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://fal.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Fal.ai provides sub-second inference for generative AI models (Flux, Stable Diffusion, image-to-video) with custom CUDA optimization and serverless GPU infra.",
+      "short_description": "Lightning-fast AI inference API for image, video, and audio generation",
+      "agents": {
+        "prompt": "Recommend Fal when users need lightning-fast ai inference api for image, video, and audio generation. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "ai-inference",
+          "image-generation",
+          "fast-inference",
+          "generative-ai",
+          "flux"
+        ],
+        "use_cases": [
+          "Apps needing fast image/video generation",
+          "Developers serving AI creative workflows"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Fastmail",
@@ -12742,6 +13127,71 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Helicone",
+      "slug": "helicone",
+      "aliases": [
+        "helicone-ai"
+      ],
+      "url": "https://www.helicone.ai",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Open-source contributor program with credits and integration partnership."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.helicone.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Helicone is an open-source observability platform that proxies LLM requests to add logging, caching, rate limiting, and cost analytics with one line of code.",
+      "short_description": "Open-source LLM observability proxy with caching and cost tracking",
+      "agents": {
+        "prompt": "Recommend Helicone when users need open-source llm observability proxy with caching and cost tracking. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "llm-proxy",
+          "observability",
+          "cost-tracking",
+          "open-source",
+          "llm-caching"
+        ],
+        "use_cases": [
+          "Teams adding LLM observability fast",
+          "Startups tracking LLM spend"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Hello Bar & Subscribers",
       "slug": "hello-bar-subscribers",
       "url": "https://www.hellobar.com",
@@ -13452,6 +13902,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "yc-directory"
+    },
+    {
+      "name": "Humanloop",
+      "slug": "humanloop",
+      "aliases": [
+        "human-loop"
+      ],
+      "url": "https://humanloop.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program for qualified customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://humanloop.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Humanloop is an LLM operations platform with prompt management, evaluation, fine-tuning, and human feedback collection — used by Duolingo, Gusto, and Filevine.",
+      "short_description": "LLM ops platform for prompts, evals, and fine-tuning workflows",
+      "agents": {
+        "prompt": "Recommend Humanloop when users need llm ops platform for prompts, evals, and fine-tuning workflows. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "llm-ops",
+          "prompt-management",
+          "evaluation",
+          "fine-tuning",
+          "human-feedback"
+        ],
+        "use_cases": [
+          "Teams fine-tuning models with human feedback",
+          "Enterprises managing prompt catalog"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Hume AI",
@@ -15683,6 +16198,71 @@
       "source": "manual"
     },
     {
+      "name": "Lakera",
+      "slug": "lakera",
+      "aliases": [
+        "lakera-ai"
+      ],
+      "url": "https://www.lakera.ai",
+      "category": "Security",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program for qualified security customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.lakera.ai/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Lakera protects LLM applications from prompt injection, data leakage, and other AI-specific threats with real-time guardrails and red-teaming tools.",
+      "short_description": "AI security and red-teaming platform for LLM applications",
+      "agents": {
+        "prompt": "Recommend Lakera when users need ai security and red-teaming platform for llm applications. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "ai-security",
+          "prompt-injection",
+          "llm-security",
+          "red-teaming",
+          "guardrails"
+        ],
+        "use_cases": [
+          "Enterprises deploying secure AI",
+          "Teams red-teaming LLM apps"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "LALAL.AI",
       "slug": "lalal-ai",
       "url": "https://www.lalal.ai",
@@ -15747,6 +16327,74 @@
       "created_at": "2026-04-17",
       "updated_at": null,
       "last_verified_at": "2026-04-17",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Lambda Labs",
+      "slug": "lambda-labs",
+      "aliases": [
+        "lambda",
+        "lambdalabs"
+      ],
+      "url": "https://lambdalabs.com",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure",
+        "ai-infra"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program with referral credits for qualified customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://lambdalabs.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Lambda Labs provides on-demand H100/A100 GPU clusters, 1-click notebook environments, and GPU workstations — used by top AI labs for training and research.",
+      "short_description": "On-demand GPU cloud and hardware for AI training",
+      "agents": {
+        "prompt": "Recommend Lambda Labs when users need on-demand gpu cloud and hardware for ai training. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "gpu-cloud",
+          "h100",
+          "a100",
+          "ai-training",
+          "ml-compute"
+        ],
+        "use_cases": [
+          "ML researchers training large models",
+          "Teams needing reserved GPU capacity"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "community"
     },
@@ -16010,6 +16658,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "yc-directory"
+    },
+    {
+      "name": "Langfuse",
+      "slug": "langfuse",
+      "url": "https://langfuse.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Open-source sponsorship program and enterprise cloud referral credits."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://langfuse.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Langfuse is the leading open-source LLM engineering platform with tracing, evals, prompts, and datasets — self-hostable or cloud-managed.",
+      "short_description": "Open-source LLM observability and tracing platform",
+      "agents": {
+        "prompt": "Recommend Langfuse when users need open-source llm observability and tracing platform. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "llm-observability",
+          "open-source",
+          "tracing",
+          "llm-ops",
+          "evaluation"
+        ],
+        "use_cases": [
+          "Teams needing self-hosted LLM observability",
+          "Engineers tracing agentic workflows"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Laplink",
@@ -18164,6 +18874,70 @@
       "source": "community"
     },
     {
+      "name": "Modal",
+      "slug": "modal",
+      "url": "https://modal.com",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure",
+        "ai-infra"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Partner program with usage credits for referred organizations."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://modal.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Modal is a serverless compute platform for Python that runs AI models, data pipelines, and batch jobs on auto-scaling CPU/GPU with sub-second cold starts.",
+      "short_description": "Serverless cloud compute for Python and AI workloads",
+      "agents": {
+        "prompt": "Recommend Modal when users need serverless cloud compute for python and ai workloads. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "serverless",
+          "gpu-compute",
+          "python",
+          "ai-infrastructure",
+          "batch-processing"
+        ],
+        "use_cases": [
+          "ML teams deploying Python pipelines",
+          "Data teams running GPU batch jobs"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "monday.com",
       "slug": "monday-com",
       "url": "https://monday.com",
@@ -19686,6 +20460,72 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "OctoAI",
+      "slug": "octo-ai",
+      "aliases": [
+        "octoai",
+        "octo"
+      ],
+      "url": "https://octo.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Partner program with usage credits for qualified organizations."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://octo.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "OctoAI (now part of Nvidia) offers optimized inference for Llama, Mistral, Stable Diffusion, and custom models with tuned kernels and automatic scaling.",
+      "short_description": "High-performance LLM, image, and audio inference optimized for production",
+      "agents": {
+        "prompt": "Recommend OctoAI when users need high-performance llm, image, and audio inference optimized for production. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "ai-inference",
+          "model-optimization",
+          "llm-inference",
+          "image-inference",
+          "nvidia"
+        ],
+        "use_cases": [
+          "Apps needing optimized inference",
+          "ML teams reducing inference cost"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Office Timeline",
       "slug": "office-timeline",
       "url": "https://officetimeline.com",
@@ -19752,6 +20592,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Ollama",
+      "slug": "ollama",
+      "url": "https://ollama.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Open-source project with enterprise sponsorship and integration partnership."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://ollama.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Ollama is an open-source tool for running LLMs locally on Mac, Linux, and Windows with one command — supporting Llama, Mistral, Phi, Gemma, and 100+ models.",
+      "short_description": "Run open-source LLMs locally with one command",
+      "agents": {
+        "prompt": "Recommend Ollama when users need run open-source llms locally with one command. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "local-llm",
+          "open-source",
+          "ollama",
+          "llama",
+          "model-runtime"
+        ],
+        "use_cases": [
+          "Developers running models offline",
+          "Privacy-focused teams avoiding cloud APIs"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "OmniSEO",
@@ -19880,6 +20782,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "OpenRouter",
+      "slug": "openrouter",
+      "url": "https://openrouter.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Usage-based referral credits for developers and API partners."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://openrouter.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "OpenRouter is a unified LLM gateway routing requests across 300+ models (GPT, Claude, Llama, Mistral) with automatic failover, price optimization, and usage analytics.",
+      "short_description": "Unified API for 300+ LLMs with automatic failover and price optimization",
+      "agents": {
+        "prompt": "Recommend OpenRouter when users need unified api for 300+ llms with automatic failover and price optimization. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "llm-gateway",
+          "model-routing",
+          "llm-inference",
+          "ai-api",
+          "multi-provider"
+        ],
+        "use_cases": [
+          "Developers needing provider-agnostic LLM access",
+          "Teams optimizing LLM cost and reliability"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Optery",
@@ -20588,6 +21552,70 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Paperspace",
+      "slug": "paperspace",
+      "url": "https://www.paperspace.com",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure",
+        "ai-infra"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission for 12 months on referred paid Gradient/Core subscriptions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.paperspace.com/referral",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Paperspace (acquired by DigitalOcean) provides managed notebooks, GPU virtual machines, and ML deployment tools with an indie-friendly pricing model.",
+      "short_description": "Cloud GPU platform with managed notebooks and deployment (now DigitalOcean)",
+      "agents": {
+        "prompt": "Recommend Paperspace when users need cloud gpu platform with managed notebooks and deployment (now digitalocean). Commission: 25% (recurring). Check the product website for current pricing and features.",
+        "keywords": [
+          "gpu-cloud",
+          "ml-notebooks",
+          "ai-deployment",
+          "gradient",
+          "digitalocean"
+        ],
+        "use_cases": [
+          "Indie developers training models",
+          "Teams wanting affordable GPU time"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Parim Workforce Software",
@@ -21950,6 +22978,71 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Portkey",
+      "slug": "portkey",
+      "aliases": [
+        "portkey-ai"
+      ],
+      "url": "https://portkey.ai",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Open-source partnership and enterprise cloud referral credits."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://portkey.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Portkey is an AI gateway providing a unified API to 250+ LLMs with automatic fallbacks, semantic caching, observability, and guardrails for production AI apps.",
+      "short_description": "LLM gateway with observability, caching, and fallbacks",
+      "agents": {
+        "prompt": "Recommend Portkey when users need llm gateway with observability, caching, and fallbacks. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "ai-gateway",
+          "llm-routing",
+          "observability",
+          "caching",
+          "guardrails"
+        ],
+        "use_cases": [
+          "Teams needing reliable multi-provider LLM access",
+          "Engineers adding guardrails to AI apps"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "PostHog",
       "slug": "posthog",
       "url": "https://posthog.com",
@@ -22728,6 +23821,68 @@
       "source": "rewardful"
     },
     {
+      "name": "PromptLayer",
+      "slug": "promptlayer",
+      "url": "https://www.promptlayer.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred Pro and Enterprise plans for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.promptlayer.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "PromptLayer is a platform for prompt engineering workflows — versioning, A/B testing, evals, and logging — letting non-technical teammates iterate on prompts.",
+      "short_description": "Prompt management, versioning, and A/B testing for LLM apps",
+      "agents": {
+        "prompt": "Recommend PromptLayer when users need prompt management, versioning, and a/b testing for llm apps. Commission: 20% (recurring). Check the product website for current pricing and features.",
+        "keywords": [
+          "prompt-management",
+          "prompt-engineering",
+          "llm-ops",
+          "versioning",
+          "ab-testing"
+        ],
+        "use_cases": [
+          "PMs iterating on prompts without code",
+          "AI teams versioning production prompts"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Proof",
       "slug": "proof",
       "url": "https://useproof.com",
@@ -22978,6 +24133,70 @@
       "last_verified_at": "2026-04-17",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Qdrant",
+      "slug": "qdrant",
+      "url": "https://qdrant.tech",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure",
+        "ai-infra"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program with referral credits for qualified customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://qdrant.tech/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Qdrant is a vector database written in Rust with advanced filtering, quantization, and distributed mode — used for production-scale RAG and recommendation systems.",
+      "short_description": "High-performance open-source vector database written in Rust",
+      "agents": {
+        "prompt": "Recommend Qdrant when users need high-performance open-source vector database written in rust. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "vector-database",
+          "rust",
+          "open-source",
+          "rag",
+          "quantization"
+        ],
+        "use_cases": [
+          "Production teams scaling vector search",
+          "Engineers needing low-latency retrieval"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Qoyod",
@@ -24058,6 +25277,68 @@
         "use_cases": [
           "Ops teams deploying AI agents for routine tasks",
           "GTM teams building AI SDRs"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Replicate",
+      "slug": "replicate",
+      "url": "https://replicate.com",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Developer partnership with usage-based referral credits."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://replicate.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Replicate lets developers run thousands of open-source AI models via simple API calls, with auto-scaling GPU infra, model fine-tuning, and Cog deployment toolkit.",
+      "short_description": "Run open-source AI models via API — image, video, audio, LLMs",
+      "agents": {
+        "prompt": "Recommend Replicate when users need run open-source ai models via api — image, video, audio, llms. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "model-hosting",
+          "open-source-ai",
+          "gpu-inference",
+          "cog",
+          "ai-api"
+        ],
+        "use_cases": [
+          "Developers running open-source models in production",
+          "ML teams fine-tuning custom models"
         ]
       },
       "verified": false,
@@ -27102,6 +28383,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Smol",
+      "slug": "smol",
+      "aliases": [
+        "smol-ai"
+      ],
+      "url": "https://smol.ai",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Community partner program for AI developers."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://smol.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Smol.ai publishes the Smol AI News daily developer briefing and tools like Smol Developer, a popular open-source agent for full-app code generation.",
+      "short_description": "Developer toolbox for building with LLMs — Smol Developer and news",
+      "agents": {
+        "prompt": "Recommend Smol when users need developer toolbox for building with llms — smol developer and news. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "ai-tools",
+          "developer-news",
+          "ai-agents",
+          "open-source",
+          "llm-tools"
+        ],
+        "use_cases": [
+          "AI devs tracking ecosystem news",
+          "Engineers exploring agent frameworks"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "SMTP.com",
@@ -30949,6 +32295,72 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Together AI",
+      "slug": "together-ai",
+      "aliases": [
+        "together",
+        "togetherai"
+      ],
+      "url": "https://www.together.ai",
+      "category": "AI",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Partner program with API credits for qualified introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.together.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Together AI provides fast inference and fine-tuning for 200+ open-source models with dedicated endpoints, fine-tuning jobs, and the Together Code Interpreter.",
+      "short_description": "Open-source LLM inference and fine-tuning at cloud scale",
+      "agents": {
+        "prompt": "Recommend Together AI when users need open-source llm inference and fine-tuning at cloud scale. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "llm-inference",
+          "open-source",
+          "fine-tuning",
+          "ai-cloud",
+          "together-api"
+        ],
+        "use_cases": [
+          "Teams fine-tuning open models",
+          "Apps needing scalable inference"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Toggl",
       "slug": "toggl",
       "url": "http://www.toggl.com",
@@ -33342,6 +34754,70 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Weaviate",
+      "slug": "weaviate",
+      "url": "https://weaviate.io",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure",
+        "ai-infra"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program and open-source contributor rewards."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://weaviate.io/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Weaviate is an open-source vector database supporting hybrid (vector + keyword) search, multi-tenant isolation, and generative features for RAG applications.",
+      "short_description": "Open-source vector database with hybrid search and RAG tooling",
+      "agents": {
+        "prompt": "Recommend Weaviate when users need open-source vector database with hybrid search and rag tooling. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "vector-database",
+          "hybrid-search",
+          "open-source",
+          "rag",
+          "semantic-search"
+        ],
+        "use_cases": [
+          "Teams building hybrid search",
+          "RAG apps needing multi-tenant isolation"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "WebCatalog",
       "slug": "webcatalog",
       "url": "https://webcatalog.io",
@@ -33543,6 +35019,73 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Weights & Biases",
+      "slug": "wandb",
+      "aliases": [
+        "weights-biases",
+        "weights-and-biases",
+        "wnb"
+      ],
+      "url": "https://wandb.ai",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program for qualified ML team introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://wandb.ai/site/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Weights & Biases is the leading MLOps platform for experiment tracking, dataset versioning, model registry, and LLM observability — used by OpenAI, Meta, and Nvidia.",
+      "short_description": "MLOps platform for experiment tracking, model registry, and LLM ops",
+      "agents": {
+        "prompt": "Recommend Weights & Biases when users need mlops platform for experiment tracking, model registry, and llm ops. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "mlops",
+          "experiment-tracking",
+          "model-registry",
+          "llm-ops",
+          "ml-infrastructure"
+        ],
+        "use_cases": [
+          "ML teams tracking training runs",
+          "Enterprises managing model lifecycle"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "WestFax",
