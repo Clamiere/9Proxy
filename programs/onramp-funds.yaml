@@ -24,7 +24,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://onrampfunds.com
+signup_url: https://onrampfunds.com/partners
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

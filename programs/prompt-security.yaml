@@ -22,7 +22,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://www.prompt.security
+signup_url: https://www.prompt.security/partner
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

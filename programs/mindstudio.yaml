@@ -23,7 +23,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://www.mindstudio.ai
+signup_url: https://university.mindstudio.ai/programs/referral-program
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

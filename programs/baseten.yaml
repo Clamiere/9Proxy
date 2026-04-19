@@ -23,7 +23,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://www.baseten.co
+signup_url: https://www.baseten.co/talk-to-us/partner/
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

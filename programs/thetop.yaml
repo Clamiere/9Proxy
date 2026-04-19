@@ -23,7 +23,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://thetop.com
+signup_url: https://market.partnerstack.com/thetop
 approval: manual
 approval_time: 1-5 business days
 restrictions: null

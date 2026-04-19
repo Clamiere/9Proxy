@@ -23,7 +23,7 @@ payout:
   methods:
   - bank
   - paypal
-signup_url: https://www.harvey.ai
+signup_url: https://www.harvey.ai/platform/partnerships
 approval: invite-only
 approval_time: N/A
 restrictions: null
