@@ -34,7 +34,7 @@ marketing_materials: true
 api_available: true
 dedicated_manager: false
 dashboard_url: null
-network: null
+network: in-house
 program_age: 2+ years
 description: 'CustomGPT lets businesses create custom AI chatbots trained on their own data — documents, websites, help centers,
   and knowledge bases. No coding required. Features include RAG-powered responses, website embedding, API access, and multi-language

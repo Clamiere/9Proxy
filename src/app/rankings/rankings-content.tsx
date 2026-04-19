@@ -390,12 +390,12 @@ function NetworksTable() {
                 </td>
                 <td className="py-3 px-3 text-center hidden sm:table-cell">
                   <span className="text-sm text-muted-foreground tabular-nums">
-                    {row.avgCommission.toFixed(1)}%
+                    {row.avgCommission > 0 ? `${row.avgCommission.toFixed(1)}%` : "—"}
                   </span>
                 </td>
                 <td className="py-3 px-3 text-center hidden sm:table-cell">
                   <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 tabular-nums">
-                    {row.bestCommission}%
+                    {row.bestCommissionDisplay}
                   </span>
                 </td>
                 <td className="py-3 px-3 hidden md:table-cell">
@@ -476,12 +476,12 @@ function CategoriesTable() {
                 </td>
                 <td className="py-3 px-3 text-center hidden sm:table-cell">
                   <span className="text-sm text-muted-foreground tabular-nums">
-                    {row.avgCommission.toFixed(1)}%
+                    {row.avgCommission > 0 ? `${row.avgCommission.toFixed(1)}%` : "—"}
                   </span>
                 </td>
                 <td className="py-3 px-3 text-center hidden sm:table-cell">
                   <span className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 tabular-nums">
-                    {row.highestCommission}%
+                    {row.highestCommissionDisplay}
                   </span>
                 </td>
                 <td className="py-3 px-3 hidden md:table-cell">

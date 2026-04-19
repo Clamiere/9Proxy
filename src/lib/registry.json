@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T05:10:53.550Z",
+  "generated_at": "2026-04-19T05:20:12.405Z",
   "count": 718,
   "categories": [
     "AI",
@@ -776,7 +776,7 @@
       "api_available": true,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": null,
+      "network": "in-house",
       "program_age": "3+ years",
       "description": "AdCreative.ai uses AI to generate high-converting ad creatives, social media posts, and banner ads. It analyzes top-performing ads in your industry and generates data-backed designs with AI copy. Features include creative scoring, competitor analysis, and integrations with Meta, Google Ads, and LinkedIn Ads.\nThe affiliate program pays 30% recurring (up to 40% for top performers) plus a $100 bonus when you refer 10 paid users.\n",
       "short_description": "AdCreative.ai is an AI-powered platform for generating ad creatives, product photos, videos, and marketing assets. Offers tiered affiliate program with 30-40% recurring revenue share based on performance tiers.",
@@ -5487,7 +5487,7 @@
       "api_available": true,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": null,
+      "network": "in-house",
       "program_age": "2+ years",
       "description": "Browse AI is a no-code web scraping tool that lets you train AI robots to extract data from any website. Point-and-click interface — no coding required. Features include scheduled scraping, change monitoring, data export to Google Sheets, and pre-built robots for common use cases.\nThe affiliate program pays 20% lifetime recurring via PartnerStack.\n",
       "short_description": "Browse AI affiliate program offering 20% lifetime commissions for every referred customer subscription, with 30-day cookie attribution window.",
@@ -5519,7 +5519,7 @@
       "status": "active",
       "signup_url_type": "official",
       "verified_by": "backfill-auto",
-      "verified_at": "2026-04-18T21:55:52.174Z"
+      "verified_at": "2026-04-18 21:55:52.174000+00:00"
     },
     {
       "name": "Bruno",
@@ -10007,7 +10007,7 @@
       "api_available": true,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": null,
+      "network": "in-house",
       "program_age": "2+ years",
       "description": "CustomGPT lets businesses create custom AI chatbots trained on their own data — documents, websites, help centers, and knowledge bases. No coding required. Features include RAG-powered responses, website embedding, API access, and multi-language support. Used for customer support, internal knowledge bases, and sales automation.\nThe affiliate program pays 15-20% recurring for 24 months with a 60-day cookie window.\n",
       "short_description": "Earn up to 20% recurring monthly commission for 2 years referring businesses to CustomGPT's AI knowledge management and customer service platform.",
@@ -10784,7 +10784,7 @@
       "api_available": false,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": null,
+      "network": "in-house",
       "program_age": "3+ years",
       "description": "Descript is an AI-powered video and podcast editing platform that lets you edit media by editing text. Features include AI transcription, filler word removal, eye contact correction, green screen, AI voice cloning, and automatic clip generation. Edit videos as easily as editing a Google Doc.\nThe affiliate program offers $25 per new subscriber or 15% recurring for the first year, tracked via PartnerStack.\n",
       "short_description": "Earn $25 commission per new Descript subscriber referred. Monthly PayPal payouts, no minimums required.",
@@ -10818,7 +10818,7 @@
       "status": "active",
       "signup_url_type": "official",
       "verified_by": "backfill-auto",
-      "verified_at": "2026-04-19T02:15:22.016Z"
+      "verified_at": "2026-04-19 02:15:22.016000+00:00"
     },
     {
       "name": "Dext",
@@ -10995,7 +10995,7 @@
       "api_available": false,
       "dedicated_manager": false,
       "dashboard_url": null,
-      "network": null,
+      "network": "in-house",
       "program_age": "8+ years",
       "description": "DigitalOcean is a cloud computing platform focused on simplicity and developer experience. It offers Droplets (virtual machines), Kubernetes, managed databases (PostgreSQL, MySQL, Redis, MongoDB), App Platform (PaaS), Spaces (S3-compatible object storage), and more. Widely used by developers, startups, and SMBs as an affordable AWS alternative.\nThe affiliate program runs through CJ Affiliate and pays 10% recurring commission on referred users' monthly cloud spend for 12 months. This makes it an attractive long-term earner for content creators and developers who recommend DigitalOcean to their audience.\n",
       "short_description": "Earn 10% recurring monthly commission for 12 months on every referred user's cloud infrastructure spend with DigitalOcean.",
@@ -11031,7 +11031,7 @@
       "status": "active",
       "signup_url_type": "official",
       "verified_by": "backfill-auto",
-      "verified_at": "2026-04-18T22:04:00.204Z"
+      "verified_at": "2026-04-18 22:04:00.204000+00:00"
     },
     {
       "name": "Digits",
@@ -15961,7 +15961,7 @@
       "api_available": false,
       "dedicated_manager": true,
       "dashboard_url": null,
-      "network": null,
+      "network": "in-house",
       "program_age": "8+ years",
       "description": "Grammarly is an AI writing assistant that checks grammar, spelling, tone, clarity, and style across browsers, desktop apps, and mobile. Grammarly Premium adds AI-powered rewriting, tone detection, and full-sentence suggestions. Grammarly Business includes team analytics and brand tone profiles. Over 30 million daily active users.\nThe affiliate program is one of the most established in AI, paying $0.20 per free signup and $20 per Premium upgrade with a 90-day cookie.\n",
       "short_description": "Grammarly's affiliate program offers high conversion rates (20-30%), 90-day cookie window, activation bonuses, and tiered rewards for top performers promoting writing and grammar tools.",
@@ -31902,7 +31902,7 @@
         ]
       },
       "status": "active",
-      "network": null,
+      "network": "in-house",
       "category": "Developer Tools",
       "logo_url": "https://cdn.brandfetch.io/idxxHV50Mm/w/800/h/309/theme/light/logo.png?c=1bxtwjz48s37dxrwob1iv46t3nySzUcFgVs",
       "verified": true,
@@ -31915,15 +31915,15 @@
         "recurring_period": null
       },
       "signup_url": "https://www.raycast.com/blog/affiliate-program",
-      "updated_at": "2026-04-18T19:51:47.799Z",
+      "updated_at": "2026-04-18 19:51:47.799000+00:00",
       "brand_color": "#FF6363",
       "cookie_days": 30,
-      "verified_at": "2026-04-18T19:52:02.845Z",
+      "verified_at": "2026-04-18 19:52:02.845000+00:00",
       "signup_url_type": "official",
       "short_description": "Earn 30% recurring commission on Raycast Pro referrals.",
       "description": "Raycast is a productivity launcher for macOS built for developers. The\naffiliate program pays 30% recurring commission on all Raycast Pro\nsubscription payments from users you refer, and referrals receive a 10%\ndiscount on signup.\n",
       "verified_by": "dev-bypass",
-      "last_verified_at": "2026-04-18T19:51:47.799Z",
+      "last_verified_at": "2026-04-18 19:51:47.799000+00:00",
       "kind": "affiliate",
       "source": "manual"
     },

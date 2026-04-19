@@ -46,6 +46,9 @@ export interface Program {
   programAge?: string | null
   agentKeywords?: string[]
   agentUseCases?: string[]
+  source?: string
+  lastVerifiedAt?: string | null
+  aliases?: string[]
 }
 
 // Map snake_case YAML fields to camelCase Program interface
@@ -97,6 +100,9 @@ function mapYamlToProgram(yaml: any): Program {
     programAge: yaml.program_age ?? null,
     agentKeywords: yaml.agents?.keywords ?? [],
     agentUseCases: yaml.agents?.use_cases ?? [],
+    source: yaml.source,
+    lastVerifiedAt: yaml.last_verified_at ?? null,
+    aliases: yaml.aliases ?? [],
   }
 }
 
@@ -164,6 +170,22 @@ export function isCommissionFlat(rate: string | number): boolean {
   // If it has a dollar sign, it's flat
   if (s.includes("$")) return true
   return false
+}
+
+/**
+ * Format a parsed commission value for display. A raw parsed number can
+ * be either a percentage or a flat dollar fee — the `flat` flag tells
+ * the renderer which suffix to use. Used by rankings and category stats
+ * where we show aggregated best/avg values pulled from mixed rate types.
+ */
+export function formatCommissionDisplay(value: number, flat: boolean): string {
+  if (!isFinite(value) || value <= 0) return "—"
+  if (flat) {
+    return value >= 1000
+      ? `$${(value / 1000).toFixed(value % 1000 === 0 ? 0 : 1)}k`
+      : `$${value.toLocaleString()}`
+  }
+  return `${value % 1 === 0 ? value : value.toFixed(1)}%`
 }
 
 /**
@@ -242,7 +264,7 @@ export function searchPrograms(queryOrOptions: string | SearchOptions, category?
   }
 
   if (opts.network) {
-    results = results.filter((p) => (p.network ?? "in-house") === opts.network)
+    results = results.filter((p) => (p.network ?? "In-house") === opts.network)
   }
 
   if (opts.verified) {
@@ -272,7 +294,42 @@ export function searchPrograms(queryOrOptions: string | SearchOptions, category?
       results.sort((a, b) => parseCommissionRate(b.commission.rate) - parseCommissionRate(a.commission.rate))
       break
     case "newest":
-      results.sort((a, b) => (b.createdAt || "").localeCompare(a.createdAt || ""))
+      // Many existing programs share a backfill date of 2026-04-18. To give
+      // users a meaningful "what arrived most recently" view, tiebreak by:
+      //   (1) source priority — recently-added batches use community /
+      //       yc-directory; the original bulk import used partnerstack-api
+      //       or legacy. Newer source > older source.
+      //   (2) affiliate score — higher-quality programs surface first.
+      {
+        const sourceWeight = (s: string | undefined): number => {
+          // Higher = shown first when created_at ties.
+          const map: Record<string, number> = {
+            community: 9,
+            manual: 9,
+            "yc-directory": 8,
+            firstpromoter: 7,
+            rewardful: 7,
+            tolt: 7,
+            dub: 7,
+            impact: 6,
+            awin: 6,
+            "partnerstack-api": 5,
+            "product-hunt": 4,
+            "hacker-news": 4,
+            theresanaiforthat: 3,
+            futuretools: 3,
+            legacy: 1,
+          }
+          return map[s ?? ""] ?? 2
+        }
+        results.sort((a, b) => {
+          const byDate = (b.createdAt || "").localeCompare(a.createdAt || "")
+          if (byDate !== 0) return byDate
+          const bySource = sourceWeight(b.source) - sourceWeight(a.source)
+          if (bySource !== 0) return bySource
+          return affiliateScore(b) - affiliateScore(a)
+        })
+      }
       break
     case "relevance":
     default:
@@ -302,11 +359,11 @@ export const categoryCounts: Record<string, number> = programs.reduce(
   {} as Record<string, number>
 )
 
-export const networks = [...new Set(programs.map((p) => p.network ?? "in-house"))].sort() as string[]
+export const networks = [...new Set(programs.map((p) => p.network ?? "In-house"))].sort() as string[]
 
 export const networkCounts: Record<string, number> = programs.reduce(
   (acc, p) => {
-    const net = p.network ?? "in-house"
+    const net = p.network ?? "In-house"
     acc[net] = (acc[net] || 0) + 1
     return acc
   },
@@ -326,36 +383,68 @@ export function networkToSlug(network: string): string {
 }
 
 export function slugToNetwork(slug: string): string | undefined {
-  const networks = [...new Set(programs.map((p) => p.network ?? "in-house"))]
+  const networks = [...new Set(programs.map((p) => p.network ?? "In-house"))]
   return networks.find((n) => networkToSlug(n) === slug)
 }
 
 export interface NetworkStats {
   network: string
   programCount: number
-  avgCommission: number
-  bestCommission: number
-  topProgram: Program
+  avgCommission: number        // legacy — mean of percentage rates only
+  bestCommission: number       // legacy — max of percentage rates only
+  bestCommissionDisplay: string // formatted, covers both flat and percentage
+  topProgram: Program           // the program with the strongest commission
+}
+
+/**
+ * Rank programs within a network or category using a normalized score that
+ * can compare a percentage rate against a flat-fee rate. Heuristic: treat
+ * $1 ≈ 1pp up to a cap of 100 (so $500 flat ≈ a cap, preventing giant
+ * referral bounties like $10,000 from dominating the "best" slot).
+ */
+function rankScore(rate: string | number): number {
+  const n = parseCommissionRate(rate)
+  if (!isFinite(n) || n <= 0) return 0
+  if (isCommissionFlat(rate)) {
+    // $1-$49 → 5-49, $50-$500 → 50-100, $500+ → 100 cap
+    if (n < 50) return n
+    return Math.min(100, 50 + (n - 50) * 0.1)
+  }
+  // Percentage: direct, capped at 100
+  return Math.min(n, 100)
 }
 
 export function getNetworkStats(): NetworkStats[] {
   const networkMap = new Map<string, Program[]>()
   for (const p of programs) {
-    const net = p.network ?? "in-house"
+    const net = p.network ?? "In-house"
     if (!networkMap.has(net)) networkMap.set(net, [])
     networkMap.get(net)!.push(p)
   }
 
   return Array.from(networkMap.entries())
     .map(([network, progs]) => {
-      const rates = progs.map((p) => parseCommissionRate(p.commission.rate))
-      const bestIdx = rates.indexOf(Math.max(...rates))
+      const scores = progs.map((p) => rankScore(p.commission.rate))
+      const bestIdx = scores.indexOf(Math.max(...scores))
+      const topProgram = progs[bestIdx]
+      // Avg and bestCommission legacy: only consider percentage rates, so the
+      // displayed "X%" makes semantic sense. Flat-fee-only networks will show
+      // a conservative 0 for avg and use bestCommissionDisplay for UI.
+      const pctRates = progs
+        .filter((p) => !isCommissionFlat(p.commission.rate))
+        .map((p) => parseCommissionRate(p.commission.rate))
       return {
         network,
         programCount: progs.length,
-        avgCommission: rates.reduce((a, b) => a + b, 0) / rates.length,
-        bestCommission: Math.max(...rates),
-        topProgram: progs[bestIdx],
+        avgCommission: pctRates.length
+          ? pctRates.reduce((a, b) => a + b, 0) / pctRates.length
+          : 0,
+        bestCommission: pctRates.length ? Math.max(...pctRates) : 0,
+        bestCommissionDisplay: formatCommissionDisplay(
+          parseCommissionRate(topProgram.commission.rate),
+          isCommissionFlat(topProgram.commission.rate)
+        ),
+        topProgram,
       }
     })
     .sort((a, b) => b.programCount - a.programCount)
@@ -364,8 +453,9 @@ export function getNetworkStats(): NetworkStats[] {
 export interface CategoryStats {
   category: string
   programCount: number
-  highestCommission: number
-  avgCommission: number
+  highestCommission: number        // legacy — max of percentage rates only
+  avgCommission: number             // legacy — mean of percentage rates only
+  highestCommissionDisplay: string  // formatted, covers both flat and percentage
   topProgram: Program
 }
 
@@ -378,14 +468,24 @@ export function getCategoryStats(): CategoryStats[] {
 
   return Array.from(catMap.entries())
     .map(([category, progs]) => {
-      const rates = progs.map((p) => parseCommissionRate(p.commission.rate))
-      const bestIdx = rates.indexOf(Math.max(...rates))
+      const scores = progs.map((p) => rankScore(p.commission.rate))
+      const bestIdx = scores.indexOf(Math.max(...scores))
+      const topProgram = progs[bestIdx]
+      const pctRates = progs
+        .filter((p) => !isCommissionFlat(p.commission.rate))
+        .map((p) => parseCommissionRate(p.commission.rate))
       return {
         category,
         programCount: progs.length,
-        highestCommission: Math.max(...rates),
-        avgCommission: rates.reduce((a, b) => a + b, 0) / rates.length,
-        topProgram: progs[bestIdx],
+        highestCommission: pctRates.length ? Math.max(...pctRates) : 0,
+        avgCommission: pctRates.length
+          ? pctRates.reduce((a, b) => a + b, 0) / pctRates.length
+          : 0,
+        highestCommissionDisplay: formatCommissionDisplay(
+          parseCommissionRate(topProgram.commission.rate),
+          isCommissionFlat(topProgram.commission.rate)
+        ),
+        topProgram,
       }
     })
     .sort((a, b) => b.programCount - a.programCount)
