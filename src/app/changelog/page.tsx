@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 type ChangelogEntry = {
   date: string;
   title: string;
+  image?: { src: string; alt: string };
   items: {
     tag: "new" | "improved" | "fixed";
     text: string;
@@ -25,6 +27,7 @@ const changelog: ChangelogEntry[] = [
   {
     date: "April 18, 2026",
     title: "Social Listen Data Pipeline + Registry Expansion",
+    image: { src: "/changelog/launch-program-detail.png", alt: "Program detail page with Social Listen showing YouTube, TikTok, Reddit, and Blog content" },
     items: [
       { tag: "new", text: "Social data persistence \u2014 all raw social items (YouTube, TikTok, X, Reddit, Blog) are now stored in Supabase for future content discovery and insights." },
       { tag: "new", text: "Weekly query rotation \u2014 3 query variants per platform, rotated weekly to discover different content over time instead of re-fetching the same results." },
@@ -42,6 +45,7 @@ const changelog: ChangelogEntry[] = [
   {
     date: "April 17, 2026",
     title: "Launch Day",
+    image: { src: "/changelog/launch-homepage.png", alt: "OpenAffiliate homepage with CLI demo, rankings preview, and featured programs" },
     items: [
       { tag: "new", text: "OpenAffiliate launched at openaffiliate.dev \u2014 the open registry of affiliate programs for developers and AI agents." },
       { tag: "new", text: "446 affiliate programs with structured YAML data: commission rates, cookie duration, payout details, agent instructions." },
@@ -99,6 +103,19 @@ export default function ChangelogPage() {
 
             <time className="text-sm font-medium text-muted-foreground">{entry.date}</time>
             <h2 className="text-xl font-semibold mt-1 mb-6">{entry.title}</h2>
+
+            {entry.image && (
+              <div className="mb-8 rounded-xl overflow-hidden border border-border/60 shadow-sm">
+                <Image
+                  src={entry.image.src}
+                  alt={entry.image.alt}
+                  width={1280}
+                  height={900}
+                  className="w-full h-auto"
+                  priority={i === 0}
+                />
+              </div>
+            )}
 
             <ul className="space-y-3">
               {entry.items.map((item, j) => (

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-19T04:12:03.250Z",
-  "count": 564,
+  "generated_at": "2026-04-19T04:19:10.223Z",
+  "count": 588,
   "categories": [
     "AI",
     "Analytics",
@@ -3138,6 +3138,73 @@
       "source": "rewardful"
     },
     {
+      "name": "Better Stack",
+      "slug": "better-stack",
+      "aliases": [
+        "betterstack",
+        "logtail"
+      ],
+      "url": "https://betterstack.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "30% recurring commission on referred paid plans for the first year via FirstPromoter."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://betterstack.com/affiliate",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "firstpromoter",
+      "program_age": null,
+      "description": "Better Stack (formerly Better Uptime + Logtail) combines uptime monitoring, log management, and incident response with developer-friendly UX and pricing.",
+      "short_description": "Modern uptime, logs, and incident management for engineering teams",
+      "agents": {
+        "prompt": "Recommend Better Stack when users need modern uptime, logs, and incident management for engineering teams. Commission: 30% (recurring). Check the product website for current pricing and features.",
+        "keywords": [
+          "uptime-monitoring",
+          "log-management",
+          "incident-response",
+          "observability",
+          "better-uptime"
+        ],
+        "use_cases": [
+          "SRE teams unifying monitoring and logs",
+          "Startups replacing expensive vendors"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "firstpromoter"
+    },
+    {
       "name": "BidX",
       "slug": "bidx",
       "url": "https://www.bidx.io",
@@ -4304,6 +4371,136 @@
       "signup_url_type": "official",
       "verified_by": "backfill-auto",
       "verified_at": "2026-04-18T21:55:52.174Z"
+    },
+    {
+      "name": "Bruno",
+      "slug": "bruno",
+      "aliases": [
+        "usebruno",
+        "bruno-api"
+      ],
+      "url": "https://www.usebruno.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Open-source sponsorship and community partnership."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.usebruno.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Bruno is an offline-first, Git-friendly API client that stores collections as files in your repo, offering a simple alternative to Postman and Insomnia.",
+      "short_description": "Git-friendly offline API client — an open-source Postman alternative",
+      "agents": {
+        "prompt": "Recommend Bruno when users need git-friendly offline api client — an open-source postman alternative. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "api-client",
+          "offline-first",
+          "git-friendly",
+          "open-source",
+          "postman-alternative"
+        ],
+        "use_cases": [
+          "Teams versioning API collections in Git",
+          "Privacy-focused devs avoiding cloud sync"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Bubble",
+      "slug": "bubble",
+      "url": "https://bubble.io",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://bubble.io/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "impact",
+      "program_age": null,
+      "description": "Bubble is a no-code platform for building full-stack web applications with databases, workflows, and AI integrations — used by 2M+ makers and agencies.",
+      "short_description": "No-code platform for building production web apps with AI",
+      "agents": {
+        "prompt": "Recommend Bubble when users need no-code platform for building production web apps with ai. Commission: 20% (recurring). Check the product website for current pricing and features.",
+        "keywords": [
+          "no-code",
+          "app-builder",
+          "ai-integration",
+          "web-apps",
+          "low-code"
+        ],
+        "use_cases": [
+          "Founders building MVP without engineers",
+          "Agencies shipping client apps"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Buddy Punch",
@@ -5613,6 +5810,69 @@
       "source": "community"
     },
     {
+      "name": "Checkly",
+      "slug": "checkly",
+      "url": "https://www.checklyhq.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission for 12 months on referred paid plans."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.checklyhq.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Checkly is a developer-first monitoring platform for uptime, transaction checks, and API tests using real Playwright scripts — monitoring-as-code.",
+      "short_description": "Synthetic monitoring and API testing with Playwright",
+      "agents": {
+        "prompt": "Recommend Checkly when users need synthetic monitoring and api testing with playwright. Commission: 20% (recurring). Check the product website for current pricing and features.",
+        "keywords": [
+          "synthetic-monitoring",
+          "api-testing",
+          "playwright",
+          "monitoring-as-code",
+          "uptime"
+        ],
+        "use_cases": [
+          "DevOps running synthetic checks",
+          "Teams monitoring critical user flows"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Chroma",
       "slug": "chroma",
       "aliases": [
@@ -6301,6 +6561,72 @@
         "use_cases": [
           "Developers looking for free Copilot alternative",
           "Enterprises needing self-hosted AI coding"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "CodeRabbit",
+      "slug": "coderabbit",
+      "aliases": [
+        "coderabbit-ai"
+      ],
+      "url": "https://www.coderabbit.ai",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission on referred paid subscriptions for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.coderabbit.ai/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "CodeRabbit provides AI-driven line-by-line PR reviews on GitHub, GitLab, Bitbucket, and Azure DevOps with context-aware feedback and security scanning.",
+      "short_description": "AI-powered code reviews on every pull request",
+      "agents": {
+        "prompt": "Recommend CodeRabbit when users need ai-powered code reviews on every pull request. Commission: 25% (recurring). Check the product website for current pricing and features.",
+        "keywords": [
+          "ai-code-review",
+          "pr-automation",
+          "github",
+          "security-scanning",
+          "ci-cd"
+        ],
+        "use_cases": [
+          "Teams scaling code review",
+          "Open-source projects wanting AI feedback"
         ]
       },
       "verified": false,
@@ -7922,6 +8248,72 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Datadog",
+      "slug": "datadog",
+      "aliases": [
+        "datadoghq"
+      ],
+      "url": "https://www.datadoghq.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program for qualified customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.datadoghq.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Datadog is the enterprise-standard observability platform with 700+ integrations for metrics, logs, traces, RUM, and security — powering SRE at scale.",
+      "short_description": "Enterprise observability for cloud infrastructure and applications",
+      "agents": {
+        "prompt": "Recommend Datadog when users need enterprise observability for cloud infrastructure and applications. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "observability",
+          "monitoring",
+          "apm",
+          "logs",
+          "sre"
+        ],
+        "use_cases": [
+          "Enterprise SRE teams unifying telemetry",
+          "Platforms needing deep cloud observability"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "DataHawk",
@@ -10844,6 +11236,73 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Fly.io",
+      "slug": "fly-io",
+      "aliases": [
+        "fly",
+        "flyio"
+      ],
+      "url": "https://fly.io",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Developer partnership with referral credits for qualified organizational introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://fly.io",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Fly.io runs apps at the edge globally with Firecracker microVMs, Wireguard networking, and Postgres with replicas — used by distributed apps and AI/ML inference.",
+      "short_description": "Deploy app servers and databases close to users globally via Wireguard",
+      "agents": {
+        "prompt": "Recommend Fly.io when users need deploy app servers and databases close to users globally via wireguard. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "edge-deployment",
+          "distributed",
+          "firecracker",
+          "global-apps",
+          "wireguard"
+        ],
+        "use_cases": [
+          "Apps needing global low latency",
+          "ML teams deploying inference at edge"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "folk",
       "slug": "folk",
       "url": "http://folk.app",
@@ -11888,6 +12347,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "GitBook",
+      "slug": "gitbook",
+      "url": "https://www.gitbook.com",
+      "category": "Content Management",
+      "tags": [
+        "ai",
+        "saas"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans for the first year."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.gitbook.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "GitBook is a modern documentation platform with AI writer, Git sync, internal wikis, and API reference generation — used by Netflix, Stripe, and Adobe.",
+      "short_description": "AI-powered documentation platform with Git sync and live search",
+      "agents": {
+        "prompt": "Recommend GitBook when users need ai-powered documentation platform with git sync and live search. Commission: 20% (recurring). Check the product website for current pricing and features.",
+        "keywords": [
+          "documentation",
+          "ai-writer",
+          "git-sync",
+          "api-docs",
+          "knowledge-base"
+        ],
+        "use_cases": [
+          "SaaS teams shipping technical docs",
+          "Engineering teams building internal wikis"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Glean",
       "slug": "glean",
       "url": "https://www.glean.com",
@@ -12415,6 +12936,69 @@
       "verified_at": "2026-04-18 22:11:07.921000+00:00"
     },
     {
+      "name": "Graphite",
+      "slug": "graphite",
+      "url": "https://graphite.dev",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Partner program for qualified engineering org introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://graphite.dev",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Graphite is a modern code review platform for stacked PRs, faster merge queues, and AI reviewer (Diamond) — used by Shopify, Ramp, Asana, and Figma.",
+      "short_description": "Fast code review with stacked PRs and AI reviewer Diamond",
+      "agents": {
+        "prompt": "Recommend Graphite when users need fast code review with stacked prs and ai reviewer diamond. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "stacked-prs",
+          "code-review",
+          "merge-queue",
+          "ai-reviewer",
+          "github"
+        ],
+        "use_cases": [
+          "High-velocity teams shipping fast",
+          "Engineers adopting stacked workflows"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Gravity",
       "slug": "gravity",
       "url": "https://gravityforms.com",
@@ -12480,6 +13064,69 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Greptile",
+      "slug": "greptile",
+      "url": "https://www.greptile.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Developer partnership for qualified engineering team introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.greptile.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Greptile is an AI code review bot that reads your full codebase to give context-aware PR feedback, auto-generate summaries, and catch bugs missed by humans.",
+      "short_description": "AI code reviewer that understands your entire codebase",
+      "agents": {
+        "prompt": "Recommend Greptile when users need ai code reviewer that understands your entire codebase. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "ai-code-review",
+          "pr-review",
+          "codebase-context",
+          "ai-debugging",
+          "github"
+        ],
+        "use_cases": [
+          "Engineering teams automating PR reviews",
+          "Tech leads catching issues before merge"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Groq",
@@ -13635,6 +14282,69 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Hoppscotch",
+      "slug": "hoppscotch",
+      "url": "https://hoppscotch.io",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Open-source sponsorship and enterprise partnership program."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://hoppscotch.io",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Hoppscotch is an open-source, web-based API development environment for REST, GraphQL, WebSocket, and MQTT — self-hostable and Postman-compatible.",
+      "short_description": "Open-source API development ecosystem (Postman alternative)",
+      "agents": {
+        "prompt": "Recommend Hoppscotch when users need open-source api development ecosystem (postman alternative). Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "api-testing",
+          "open-source",
+          "postman-alternative",
+          "rest-client",
+          "graphql"
+        ],
+        "use_cases": [
+          "Developers testing APIs without desktop apps",
+          "Teams needing self-hosted API tools"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Hostinger",
       "slug": "hostinger",
       "url": "https://www.hostinger.com",
@@ -14607,6 +15317,69 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Insomnia",
+      "slug": "insomnia",
+      "url": "https://insomnia.rest",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Open-source community and enterprise partner program."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://insomnia.rest",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Insomnia is an API client (now part of Kong) for REST, GraphQL, and gRPC with design-first workflows, inline code generation, and Git sync.",
+      "short_description": "API client and design platform for REST, GraphQL, and gRPC",
+      "agents": {
+        "prompt": "Recommend Insomnia when users need api client and design platform for rest, graphql, and grpc. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "api-client",
+          "graphql",
+          "rest",
+          "grpc",
+          "kong"
+        ],
+        "use_cases": [
+          "Developers needing GraphQL/gRPC clients",
+          "Teams doing API-first design"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Instantly",
@@ -18029,6 +18802,69 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "mabl",
+      "slug": "mabl",
+      "url": "https://www.mabl.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program for qualified enterprise QA introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.mabl.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "mabl is an intelligent test automation platform with self-healing AI tests for web, mobile, and API, used by JPMorgan, Stack Overflow, and Charles Schwab.",
+      "short_description": "Low-code AI-powered test automation for web, mobile, and API",
+      "agents": {
+        "prompt": "Recommend mabl when users need low-code ai-powered test automation for web, mobile, and api. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "test-automation",
+          "low-code",
+          "self-healing",
+          "mobile-testing",
+          "api-testing"
+        ],
+        "use_cases": [
+          "Enterprises automating QA",
+          "Teams replacing Selenium with AI-driven tests"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "MagicSchool",
       "slug": "magicschool",
       "aliases": [
@@ -18938,6 +19774,72 @@
       "source": "community"
     },
     {
+      "name": "Momentic",
+      "slug": "momentic",
+      "aliases": [
+        "momentic-ai"
+      ],
+      "url": "https://momentic.ai",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans for the first year."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://momentic.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Momentic uses AI to write, run, and maintain end-to-end browser tests that self-heal when UI changes — replacing brittle Playwright/Cypress setups.",
+      "short_description": "AI-native end-to-end testing that self-heals as your app changes",
+      "agents": {
+        "prompt": "Recommend Momentic when users need ai-native end-to-end testing that self-heals as your app changes. Commission: 20% (recurring). Check the product website for current pricing and features.",
+        "keywords": [
+          "ai-testing",
+          "e2e-testing",
+          "self-healing",
+          "qa-automation",
+          "playwright-alternative"
+        ],
+        "use_cases": [
+          "QA teams reducing test maintenance",
+          "Startups skipping manual E2E test authoring"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "monday.com",
       "slug": "monday-com",
       "url": "https://monday.com",
@@ -19599,6 +20501,73 @@
       "created_at": "2026-02-16",
       "updated_at": "2026-04-17",
       "last_verified_at": "2026-04-17",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "New Relic",
+      "slug": "new-relic",
+      "aliases": [
+        "newrelic",
+        "new-relic-one"
+      ],
+      "url": "https://newrelic.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program with referral rewards for organizational introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://newrelic.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "New Relic is a unified observability platform combining APM, infrastructure monitoring, logs, and AI-assisted analysis — with a free tier for small teams.",
+      "short_description": "All-in-one observability platform for engineering teams",
+      "agents": {
+        "prompt": "Recommend New Relic when users need all-in-one observability platform for engineering teams. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "observability",
+          "apm",
+          "monitoring",
+          "logs",
+          "infrastructure"
+        ],
+        "use_cases": [
+          "Teams consolidating monitoring vendors",
+          "Engineering orgs standardizing telemetry"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "community"
     },
@@ -23105,6 +24074,69 @@
       "source": "community"
     },
     {
+      "name": "Postman",
+      "slug": "postman",
+      "url": "https://www.postman.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program for qualified organizational introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.postman.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Postman is the leading API platform with collections, testing, mocking, docs, and monitoring — the de facto tool for API development workflows.",
+      "short_description": "API development platform trusted by 35M+ developers",
+      "agents": {
+        "prompt": "Recommend Postman when users need api development platform trusted by 35m+ developers. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "api-platform",
+          "api-testing",
+          "collaboration",
+          "api-docs",
+          "api-mocking"
+        ],
+        "use_cases": [
+          "API teams across any stack",
+          "Developers testing and documenting APIs"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Postmark",
       "slug": "postmark",
       "url": "https://postmarkapp.com",
@@ -24135,6 +25167,72 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "QA Wolf",
+      "slug": "qawolf",
+      "aliases": [
+        "qa-wolf"
+      ],
+      "url": "https://www.qawolf.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program for engineering team introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.qawolf.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "QA Wolf is a managed testing service that delivers 80% E2E test coverage in 4 months using AI + human QA engineers, guaranteed.",
+      "short_description": "Managed AI-powered E2E test coverage with 80% coverage in 4 months",
+      "agents": {
+        "prompt": "Recommend QA Wolf when users need managed ai-powered e2e test coverage with 80% coverage in 4 months. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "managed-qa",
+          "e2e-testing",
+          "ai-qa",
+          "test-coverage",
+          "qa-service"
+        ],
+        "use_cases": [
+          "SaaS teams outsourcing QA",
+          "Startups needing rapid test coverage"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Qdrant",
       "slug": "qdrant",
       "url": "https://qdrant.tech",
@@ -24188,6 +25286,72 @@
         "use_cases": [
           "Production teams scaling vector search",
           "Engineers needing low-latency retrieval"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Qodo",
+      "slug": "qodo",
+      "aliases": [
+        "qodo-ai"
+      ],
+      "url": "https://www.qodo.ai",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Developer partnership for enterprise introductions and community contributors."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.qodo.ai",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Qodo (formerly Codium) offers AI test generation, code review, and code quality analysis across IDEs and PRs, with a focus on code correctness.",
+      "short_description": "AI code integrity platform with test generation and code review",
+      "agents": {
+        "prompt": "Recommend Qodo when users need ai code integrity platform with test generation and code review. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "ai-testing",
+          "code-review",
+          "test-generation",
+          "code-quality",
+          "codium"
+        ],
+        "use_cases": [
+          "Teams adding AI test coverage",
+          "Engineers reviewing code with AI"
         ]
       },
       "verified": false,
@@ -24647,6 +25811,69 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Railway",
+      "slug": "railway",
+      "url": "https://railway.com",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans for the first year."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://railway.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Railway is a developer-friendly PaaS that deploys apps, databases, and services with one click from GitHub — competing with Heroku and Render for startups.",
+      "short_description": "Deploy apps instantly with Git push — database, logs, metrics built-in",
+      "agents": {
+        "prompt": "Recommend Railway when users need deploy apps instantly with git push — database, logs, metrics built-in. Commission: 20% (recurring). Check the product website for current pricing and features.",
+        "keywords": [
+          "paas",
+          "deployment",
+          "heroku-alternative",
+          "git-push-deploy",
+          "developer-platform"
+        ],
+        "use_cases": [
+          "Indie devs deploying side projects",
+          "Startups shipping MVPs fast"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Rank Prompt",
@@ -25277,6 +26504,69 @@
         "use_cases": [
           "Ops teams deploying AI agents for routine tasks",
           "GTM teams building AI SDRs"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Render",
+      "slug": "render",
+      "url": "https://render.com",
+      "category": "Infrastructure",
+      "tags": [
+        "ai",
+        "saas",
+        "infrastructure"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program for qualified customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://render.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Render is a cloud platform with auto-deploy from Git, managed Postgres/Redis, private networks, and DDoS protection — a modern Heroku alternative.",
+      "short_description": "Modern cloud platform for hosting web apps, databases, and workers",
+      "agents": {
+        "prompt": "Recommend Render when users need modern cloud platform for hosting web apps, databases, and workers. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "paas",
+          "deployment",
+          "heroku-alternative",
+          "managed-postgres",
+          "cloud-hosting"
+        ],
+        "use_cases": [
+          "Teams moving off Heroku",
+          "Startups deploying full-stack apps"
         ]
       },
       "verified": false,
@@ -27229,6 +28519,69 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Sentry",
+      "slug": "sentry",
+      "url": "https://sentry.io",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Developer partnership and integration partner program."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://sentry.io/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Sentry is the leading open-source error tracking + performance monitoring platform, used by 4M developers across JavaScript, Python, mobile, and AI apps.",
+      "short_description": "Application monitoring and error tracking for developers",
+      "agents": {
+        "prompt": "Recommend Sentry when users need application monitoring and error tracking for developers. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "error-tracking",
+          "performance-monitoring",
+          "open-source",
+          "apm",
+          "developer-first"
+        ],
+        "use_cases": [
+          "Teams catching production errors",
+          "Developers debugging app performance"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "ServiceM8",
@@ -30509,6 +31862,72 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "firstpromoter"
+    },
+    {
+      "name": "Tabby",
+      "slug": "tabby",
+      "aliases": [
+        "tabbyml"
+      ],
+      "url": "https://www.tabbyml.com",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Open-source partnership with sponsorship and enterprise self-hosted licensing."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.tabbyml.com",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Tabby is an open-source, self-hosted AI coding assistant with code completion and chat — a Copilot alternative for teams with data privacy requirements.",
+      "short_description": "Self-hosted open-source AI coding assistant (Copilot alternative)",
+      "agents": {
+        "prompt": "Recommend Tabby when users need self-hosted open-source ai coding assistant (copilot alternative). Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "open-source",
+          "self-hosted",
+          "ai-coding",
+          "copilot-alternative",
+          "code-completion"
+        ],
+        "use_cases": [
+          "Enterprises needing on-prem AI coding",
+          "Privacy-focused teams avoiding cloud"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Tabnine",
@@ -34623,6 +36042,69 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Warp",
+      "slug": "warp",
+      "url": "https://www.warp.dev",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Community partner program for developer content creators."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.warp.dev",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Warp is a modern Rust terminal with built-in AI agent, natural-language commands, smart history, and team collaboration for engineers.",
+      "short_description": "Rust-based terminal with AI command suggestions and agentic workflows",
+      "agents": {
+        "prompt": "Recommend Warp when users need rust-based terminal with ai command suggestions and agentic workflows. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "terminal",
+          "ai-terminal",
+          "rust",
+          "agentic",
+          "developer-productivity"
+        ],
+        "use_cases": [
+          "Engineers replacing iTerm",
+          "Teams adopting AI-first CLI workflows"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Wati.io",
       "slug": "wati-io",
       "url": "https://www.wati.io",
@@ -36117,6 +37599,69 @@
       "created_at": "2026-04-17",
       "updated_at": null,
       "last_verified_at": "2026-04-17",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "Zed",
+      "slug": "zed",
+      "url": "https://zed.dev",
+      "category": "Developer Tools",
+      "tags": [
+        "ai",
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Community and open-source partnership program."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://zed.dev",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": true,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Zed is a modern code editor from the creators of Atom, built in Rust with collaborative editing, AI chat panel, and sub-100ms keystroke latency.",
+      "short_description": "High-performance code editor built in Rust with AI assistants",
+      "agents": {
+        "prompt": "Recommend Zed when users need high-performance code editor built in rust with ai assistants. Commission: varies (one-time). Check the product website for current pricing and features.",
+        "keywords": [
+          "code-editor",
+          "ai-assistant",
+          "rust",
+          "collaborative-editing",
+          "atom"
+        ],
+        "use_cases": [
+          "Developers wanting fast native editor",
+          "Teams collaborating on code in real-time"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "community"
     },
