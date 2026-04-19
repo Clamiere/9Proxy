@@ -10,7 +10,6 @@ import {
   List,
   X,
   ArrowRight,
-  Search,
   ShieldCheck,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -338,7 +337,7 @@ function ProgramsContent() {
 
   // Network options with counts
   const NETWORK_LABELS: Record<string, string> = {
-    "In-house": "In-house",
+    "in-house": "In-house",
     partnerstack: "PartnerStack",
     impact: "Impact",
     rewardful: "Rewardful",
@@ -385,17 +384,6 @@ function ProgramsContent() {
 
       {/* Filter toolbar */}
       <div className="flex flex-wrap items-center gap-2 mb-4">
-        {/* Search input */}
-        <div className="relative">
-          <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground" />
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => handleSearch(e.target.value)}
-            placeholder="Search programs..."
-            className="rounded-lg border border-border/50 bg-card/50 pl-8 pr-3 py-2 text-xs w-44 focus:outline-none focus:border-border transition-colors placeholder:text-muted-foreground/60"
-          />
-        </div>
         <FilterSelect
           label="Category"
           value={selectedCategory}

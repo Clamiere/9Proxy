@@ -242,7 +242,7 @@ export function searchPrograms(queryOrOptions: string | SearchOptions, category?
   }
 
   if (opts.network) {
-    results = results.filter((p) => (p.network ?? "In-house") === opts.network)
+    results = results.filter((p) => (p.network ?? "in-house") === opts.network)
   }
 
   if (opts.verified) {
@@ -302,11 +302,11 @@ export const categoryCounts: Record<string, number> = programs.reduce(
   {} as Record<string, number>
 )
 
-export const networks = [...new Set(programs.map((p) => p.network ?? "In-house"))].sort() as string[]
+export const networks = [...new Set(programs.map((p) => p.network ?? "in-house"))].sort() as string[]
 
 export const networkCounts: Record<string, number> = programs.reduce(
   (acc, p) => {
-    const net = p.network ?? "In-house"
+    const net = p.network ?? "in-house"
     acc[net] = (acc[net] || 0) + 1
     return acc
   },
@@ -326,7 +326,7 @@ export function networkToSlug(network: string): string {
 }
 
 export function slugToNetwork(slug: string): string | undefined {
-  const networks = [...new Set(programs.map((p) => p.network ?? "In-house"))]
+  const networks = [...new Set(programs.map((p) => p.network ?? "in-house"))]
   return networks.find((n) => networkToSlug(n) === slug)
 }
 
@@ -341,7 +341,7 @@ export interface NetworkStats {
 export function getNetworkStats(): NetworkStats[] {
   const networkMap = new Map<string, Program[]>()
   for (const p of programs) {
-    const net = p.network ?? "In-house"
+    const net = p.network ?? "in-house"
     if (!networkMap.has(net)) networkMap.set(net, [])
     networkMap.get(net)!.push(p)
   }

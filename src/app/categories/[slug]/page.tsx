@@ -228,7 +228,7 @@ export default async function CategoryPage({
                   </td>
                   <td className="py-3 px-3 hidden lg:table-cell">
                     <span className="text-xs text-muted-foreground capitalize">
-                      {program.network ?? "In-house"}
+                      {program.network ?? "in-house"}
                     </span>
                   </td>
                 </tr>

@@ -14,7 +14,7 @@ import {
 } from "@/lib/programs";
 
 export function generateStaticParams() {
-  const networks = [...new Set(programs.map((p) => p.network ?? "In-house"))];
+  const networks = [...new Set(programs.map((p) => p.network ?? "in-house"))];
   return networks.map((n) => ({ slug: networkToSlug(n) }));
 }
 
@@ -27,7 +27,7 @@ export async function generateMetadata({
   const network = slugToNetwork(slug);
   if (!network) return { title: "Network Not Found" };
 
-  const netPrograms = programs.filter((p) => (p.network ?? "In-house") === network);
+  const netPrograms = programs.filter((p) => (p.network ?? "in-house") === network);
   const title = `${network} Affiliate Programs — ${netPrograms.length} Programs | OpenAffiliate`;
   const description = `Browse ${netPrograms.length} affiliate programs on the ${network} network. Compare commissions, cookie duration, and payout terms.`;
 
@@ -47,7 +47,7 @@ export default async function NetworkPage({
   const network = slugToNetwork(slug);
   if (!network) notFound();
 
-  const netPrograms = [...programs.filter((p) => (p.network ?? "In-house") === network)].sort(
+  const netPrograms = [...programs.filter((p) => (p.network ?? "in-house") === network)].sort(
     (a, b) => parseCommissionRate(b.commission.rate) - parseCommissionRate(a.commission.rate)
   );
 

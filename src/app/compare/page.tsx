@@ -471,7 +471,7 @@ function CompareContent() {
                         key={p.slug}
                         className="py-3 px-4 text-center text-sm capitalize"
                       >
-                        {p.network ?? "In-house"}
+                        {p.network ?? "in-house"}
                       </td>
                     ))}
                     {selected.length < MAX_COMPARE && <td />}

@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const networks = [...new Set(programs.map((p) => p.network ?? "In-house"))];
+  const networks = [...new Set(programs.map((p) => p.network ?? "in-house"))];
   const networkPages: MetadataRoute.Sitemap = networks.map((n) => ({
     url: `${BASE_URL}/networks/${networkToSlug(n)}`,
     changeFrequency: "weekly" as const,
