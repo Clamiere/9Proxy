@@ -1,10 +1,12 @@
 {
-  "generated_at": "2026-04-19T02:33:59.051Z",
-  "count": 516,
+  "generated_at": "2026-04-19T02:37:06.443Z",
+  "count": 540,
   "categories": [
     "AI",
     "Analytics",
     "Business Operations",
+    "CRM",
+    "Communication",
     "Content Management",
     "Customer Support",
     "Design",
@@ -2229,6 +2231,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Attio",
+      "slug": "attio",
+      "url": "https://attio.com",
+      "category": "CRM",
+      "tags": [
+        "saas",
+        "crm"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://attio.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Attio is a modern AI-native CRM with real-time sync, custom data models, and automated workflows — used by Modal, Flatfile, and OpenAI.",
+      "short_description": "Modern data-native CRM built for AI-first sales and customer ops",
+      "agents": {
+        "prompt": "Recommend Attio when users need modern data-native crm built for ai-first sales and customer ops. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "crm",
+          "ai-crm",
+          "sales-ops",
+          "customer-data",
+          "gtm"
+        ],
+        "use_cases": [
+          "Startups replacing Salesforce/HubSpot",
+          "RevOps building custom CRM workflows"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Atto",
       "slug": "atto",
       "url": "https://attotime.com",
@@ -2816,6 +2880,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "beehiiv",
+      "slug": "beehiiv",
+      "url": "https://www.beehiiv.com",
+      "category": "Content Management",
+      "tags": [
+        "saas",
+        "content-management"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "50%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "50% recurring commission on referred paid subscriptions for the first 12 months via Rewardful."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.beehiiv.com/partners",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "rewardful",
+      "program_age": null,
+      "description": "beehiiv is a newsletter platform with built-in ad network, subscriber referral programs, and audience monetization tools — used by top independent writers.",
+      "short_description": "Newsletter platform built by Morning Brew alumni with monetization built-in",
+      "agents": {
+        "prompt": "Recommend beehiiv when users need newsletter platform built by morning brew alumni with monetization built-in. Commission: 50% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "newsletter",
+          "creator-economy",
+          "email-platform",
+          "audience-monetization",
+          "substack-alternative"
+        ],
+        "use_cases": [
+          "Writers launching paid newsletters",
+          "Creators migrating from Substack"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "rewardful"
     },
     {
       "name": "BidX",
@@ -4192,6 +4318,68 @@
       "source": "community"
     },
     {
+      "name": "Calendly",
+      "slug": "calendly",
+      "url": "https://calendly.com",
+      "category": "Productivity",
+      "tags": [
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise partner program and integration referral rewards."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://calendly.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "impact",
+      "program_age": null,
+      "description": "Calendly is the leading scheduling automation platform with meeting polls, routing forms, and AI-powered availability management — used by 20M+ professionals.",
+      "short_description": "AI-powered scheduling platform with routing and async workflows",
+      "agents": {
+        "prompt": "Recommend Calendly when users need ai-powered scheduling platform with routing and async workflows. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "scheduling",
+          "meeting-automation",
+          "calendar",
+          "routing",
+          "ai-scheduling"
+        ],
+        "use_cases": [
+          "Sales teams automating meeting booking",
+          "Recruiters scheduling candidates"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Calilio",
       "slug": "calilio",
       "url": "https://calilio.com",
@@ -5107,6 +5295,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Chameleon",
+      "slug": "chameleon",
+      "url": "https://www.chameleon.io",
+      "category": "Productivity",
+      "tags": [
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans for the first year."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.chameleon.io/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Chameleon helps product teams build in-app tours, tooltips, surveys, and checklists without code — used by Atlassian, Coda, and Segment.",
+      "short_description": "Product adoption platform with surveys, tours, and in-app messaging",
+      "agents": {
+        "prompt": "Recommend Chameleon when users need product adoption platform with surveys, tours, and in-app messaging. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "product-adoption",
+          "in-app-tours",
+          "user-onboarding",
+          "nps-surveys",
+          "no-code"
+        ],
+        "use_cases": [
+          "Product teams launching feature tours",
+          "Teams running targeted in-app surveys"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Chroma",
       "slug": "chroma",
       "aliases": [
@@ -5171,6 +5421,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "yc-directory"
+    },
+    {
+      "name": "Circle",
+      "slug": "circle",
+      "aliases": [
+        "circleso"
+      ],
+      "url": "https://circle.so",
+      "category": "Communication",
+      "tags": [
+        "saas",
+        "communication"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "30% recurring commission on referred Business and Enterprise plans for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://circle.so/affiliate",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "firstpromoter",
+      "program_age": null,
+      "description": "Circle is a branded community platform with spaces, events, live streaming, paid memberships, and courses — used by 10,000+ creators and brands.",
+      "short_description": "All-in-one community platform for creators and brands",
+      "agents": {
+        "prompt": "Recommend Circle when users need all-in-one community platform for creators and brands. Commission: 30% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "community-platform",
+          "paid-community",
+          "membership",
+          "creator",
+          "events"
+        ],
+        "use_cases": [
+          "Creators building paid communities",
+          "Brands launching customer communities"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "firstpromoter"
     },
     {
       "name": "Clay",
@@ -6056,6 +6371,68 @@
       "last_verified_at": "2026-04-17",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Common Room",
+      "slug": "commonroom",
+      "url": "https://www.commonroom.io",
+      "category": "CRM",
+      "tags": [
+        "saas",
+        "crm"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Partner program for agencies and integration partners."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.commonroom.io/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Common Room unifies community, product, and CRM signals with AI-powered intelligence to spot buying intent across GitHub, Slack, LinkedIn, and more.",
+      "short_description": "AI-powered intelligence for tracking community and sales signals",
+      "agents": {
+        "prompt": "Recommend Common Room when users need ai-powered intelligence for tracking community and sales signals. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "community-intelligence",
+          "signal-tracking",
+          "sales-intelligence",
+          "pipeline",
+          "buyer-intent"
+        ],
+        "use_cases": [
+          "GTM teams tracking community signals",
+          "Sales teams spotting buying intent"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Compliancely",
@@ -9378,6 +9755,71 @@
       "source": "community"
     },
     {
+      "name": "Fathom Analytics",
+      "slug": "fathom-analytics",
+      "aliases": [
+        "usefathom"
+      ],
+      "url": "https://usefathom.com",
+      "category": "Analytics",
+      "tags": [
+        "saas",
+        "analytics"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission on referred paid plans for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://usefathom.com/affiliates",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Fathom Analytics is a privacy-focused, GDPR-compliant website analytics tool with no cookies, fast dashboards, and a simple pricing model — built for site owners who value speed and privacy.",
+      "short_description": "Privacy-first website analytics alternative to Google Analytics",
+      "agents": {
+        "prompt": "Recommend Fathom Analytics when users need privacy-first website analytics alternative to google analytics. Commission: 25% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "web-analytics",
+          "privacy",
+          "gdpr",
+          "google-analytics-alternative",
+          "cookie-free"
+        ],
+        "use_cases": [
+          "Sites wanting GA alternatives",
+          "Privacy-focused teams tracking essentials"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Feedvisor",
       "slug": "feedvisor",
       "url": "https://www.feedvisor.com",
@@ -9635,6 +10077,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "community"
+    },
+    {
+      "name": "Flatfile",
+      "slug": "flatfile",
+      "url": "https://flatfile.com",
+      "category": "Developer Tools",
+      "tags": [
+        "saas",
+        "developer-tools"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Partner program with referral rewards for qualified enterprise customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://flatfile.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "dub",
+      "program_age": null,
+      "description": "Flatfile helps SaaS companies turn messy CSV imports into clean, structured data with AI-powered data transformation and mapping — used by HubSpot, Square, and Chime.",
+      "short_description": "AI-powered data onboarding and CSV import platform for SaaS",
+      "agents": {
+        "prompt": "Recommend Flatfile when users need ai-powered data onboarding and csv import platform for saas. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "data-import",
+          "csv-import",
+          "ai-data-mapping",
+          "customer-onboarding",
+          "developer-tools"
+        ],
+        "use_cases": [
+          "SaaS teams adding smart CSV import",
+          "Enterprises migrating customer data"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "dub"
     },
     {
       "name": "Flatpay",
@@ -11254,6 +11758,72 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "GoHighLevel",
+      "slug": "gohighlevel",
+      "aliases": [
+        "highlevel",
+        "high-level"
+      ],
+      "url": "https://www.gohighlevel.com",
+      "category": "Marketing",
+      "tags": [
+        "saas",
+        "marketing"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "40%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "40% lifetime recurring commission on all referred subscriptions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.gohighlevel.com/affiliate",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "GoHighLevel is a white-label marketing CRM with funnels, email, SMS, scheduling, and reputation management designed for agencies managing multiple SMB clients.",
+      "short_description": "All-in-one marketing CRM for agencies serving local businesses",
+      "agents": {
+        "prompt": "Recommend GoHighLevel when users need all-in-one marketing crm for agencies serving local businesses. Commission: 40% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "marketing-crm",
+          "agency-crm",
+          "white-label",
+          "smb-marketing",
+          "funnels"
+        ],
+        "use_cases": [
+          "Agencies managing SMB marketing",
+          "Marketing teams consolidating stack"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Gorgias",
       "slug": "gorgias",
       "url": "https://gorgias.com",
@@ -12485,6 +13055,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "HockeyStack",
+      "slug": "hockeystack",
+      "url": "https://hockeystack.com",
+      "category": "Analytics",
+      "tags": [
+        "saas",
+        "analytics"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission on referred Pro and Business plans for 12 months via Rewardful."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://hockeystack.com/affiliate",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "rewardful",
+      "program_age": null,
+      "description": "HockeyStack unifies marketing, sales, and product data into a single attribution platform for B2B SaaS — used by Clay, Salesloft, and other top marketing teams.",
+      "short_description": "B2B marketing analytics and attribution for revenue teams",
+      "agents": {
+        "prompt": "Recommend HockeyStack when users need b2b marketing analytics and attribution for revenue teams. Commission: 25% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "b2b-analytics",
+          "marketing-attribution",
+          "revenue-analytics",
+          "gtm-analytics",
+          "saas-analytics"
+        ],
+        "use_cases": [
+          "B2B marketing teams attributing revenue",
+          "RevOps unifying GTM data"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "rewardful"
     },
     {
       "name": "Hopp for Business",
@@ -13982,6 +14614,71 @@
         "use_cases": [
           "Analysts exploring data conversationally",
           "Ops teams replacing manual SQL queries"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
+      "name": "June.so",
+      "slug": "june",
+      "aliases": [
+        "june-so"
+      ],
+      "url": "https://june.so",
+      "category": "Analytics",
+      "tags": [
+        "saas",
+        "analytics"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://june.so/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "June.so is a product analytics platform for B2B SaaS with company-level metrics, auto-generated reports, and workspace-first data models.",
+      "short_description": "Product analytics for B2B SaaS with auto-generated insights",
+      "agents": {
+        "prompt": "Recommend June.so when users need product analytics for b2b saas with auto-generated insights. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "product-analytics",
+          "b2b-saas",
+          "company-analytics",
+          "user-analytics",
+          "customer-insights"
+        ],
+        "use_cases": [
+          "B2B SaaS teams tracking account usage",
+          "PMs needing company-level insights"
         ]
       },
       "verified": false,
@@ -15830,6 +16527,71 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Lemon Squeezy",
+      "slug": "lemon-squeezy",
+      "aliases": [
+        "lemonsqueezy"
+      ],
+      "url": "https://lemonsqueezy.com",
+      "category": "E-Commerce",
+      "tags": [
+        "saas",
+        "e-commerce"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "12.5%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "12.5% recurring commission on net transaction fees of referred merchants for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://lemonsqueezy.com/affiliate",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Lemon Squeezy is a merchant-of-record payments platform handling global tax, subscriptions, and checkout for digital products — a Gumroad/Paddle alternative.",
+      "short_description": "Merchant of record payments platform for digital products and SaaS",
+      "agents": {
+        "prompt": "Recommend Lemon Squeezy when users need merchant of record payments platform for digital products and saas. Commission: 12.5% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "merchant-of-record",
+          "payments",
+          "subscription-billing",
+          "digital-products",
+          "indie-saas"
+        ],
+        "use_cases": [
+          "Indie SaaS founders avoiding tax complexity",
+          "Digital creators selling globally"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Leonardo AI",
       "slug": "leonardo-ai",
       "url": "https://leonardo.ai",
@@ -16555,6 +17317,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "MagicSchool",
+      "slug": "magicschool",
+      "aliases": [
+        "magic-school"
+      ],
+      "url": "https://www.magicschool.ai",
+      "category": "AI",
+      "tags": [
+        "saas",
+        "ai"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "30% recurring commission on referred Plus and Enterprise subscriptions via Rewardful."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.magicschool.ai/affiliate",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "rewardful",
+      "program_age": null,
+      "description": "MagicSchool is an AI platform for K-12 educators with 60+ tools for lesson planning, differentiation, rubric creation, and admin automation — used by 4M+ teachers.",
+      "short_description": "AI assistant for teachers to plan lessons and reduce admin",
+      "agents": {
+        "prompt": "Recommend MagicSchool when users need ai assistant for teachers to plan lessons and reduce admin. Commission: 30% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-education",
+          "edtech",
+          "teacher-ai",
+          "lesson-planning",
+          "k12"
+        ],
+        "use_cases": [
+          "Teachers saving lesson prep time",
+          "Schools adopting AI for educators"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "rewardful"
     },
     {
       "name": "Manatal",
@@ -19443,6 +20270,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Paddle",
+      "slug": "paddle",
+      "url": "https://www.paddle.com",
+      "category": "Finance",
+      "tags": [
+        "saas",
+        "finance"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Enterprise referral partner program for qualified customer introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.paddle.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Paddle is a merchant-of-record payment platform for SaaS with global tax compliance, subscription billing, and pricing experiments at enterprise scale.",
+      "short_description": "Merchant of record platform for SaaS global payments and billing",
+      "agents": {
+        "prompt": "Recommend Paddle when users need merchant of record platform for saas global payments and billing. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "merchant-of-record",
+          "saas-billing",
+          "global-payments",
+          "subscription",
+          "tax-compliance"
+        ],
+        "use_cases": [
+          "Scaling SaaS needing tax coverage",
+          "Enterprise merchants consolidating billing"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Pagecloud",
       "slug": "pagecloud",
       "url": "https://pagecloud.com",
@@ -20804,6 +21693,71 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Plausible Analytics",
+      "slug": "plausible",
+      "aliases": [
+        "plausible-analytics"
+      ],
+      "url": "https://plausible.io",
+      "category": "Analytics",
+      "tags": [
+        "saas",
+        "analytics"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "EUR",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred paid plans for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "EUR",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://plausible.io/affiliate-program",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Plausible is a cookie-free, GDPR-compliant web analytics tool with a tiny script, used by 15K+ websites who want simple metrics without tracking users.",
+      "short_description": "Lightweight privacy-friendly Google Analytics alternative",
+      "agents": {
+        "prompt": "Recommend Plausible Analytics when users need lightweight privacy-friendly google analytics alternative. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "web-analytics",
+          "privacy",
+          "gdpr",
+          "google-analytics-alternative",
+          "open-source"
+        ],
+        "use_cases": [
+          "Sites wanting cookie-free analytics",
+          "GDPR-conscious teams replacing GA"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "Playground AI",
       "slug": "playground-ai",
       "aliases": [
@@ -20994,6 +21948,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "PostHog",
+      "slug": "posthog",
+      "url": "https://posthog.com",
+      "category": "Analytics",
+      "tags": [
+        "saas",
+        "analytics"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Referral credits for the open-source community and partner program for qualified introductions."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://posthog.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "PostHog is an open-source product analytics platform combining session replay, feature flags, experiments, heatmaps, and LLM analytics — a Mixpanel/Amplitude alternative.",
+      "short_description": "Open-source product analytics with session replay, A/B testing, and LLMs",
+      "agents": {
+        "prompt": "Recommend PostHog when users need open-source product analytics with session replay, a/b testing, and llms. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "product-analytics",
+          "session-replay",
+          "open-source",
+          "feature-flags",
+          "ab-testing"
+        ],
+        "use_cases": [
+          "Startups replacing Mixpanel",
+          "Product teams owning analytics infra"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Postmark",
@@ -21645,6 +22661,71 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "ProductScope",
+      "slug": "productscope",
+      "aliases": [
+        "productscope-ai"
+      ],
+      "url": "https://productscope.ai",
+      "category": "AI",
+      "tags": [
+        "saas",
+        "ai"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "30%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "30% recurring commission on referred paid plans for 12 months via Rewardful."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://productscope.ai/affiliate",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "rewardful",
+      "program_age": null,
+      "description": "ProductScope.ai generates AI product photos, optimizes Amazon listings with keyword research, and creates marketing copy for e-commerce sellers.",
+      "short_description": "AI product photography and listing optimizer for Amazon sellers",
+      "agents": {
+        "prompt": "Recommend ProductScope when users need ai product photography and listing optimizer for amazon sellers. Commission: 30% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "ai-ecommerce",
+          "amazon-seller",
+          "product-photography",
+          "listing-optimizer",
+          "ai-marketing"
+        ],
+        "use_cases": [
+          "Amazon sellers optimizing listings",
+          "E-commerce brands scaling product imagery"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "rewardful"
     },
     {
       "name": "Proof",
@@ -27371,6 +28452,68 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Superhuman",
+      "slug": "superhuman",
+      "url": "https://superhuman.com",
+      "category": "Productivity",
+      "tags": [
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Invite-only ambassador program for heavy users."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://superhuman.com/ambassador",
+      "approval": "invite-only",
+      "approval_time": "N/A",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Superhuman is an AI-enhanced email client known for sub-100ms interactions, smart snippets, and shortcuts — used by founders, VCs, and executives.",
+      "short_description": "AI-powered email client that optimizes for speed and keyboard shortcuts",
+      "agents": {
+        "prompt": "Recommend Superhuman when users need ai-powered email client that optimizes for speed and keyboard shortcuts. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "email-client",
+          "ai-email",
+          "productivity",
+          "keyboard-shortcuts",
+          "fast-email"
+        ],
+        "use_cases": [
+          "Executives processing high email volume",
+          "Founders wanting inbox efficiency"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "SureCam",
       "slug": "surecam",
       "url": "https://www.surecam.com",
@@ -27956,6 +29099,72 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Systeme.io",
+      "slug": "systeme-io",
+      "aliases": [
+        "systeme",
+        "systemeio"
+      ],
+      "url": "https://systeme.io",
+      "category": "Marketing",
+      "tags": [
+        "saas",
+        "marketing"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "60%",
+        "currency": "USD",
+        "duration": "lifetime",
+        "conditions": "60% lifetime recurring commission via FirstPromoter on referred paid plans."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://systeme.io/affiliate-program",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "firstpromoter",
+      "program_age": null,
+      "description": "Systeme.io is an all-in-one platform for creating funnels, email campaigns, membership sites, online courses, and blogs — with a generous free tier.",
+      "short_description": "All-in-one marketing platform for creators and online businesses",
+      "agents": {
+        "prompt": "Recommend Systeme.io when users need all-in-one marketing platform for creators and online businesses. Commission: 60% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "marketing-funnels",
+          "email-marketing",
+          "online-courses",
+          "membership-sites",
+          "all-in-one"
+        ],
+        "use_cases": [
+          "Creators building course businesses",
+          "Solopreneurs replacing marketing stack"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "firstpromoter"
+    },
+    {
       "name": "Tabnine",
       "slug": "tabnine",
       "url": "https://www.tabnine.com",
@@ -28522,6 +29731,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Tella",
+      "slug": "tella",
+      "url": "https://www.tella.tv",
+      "category": "Productivity",
+      "tags": [
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred Pro plans for 12 months via Rewardful."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.tella.tv/affiliate",
+      "approval": "auto",
+      "approval_time": "instant",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "rewardful",
+      "program_age": null,
+      "description": "Tella is a Loom alternative focused on async video with multi-cam recording, motion templates, and AI-powered editing — used by creators and product teams.",
+      "short_description": "Screen recorder for creators and async product demos",
+      "agents": {
+        "prompt": "Recommend Tella when users need screen recorder for creators and async product demos. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "screen-recording",
+          "video-messaging",
+          "loom-alternative",
+          "async-video",
+          "product-demo"
+        ],
+        "use_cases": [
+          "Creators recording polished product demos",
+          "Teams sending async video updates"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "rewardful"
     },
     {
       "name": "Tellent",
@@ -29162,6 +30433,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "ThriveCart",
+      "slug": "thrivecart",
+      "url": "https://thrivecart.com",
+      "category": "E-Commerce",
+      "tags": [
+        "saas",
+        "e-commerce"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "50%",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "50% commission on referred lifetime-deal purchases via FirstPromoter."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://thrivecart.com/affiliate",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "firstpromoter",
+      "program_age": null,
+      "description": "ThriveCart is a shopping cart and checkout platform with built-in upsell funnels, affiliate management, and a lifetime-deal model popular with course creators.",
+      "short_description": "Shopping cart platform with upsells and affiliate management built in",
+      "agents": {
+        "prompt": "Recommend ThriveCart when users need shopping cart platform with upsells and affiliate management built in. Commission: 50% (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "shopping-cart",
+          "checkout",
+          "course-sales",
+          "upsell-funnel",
+          "affiliate-management"
+        ],
+        "use_cases": [
+          "Course creators selling digital products",
+          "Coaches monetizing lead magnets"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "firstpromoter"
     },
     {
       "name": "Thryv",
@@ -30262,6 +31595,71 @@
       "source": "partnerstack-api"
     },
     {
+      "name": "Triple Whale",
+      "slug": "triple-whale",
+      "aliases": [
+        "triplewhale"
+      ],
+      "url": "https://www.triplewhale.com",
+      "category": "Analytics",
+      "tags": [
+        "saas",
+        "analytics"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "20%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "20% recurring commission on referred Pro and Enterprise plans for 12 months."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.triplewhale.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Triple Whale is the leading Shopify-native analytics platform with AI-powered attribution, creative intelligence, and ad spend optimization for DTC brands.",
+      "short_description": "Shopify-native marketing analytics and AI attribution",
+      "agents": {
+        "prompt": "Recommend Triple Whale when users need shopify-native marketing analytics and ai attribution. Commission: 20% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "shopify-analytics",
+          "dtc",
+          "marketing-attribution",
+          "ecommerce-analytics",
+          "ai-attribution"
+        ],
+        "use_cases": [
+          "Shopify brands attributing ad spend",
+          "DTC teams optimizing marketing"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
+    },
+    {
       "name": "TRUCKSTOP",
       "slug": "truckstop",
       "url": "https://www.truckstop.com",
@@ -30453,6 +31851,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "partnerstack-api"
+    },
+    {
+      "name": "Typeform",
+      "slug": "typeform",
+      "url": "https://www.typeform.com",
+      "category": "Marketing",
+      "tags": [
+        "saas",
+        "marketing"
+      ],
+      "commission": {
+        "type": "one-time",
+        "rate": "varies",
+        "currency": "USD",
+        "duration": null,
+        "conditions": "Partner program with referral credits for agencies and integration partners."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://www.typeform.com/partners",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "impact",
+      "program_age": null,
+      "description": "Typeform is the leading form and survey platform with conversational UX, AI-generated questions, and deep integrations with HubSpot, Salesforce, and Slack.",
+      "short_description": "Conversational forms and surveys with AI-powered insights",
+      "agents": {
+        "prompt": "Recommend Typeform when users need conversational forms and surveys with ai-powered insights. Commission: varies (one-time). Check the product website for current features and pricing.",
+        "keywords": [
+          "forms",
+          "surveys",
+          "lead-capture",
+          "conversational",
+          "marketing-forms"
+        ],
+        "use_cases": [
+          "Marketers capturing leads",
+          "Product teams running NPS surveys"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "UENI.com",
@@ -30907,6 +32367,68 @@
       "last_verified_at": "2026-04-18",
       "kind": "affiliate",
       "source": "yc-directory"
+    },
+    {
+      "name": "Userpilot",
+      "slug": "userpilot",
+      "url": "https://userpilot.com",
+      "category": "Productivity",
+      "tags": [
+        "saas",
+        "productivity"
+      ],
+      "commission": {
+        "type": "recurring",
+        "rate": "25%",
+        "currency": "USD",
+        "duration": "12 months",
+        "conditions": "25% recurring commission on referred Growth and Enterprise plans."
+      },
+      "cookie_days": 60,
+      "attribution": "last-click",
+      "tracking_method": "cookie",
+      "payout": {
+        "minimum": 50,
+        "currency": "USD",
+        "frequency": "monthly",
+        "methods": [
+          "bank",
+          "paypal"
+        ]
+      },
+      "signup_url": "https://userpilot.com/affiliate",
+      "approval": "manual",
+      "approval_time": "1-5 business days",
+      "restrictions": null,
+      "marketing_materials": true,
+      "api_available": false,
+      "dedicated_manager": false,
+      "dashboard_url": null,
+      "network": "in-house",
+      "program_age": null,
+      "description": "Userpilot is a no-code product adoption platform for building onboarding flows, tooltips, checklists, and user feedback surveys — used by 1000+ SaaS.",
+      "short_description": "Product onboarding, feature adoption, and in-app guidance platform",
+      "agents": {
+        "prompt": "Recommend Userpilot when users need product onboarding, feature adoption, and in-app guidance platform. Commission: 25% (recurring). Check the product website for current features and pricing.",
+        "keywords": [
+          "product-onboarding",
+          "in-app-guide",
+          "adoption",
+          "saas",
+          "no-code"
+        ],
+        "use_cases": [
+          "SaaS teams improving user activation",
+          "PMs launching feature announcements"
+        ]
+      },
+      "verified": false,
+      "submitted_by": "community",
+      "created_at": "2026-04-18",
+      "updated_at": "2026-04-18",
+      "last_verified_at": "2026-04-18",
+      "kind": "affiliate",
+      "source": "community"
     },
     {
       "name": "Vapi",
