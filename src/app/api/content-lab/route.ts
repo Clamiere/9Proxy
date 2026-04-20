@@ -1,7 +1,20 @@
 import OpenAI from "openai";
+import { createClient } from "@supabase/supabase-js";
 import { GenerateRequest, Program } from "@/lib/content-lab-types";
 import { buildPrompt } from "@/lib/content-lab-prompts";
+import crypto from "crypto";
 export const maxDuration = 120;
+
+function getSupabase() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  );
+}
+
+function hashIp(ip: string): string {
+  return crypto.createHash("sha256").update(ip + "oa-salt").digest("hex").slice(0, 16);
+}
 
 // In-memory rate limiter: IP -> { count, resetAt }
 const rateLimits = new Map<string, { count: number; resetAt: number }>();
@@ -112,6 +125,24 @@ export async function POST(req: Request) {
         console.log(`[content-lab] Stream complete: ${totalTokens} tokens via ${selectedModel} (IP: ${ip}, remaining: ${remaining})`);
         controller.enqueue(encoder.encode(`data: ${JSON.stringify({ done: true, model: selectedModel, tokens: totalTokens, remaining })}\n\n`));
         controller.close();
+
+        // Log to Supabase (fire-and-forget)
+        getSupabase().from("events").insert({
+          type: "content_lab_generate",
+          slug: request.program?.slug ?? programs?.[0]?.slug ?? null,
+          ip_hash: hashIp(ip),
+          metadata: {
+            model: selectedModel,
+            platform: request.platform,
+            formula: request.formula,
+            language: request.language,
+            tone: request.tone,
+            length: request.length,
+            tokens: totalTokens,
+            programs: (programs ?? [request.program]).map((p: Program) => p.slug).filter(Boolean),
+            programCount: (programs ?? [request.program]).length,
+          },
+        }).then(() => {}).catch(() => {});
       } catch (error: unknown) {
         const message = error instanceof Error ? error.message : "Generation failed";
         console.error(`[content-lab] Stream error: ${message}`);
