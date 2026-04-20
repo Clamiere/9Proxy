@@ -265,7 +265,7 @@ export default function ContentLab() {
                       className="w-full text-left px-4 py-3 hover:bg-emerald-500/10 transition border-b border-white/5 last:border-0"
                     >
                       <div className="flex items-center justify-between mb-1">
-                        <span className="font-medium text-sm">{p.name}</span>
+                        <span className="font-medium text-sm text-white">{p.name}</span>
                         <span className="text-xs px-2 py-0.5 rounded-full bg-white/5 text-white/50">
                           {p.category}
                         </span>

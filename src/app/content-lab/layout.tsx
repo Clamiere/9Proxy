@@ -3,5 +3,5 @@ export default function ContentLabLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="dark bg-[#0a0a0a] min-h-screen">{children}</div>;
+  return <div className="dark bg-[#0a0a0a] text-white min-h-screen">{children}</div>;
 }
